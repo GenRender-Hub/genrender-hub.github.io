@@ -1,0 +1,1276 @@
+{
+  "stations": [
+    {
+      "line": "llm",
+      "date": "2023-09-20",
+      "year": 2023,
+      "month": 9,
+      "side": "a",
+      "kind": "stn",
+      "logo": "unc",
+      "label": "VideoDirectorGPT",
+      "bold": false,
+      "key": "lin2023videodirectorgpt",
+      "url": "https://arxiv.org/abs/2309.15091",
+      "title": "VideoDirectorGPT: Consistent Multi-scene Video Generation via LLM-Guided Planning"
+    },
+    {
+      "line": "llm",
+      "date": "2023-09-20",
+      "year": 2023,
+      "month": 9,
+      "side": "b",
+      "kind": "stn",
+      "logo": "openai",
+      "label": "DALL·E 3",
+      "bold": true,
+      "key": "betker2023dalle3",
+      "url": "https://cdn.openai.com/papers/dall-e-3.pdf",
+      "title": "Improving Image Generation with Better Captions"
+    },
+    {
+      "line": "llm",
+      "date": "2023-11-21",
+      "year": 2023,
+      "month": 11,
+      "side": "a",
+      "kind": "stn",
+      "logo": "cas",
+      "label": "GPT4Motion",
+      "bold": false,
+      "key": "lv2023gpt4motion",
+      "url": "https://arxiv.org/abs/2311.12631",
+      "title": "GPT4Motion: Scripting Physical Motions in Text-to-Video Generation via Blender-Oriented GPT Planning"
+    },
+    {
+      "line": "llm",
+      "date": "2024-08-19",
+      "year": 2024,
+      "month": 8,
+      "side": "b",
+      "kind": "stn",
+      "logo": "purdue",
+      "label": "Kubrick",
+      "bold": false,
+      "key": "he2024kubrick",
+      "url": "https://arxiv.org/abs/2408.10453",
+      "title": "Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation"
+    },
+    {
+      "line": "llm",
+      "date": "2024-11-26",
+      "year": 2024,
+      "month": 11,
+      "side": "a",
+      "kind": "stn",
+      "logo": "ucf",
+      "label": "Scene Co-pilot",
+      "bold": false,
+      "key": "qian2024scenecopilot",
+      "url": "https://arxiv.org/abs/2411.18644",
+      "title": "Scene Co-pilot: Procedural Text to Video Generation with Human in the Loop"
+    },
+    {
+      "line": "llm",
+      "date": "2025-03-26",
+      "year": 2025,
+      "month": 3,
+      "side": "b",
+      "kind": "stn",
+      "logo": "thu",
+      "label": "VPO",
+      "bold": false,
+      "key": "cheng2025vpo",
+      "url": "https://arxiv.org/abs/2503.20491",
+      "title": "VPO: Aligning Text-to-Video Generation Models with Prompt Optimization"
+    },
+    {
+      "line": "llm",
+      "date": "2025-10-28",
+      "year": 2025,
+      "month": 10,
+      "side": "a",
+      "kind": "stn",
+      "logo": "ruc",
+      "label": "VC4VG",
+      "bold": false,
+      "key": "du2025vc4vg",
+      "url": "https://arxiv.org/abs/2510.24134",
+      "title": "VC4VG: Optimizing Video Captions for Text-to-Video Generation"
+    },
+    {
+      "line": "llm",
+      "date": "2025-12-03",
+      "year": 2025,
+      "month": 12,
+      "side": "b",
+      "kind": "stn",
+      "logo": "northeastern",
+      "label": "MoReGen",
+      "bold": false,
+      "key": "bai2025moregen",
+      "url": "https://arxiv.org/abs/2512.04221",
+      "title": "MoReGen: Multi-Agent Motion-Reasoning Engine for Code-based Text-to-Video Synthesis"
+    },
+    {
+      "line": "llm",
+      "date": "2026-05-14",
+      "year": 2026,
+      "month": 5,
+      "side": "a",
+      "kind": "stn",
+      "logo": "uwmadison",
+      "label": "ChronoAgentic",
+      "bold": false,
+      "key": "wang2026chronoagentic",
+      "url": "https://arxiv.org/abs/2605.14398",
+      "title": "ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction"
+    },
+    {
+      "line": "llm",
+      "date": "2026-07-29",
+      "year": 2026,
+      "month": 7,
+      "side": "b",
+      "kind": "stn",
+      "logo": "cuhk",
+      "label": "VideoCoCo",
+      "bold": true,
+      "key": "li2026videococo",
+      "url": "https://arxiv.org/abs/2607.27380",
+      "title": "VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System"
+    },
+    {
+      "line": "r2v",
+      "date": "2024-07-30",
+      "year": 2024,
+      "month": 7,
+      "side": "a",
+      "kind": "prod",
+      "logo": "shengshu",
+      "label": "Vidu C2V",
+      "bold": false,
+      "key": "scmp2024vidu",
+      "url": "https://finance.yahoo.com/news/sora-finds-rival-china-start-093000105.html",
+      "title": "Sora Finds a New Rival in China as Start-up Shengshu AI Rolls out Text-to-Video Tool"
+    },
+    {
+      "line": "r2v",
+      "date": "2024-08-23",
+      "year": 2024,
+      "month": 8,
+      "side": "b",
+      "kind": "stn",
+      "logo": "zju",
+      "label": "CustomCrafter",
+      "bold": false,
+      "key": "wu2025customcrafter",
+      "url": "https://arxiv.org/abs/2408.13239",
+      "title": "CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities"
+    },
+    {
+      "line": "r2v",
+      "date": "2024-11-26",
+      "year": 2024,
+      "month": 11,
+      "side": "a",
+      "kind": "stn",
+      "logo": "pku",
+      "label": "ConsisID",
+      "bold": false,
+      "key": "yuan2024consisid",
+      "url": "https://arxiv.org/abs/2411.17440",
+      "title": "Identity-Preserving Text-to-Video Generation by Frequency Decomposition"
+    },
+    {
+      "line": "r2v",
+      "date": "2025-02-16",
+      "year": 2025,
+      "month": 2,
+      "side": "b",
+      "kind": "stn",
+      "logo": "bytedance",
+      "label": "Phantom",
+      "bold": false,
+      "key": "liu2025phantom",
+      "url": "https://arxiv.org/abs/2502.11079",
+      "title": "Phantom: Subject-consistent video generation via cross-modal alignment"
+    },
+    {
+      "line": "r2v",
+      "date": "2025-04-03",
+      "year": 2025,
+      "month": 4,
+      "side": "a",
+      "kind": "stn",
+      "logo": "skywork",
+      "label": "SkyReels-A2",
+      "bold": false,
+      "key": "fei2025skyreelsa2",
+      "url": "https://arxiv.org/abs/2504.02436",
+      "title": "SkyReels-A2: Compose Anything in Video Diffusion Transformers"
+    },
+    {
+      "line": "r2v",
+      "date": "2025-05-07",
+      "year": 2025,
+      "month": 5,
+      "side": "b",
+      "kind": "stn",
+      "logo": "hunyuan",
+      "label": "HunyuanCustom",
+      "bold": false,
+      "key": "hu2025hunyuancustom",
+      "url": "https://arxiv.org/abs/2505.04512",
+      "title": "HunyuanCustom: A Multimodal-Driven Architecture for Customized Video Generation"
+    },
+    {
+      "line": "r2v",
+      "date": "2025-08-26",
+      "year": 2025,
+      "month": 8,
+      "side": "a",
+      "kind": "stn",
+      "logo": "bytedance",
+      "label": "OmniHuman-1.5",
+      "bold": false,
+      "key": "jiang2025omnihuman15",
+      "url": "https://arxiv.org/abs/2508.19209",
+      "title": "OmniHuman-1.5: Instilling an Active Mind in Avatars via Cognitive Simulation"
+    },
+    {
+      "line": "r2v",
+      "date": "2025-08-26",
+      "year": 2025,
+      "month": 8,
+      "side": "a",
+      "kind": "stn",
+      "logo": "wan",
+      "label": "Wan-S2V",
+      "bold": true,
+      "key": "gao2025wans2v",
+      "url": "https://arxiv.org/abs/2508.18621",
+      "title": "Wan-S2V: Audio-Driven Cinematic Video Generation"
+    },
+    {
+      "line": "r2v",
+      "date": "2025-10-15",
+      "year": 2025,
+      "month": 10,
+      "side": "a",
+      "kind": "prod",
+      "logo": "google",
+      "label": "Veo 3.1",
+      "bold": false,
+      "key": "google2026veoreference",
+      "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation",
+      "title": "Use Reference Images to Guide Video Generation (Veo)"
+    },
+    {
+      "line": "r2v",
+      "date": "2025-12-18",
+      "year": 2025,
+      "month": 12,
+      "side": "b",
+      "kind": "prod",
+      "logo": "kuaishou",
+      "label": "Kling-Omni",
+      "bold": false,
+      "key": "klingteam2025klingomni",
+      "url": "https://arxiv.org/abs/2512.16776",
+      "title": "Kling-Omni Technical Report"
+    },
+    {
+      "line": "r2v",
+      "date": "2026-02-06",
+      "year": 2026,
+      "month": 2,
+      "side": "a",
+      "kind": "prod",
+      "logo": "kuaishou",
+      "label": "Kling 3.0 Omni",
+      "bold": false,
+      "key": "kling2026omni",
+      "url": "https://kling.ai/quickstart/klingai-video-3-omni-model-user-guide",
+      "title": "Kling VIDEO 3.0 Omni Model User Guide"
+    },
+    {
+      "line": "r2v",
+      "date": "2026-02-06",
+      "year": 2026,
+      "month": 2,
+      "side": "b",
+      "kind": "prod",
+      "logo": "bytedance",
+      "label": "Seedance 2.0",
+      "bold": false,
+      "key": "byteplus2026seedance20",
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-2-0",
+      "title": "Seedance 2.0"
+    },
+    {
+      "line": "r2v",
+      "date": "2026-07-31",
+      "year": 2026,
+      "month": 7,
+      "side": "b",
+      "kind": "prod",
+      "logo": "minimax",
+      "label": "MiniMax-H3",
+      "bold": true,
+      "key": "minimax2026h3",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "title": "MiniMax H3: Model Card"
+    },
+    {
+      "line": "r2v",
+      "date": "2026-07-31",
+      "year": 2026,
+      "month": 7,
+      "side": "a",
+      "kind": "prod",
+      "logo": "bytedance",
+      "label": "Seedance 2.5",
+      "bold": true,
+      "key": "bytedance2026seedance25",
+      "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+      "title": "One-Take Creation, Flexible Referencing: Introducing Seedance 2.5"
+    },
+    {
+      "line": "geo",
+      "date": "2016-11-21",
+      "year": 2016,
+      "month": 11,
+      "side": "b",
+      "kind": "stn",
+      "logo": "berkeley",
+      "label": "pix2pix",
+      "bold": false,
+      "key": "isola2017pix2pix",
+      "url": "https://arxiv.org/abs/1611.07004",
+      "title": "Image-to-Image Translation with Conditional Adversarial Networks"
+    },
+    {
+      "line": "geo",
+      "date": "2018-08-20",
+      "year": 2018,
+      "month": 8,
+      "side": "a",
+      "kind": "stn",
+      "logo": "nvidia",
+      "label": "vid2vid",
+      "bold": true,
+      "key": "wang2018vid2vid",
+      "url": "https://arxiv.org/abs/1808.06601",
+      "title": "Video-to-Video Synthesis"
+    },
+    {
+      "line": "geo",
+      "date": "2019-04-28",
+      "year": 2019,
+      "month": 4,
+      "side": "b",
+      "kind": "stn",
+      "logo": "tum",
+      "label": "Deferred NR",
+      "bold": false,
+      "key": "thies2019deferred",
+      "url": "https://arxiv.org/abs/1904.12356",
+      "title": "Deferred Neural Rendering: Image Synthesis using Neural Textures"
+    },
+    {
+      "line": "geo",
+      "date": "2021-05-10",
+      "year": 2021,
+      "month": 5,
+      "side": "a",
+      "kind": "stn",
+      "logo": "intel",
+      "label": "Photoreal. Enh.",
+      "bold": false,
+      "key": "richter2021epe",
+      "url": "https://arxiv.org/abs/2105.04619",
+      "title": "Enhancing Photorealism Enhancement"
+    },
+    {
+      "line": "geo",
+      "date": "2023-02-10",
+      "year": 2023,
+      "month": 2,
+      "side": "b",
+      "kind": "stn",
+      "logo": "stanford",
+      "label": "ControlNet",
+      "bold": false,
+      "key": "zhang2023controlnet",
+      "url": "https://arxiv.org/abs/2302.05543",
+      "title": "Adding Conditional Control to Text-to-Image Diffusion Models"
+    },
+    {
+      "line": "geo",
+      "date": "2023-07-10",
+      "year": 2023,
+      "month": 7,
+      "side": "a",
+      "kind": "prod",
+      "logo": "cuhk",
+      "label": "AnimateDiff",
+      "bold": false,
+      "key": "guo2023animatediff",
+      "url": "https://arxiv.org/abs/2307.04725",
+      "title": "AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning"
+    },
+    {
+      "line": "geo",
+      "date": "2023-12-03",
+      "year": 2023,
+      "month": 12,
+      "side": "b",
+      "kind": "stn",
+      "logo": "stanford",
+      "label": "Gen. Rendering",
+      "bold": true,
+      "key": "cai2024generativerendering",
+      "url": "https://arxiv.org/abs/2312.01409",
+      "title": "Generative Rendering: Controllable 4D-Guided Video Generation with 2D Diffusion Models"
+    },
+    {
+      "line": "geo",
+      "date": "2025-01-07",
+      "year": 2025,
+      "month": 1,
+      "side": "a",
+      "kind": "stn",
+      "logo": "hkust",
+      "label": "Diff. as Shader",
+      "bold": false,
+      "key": "gu2025das",
+      "url": "https://arxiv.org/abs/2501.03847",
+      "title": "Diffusion as Shader: 3D-aware Video Diffusion for Versatile Video Generation Control"
+    },
+    {
+      "line": "geo",
+      "date": "2025-01-30",
+      "year": 2025,
+      "month": 1,
+      "side": "b",
+      "kind": "stn",
+      "logo": "nvidia",
+      "label": "DiffusionRenderer",
+      "bold": false,
+      "key": "liang2025diffusionrenderer",
+      "url": "https://arxiv.org/abs/2501.18590",
+      "title": "DiffusionRenderer: Neural Inverse and Forward Rendering with Video Diffusion Models"
+    },
+    {
+      "line": "geo",
+      "date": "2025-03-10",
+      "year": 2025,
+      "month": 3,
+      "side": "a",
+      "kind": "stn",
+      "logo": "wan",
+      "label": "VACE",
+      "bold": true,
+      "key": "jiang2025vace",
+      "url": "https://arxiv.org/abs/2503.07598",
+      "title": "VACE: All-in-One Video Creation and Editing"
+    },
+    {
+      "line": "geo",
+      "date": "2025-03-18",
+      "year": 2025,
+      "month": 3,
+      "side": "b",
+      "kind": "stn",
+      "logo": "nvidia",
+      "label": "Cosmos-Transfer1",
+      "bold": false,
+      "key": "nvidia2025cosmostransfer1",
+      "url": "https://arxiv.org/abs/2503.14492",
+      "title": "Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal Control"
+    },
+    {
+      "line": "geo",
+      "date": "2025-09-25",
+      "year": 2025,
+      "month": 9,
+      "side": "a",
+      "kind": "stn",
+      "logo": "rochester",
+      "label": "ControlHair",
+      "bold": false,
+      "key": "lin2025controlhair",
+      "url": "https://arxiv.org/abs/2509.21541",
+      "title": "ControlHair: Synergizing Physics Simulator and Video Diffusion for Controllable Dynamic Hair Rendering"
+    },
+    {
+      "line": "geo",
+      "date": "2026-01-08",
+      "year": 2026,
+      "month": 1,
+      "side": "a",
+      "kind": "stn",
+      "logo": "fudan",
+      "label": "VerseCrafter",
+      "bold": false,
+      "key": "zheng2026versecrafter",
+      "url": "https://arxiv.org/abs/2601.05138",
+      "title": "VerseCrafter: Dynamic Realistic Video World Model with 4D Geometric Control"
+    },
+    {
+      "line": "geo",
+      "date": "2026-03-16",
+      "year": 2026,
+      "month": 3,
+      "side": "b",
+      "kind": "prod",
+      "logo": "nvidia",
+      "label": "DLSS 5",
+      "bold": true,
+      "key": "nvidia2026dlss5",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-dlss-5-delivers-ai-powered-breakthrough-in-visual-fidelity-for-games",
+      "title": "NVIDIA DLSS 5 Delivers AI-Powered Breakthrough in Visual Fidelity for Games"
+    },
+    {
+      "line": "geo",
+      "date": "2026-04-02",
+      "year": 2026,
+      "month": 4,
+      "side": "a",
+      "kind": "stn",
+      "logo": "alaya",
+      "label": "Gen. World Rend.",
+      "bold": false,
+      "key": "huang2026gwr",
+      "url": "https://arxiv.org/abs/2604.02329",
+      "title": "Generative World Renderer"
+    },
+    {
+      "line": "geo",
+      "date": "2026-07-30",
+      "year": 2026,
+      "month": 7,
+      "side": "b",
+      "kind": "stn",
+      "logo": "thu",
+      "label": "DAR",
+      "bold": true,
+      "key": "chen2026dar",
+      "url": "https://arxiv.org/abs/2608.00094",
+      "title": "Video Models as Native 4D Renderers: World-Grounded Conditioning from Animated Mesh"
+    },
+    {
+      "line": "stream",
+      "date": "2025-12-18",
+      "year": 2025,
+      "month": 12,
+      "side": "b",
+      "kind": "stn",
+      "logo": "tuebingen",
+      "label": "FrameDiffuser",
+      "bold": false,
+      "key": "beisswenger2025framediffuser",
+      "url": "https://arxiv.org/abs/2512.16670",
+      "title": "FrameDiffuser: G-Buffer-Conditioned Diffusion for Neural Forward Frame Rendering"
+    },
+    {
+      "line": "stream",
+      "date": "2026-03-05",
+      "year": 2026,
+      "month": 3,
+      "side": "b",
+      "kind": "stn",
+      "logo": "stanford",
+      "label": "RealWonder",
+      "bold": false,
+      "key": "liu2026realwonder",
+      "url": "https://arxiv.org/abs/2603.05449",
+      "title": "RealWonder: Real-Time Physical Action-Conditioned Video Generation"
+    },
+    {
+      "line": "stream",
+      "date": "2026-07-21",
+      "year": 2026,
+      "month": 7,
+      "side": "a",
+      "kind": "stn",
+      "logo": "alaya",
+      "label": "AlayaFlash",
+      "bold": true,
+      "key": "lin2026alayaflash",
+      "url": "https://arxiv.org/abs/2607.18703",
+      "title": "Generative World Renderer at the Speed of Play"
+    },
+    {
+      "line": "wm",
+      "date": "2020-05-25",
+      "year": 2020,
+      "month": 5,
+      "side": "b",
+      "kind": "stn",
+      "logo": "nvidia",
+      "label": "GameGAN",
+      "bold": false,
+      "key": "kim2020gamegan",
+      "url": "https://arxiv.org/abs/2005.12126",
+      "title": "Learning to Simulate Dynamic Environments with GameGAN"
+    },
+    {
+      "line": "wm",
+      "date": "2024-02-23",
+      "year": 2024,
+      "month": 2,
+      "side": "a",
+      "kind": "stn",
+      "logo": "deepmind",
+      "label": "Genie",
+      "bold": false,
+      "key": "bruce2024genie",
+      "url": "https://arxiv.org/abs/2402.15391",
+      "title": "Genie: Generative Interactive Environments"
+    },
+    {
+      "line": "wm",
+      "date": "2024-08-27",
+      "year": 2024,
+      "month": 8,
+      "side": "b",
+      "kind": "stn",
+      "logo": "google",
+      "label": "GameNGen",
+      "bold": false,
+      "key": "valevski2025gamengen",
+      "url": "https://arxiv.org/abs/2408.14837",
+      "title": "Diffusion Models Are Real-Time Game Engines"
+    },
+    {
+      "line": "wm",
+      "date": "2024-10-31",
+      "year": 2024,
+      "month": 10,
+      "side": "a",
+      "kind": "prod",
+      "logo": "decart",
+      "label": "Oasis",
+      "bold": false,
+      "key": "decart2024oasis",
+      "url": "https://oasis-model.github.io/",
+      "title": "Oasis: A Universe in a Transformer"
+    },
+    {
+      "line": "wm",
+      "date": "2024-12-10",
+      "year": 2024,
+      "month": 12,
+      "side": "b",
+      "kind": "stn",
+      "logo": "mit",
+      "label": "CausVid",
+      "bold": false,
+      "key": "yin2025causvid",
+      "url": "https://arxiv.org/abs/2412.07772",
+      "title": "From Slow Bidirectional to Fast Autoregressive Video Diffusion Models"
+    },
+    {
+      "line": "wm",
+      "date": "2025-06-09",
+      "year": 2025,
+      "month": 6,
+      "side": "a",
+      "kind": "stn",
+      "logo": "adobe",
+      "label": "Self-Forcing",
+      "bold": false,
+      "key": "huang2025selfforcing",
+      "url": "https://arxiv.org/abs/2506.08009",
+      "title": "Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion"
+    },
+    {
+      "line": "wm",
+      "date": "2025-06-11",
+      "year": 2025,
+      "month": 6,
+      "side": "b",
+      "kind": "stn",
+      "logo": "bytedance",
+      "label": "AAPT",
+      "bold": false,
+      "key": "lin2025aapt",
+      "url": "https://arxiv.org/abs/2506.09350",
+      "title": "Autoregressive Adversarial Post-Training for Real-Time Interactive Video Generation"
+    },
+    {
+      "line": "wm",
+      "date": "2025-08-05",
+      "year": 2025,
+      "month": 8,
+      "side": "a",
+      "kind": "prod",
+      "logo": "deepmind",
+      "label": "Genie 3",
+      "bold": true,
+      "key": "deepmind2025genie3",
+      "url": "https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/",
+      "title": "Genie 3: A New Frontier for World Models"
+    },
+    {
+      "line": "wm",
+      "date": "2025-09-26",
+      "year": 2025,
+      "month": 9,
+      "side": "b",
+      "kind": "stn",
+      "logo": "nvidia",
+      "label": "LongLive",
+      "bold": false,
+      "key": "yang2025longlive",
+      "url": "https://arxiv.org/abs/2509.22622",
+      "title": "LongLive: Real-time Interactive Long Video Generation"
+    },
+    {
+      "line": "wm",
+      "date": "2025-12-16",
+      "year": 2025,
+      "month": 12,
+      "side": "a",
+      "kind": "stn",
+      "logo": "hunyuan",
+      "label": "HY-WorldPlay",
+      "bold": true,
+      "key": "sun2025worldplay",
+      "url": "https://arxiv.org/abs/2512.14614",
+      "title": "WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling"
+    },
+    {
+      "line": "wm",
+      "date": "2026-01-28",
+      "year": 2026,
+      "month": 1,
+      "side": "b",
+      "kind": "stn",
+      "logo": "robbyant",
+      "label": "LingBot-World",
+      "bold": false,
+      "key": "robbyant2026lingbot",
+      "url": "https://arxiv.org/abs/2601.20540",
+      "title": "Advancing Open-source World Models"
+    },
+    {
+      "line": "wm",
+      "date": "2026-04-10",
+      "year": 2026,
+      "month": 4,
+      "side": "b",
+      "kind": "stn",
+      "logo": "skywork",
+      "label": "Matrix-Game 3.0",
+      "bold": false,
+      "key": "wang2026matrixgame3",
+      "url": "https://arxiv.org/abs/2604.08995",
+      "title": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory"
+    },
+    {
+      "line": "wm",
+      "date": "2026-04-10",
+      "year": 2026,
+      "month": 4,
+      "side": "a",
+      "kind": "stn",
+      "logo": "alibaba",
+      "label": "HappyOyster",
+      "bold": false,
+      "key": "alibaba2026happyoyster",
+      "url": "https://www.alibabacloud.com/blog/603048",
+      "title": "Alibaba Launches HappyOyster"
+    },
+    {
+      "line": "wm",
+      "date": "2026-06-01",
+      "year": 2026,
+      "month": 6,
+      "side": "b",
+      "kind": "stn",
+      "logo": "nvidia",
+      "label": "Cosmos 3",
+      "bold": false,
+      "key": "nvidia2026cosmos3",
+      "url": "https://arxiv.org/abs/2606.02800",
+      "title": "Cosmos 3: Omnimodal World Models for Physical AI"
+    }
+  ],
+  "terminal": {
+    "t3a_code": [
+      {
+        "pathway": "mh3",
+        "logo": "westlake",
+        "label": "Code World Model",
+        "bold": true,
+        "key": "chen2026cwm",
+        "url": "https://arxiv.org/abs/2608.25927",
+        "title": "Code World Model: Coding Agent as World Brain"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "microsoft",
+        "label": "Code Video Model",
+        "bold": false,
+        "key": "cvm2026codevideomodel",
+        "url": "https://code-video-model.github.io/tech_report.pdf",
+        "title": "Code Video Model: Conditioning Video Generation on Code"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "ucf",
+        "label": "Video-Coder",
+        "bold": false,
+        "key": "wang2026videocoder",
+        "url": "https://arxiv.org/abs/2611.09894",
+        "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "showlab",
+        "label": "SolarRenderer",
+        "bold": true,
+        "key": "fang2026solarrenderer",
+        "url": "https://arxiv.org/abs/2610.28630",
+        "title": "SolarRenderer: Few-Step Generative Reference Rendering"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "alaya",
+        "label": "AnyGameRenderer",
+        "bold": false,
+        "key": "liu2026anygamerenderer",
+        "url": "https://arxiv.org/abs/2610.31466",
+        "title": "AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "teleai",
+        "label": "CoCode-World",
+        "bold": false,
+        "key": "li2026cocodeworld",
+        "url": "https://arxiv.org/abs/2611.15602",
+        "title": "CoCode-World: Shared 3D Proxy Representation for Multi-Player World Models"
+      }
+    ],
+    "t3a_eng": [
+      {
+        "pathway": "mbr",
+        "logo": "jhu",
+        "label": "GenCine",
+        "bold": false,
+        "key": "zhang2026gencine",
+        "url": "https://arxiv.org/abs/2610.02180",
+        "title": "Generative Cinematographer: Composing Camera and Object Motion in 3D"
+      },
+      {
+        "pathway": "mbr",
+        "logo": "hmmunich",
+        "label": "BodyBridge",
+        "bold": false,
+        "key": "azer2026bodybridge",
+        "url": "https://arxiv.org/abs/2610.24436",
+        "title": "BodyBridge: Grounded Body Layers for Sim-to-Real Translation of Vulnerable Road Users"
+      },
+      {
+        "pathway": "mfus",
+        "logo": "tencent",
+        "label": "Proxy2World",
+        "bold": false,
+        "key": "xu2026proxy2world",
+        "url": "https://arxiv.org/abs/2609.35023",
+        "title": "Proxy2World: Learning to Generate Worlds From Lightweight Proxies without Seeing Them"
+      },
+      {
+        "pathway": "mbr",
+        "logo": "zju",
+        "label": "WorldWeave",
+        "bold": false,
+        "key": "huang2026worldweave",
+        "url": "https://arxiv.org/abs/2609.34221",
+        "title": "WorldWeave: Growing Persistent Geometric Worlds for Video Generation"
+      },
+      {
+        "pathway": "mfus",
+        "logo": "whu",
+        "label": "NeuralSRender",
+        "bold": false,
+        "key": "lu2026neuralsrender",
+        "url": "https://arxiv.org/abs/2610.29200",
+        "title": "NeuralSRender: G-Buffer Guided Video Diffusion for Sim-to-Real Rendering"
+      },
+      {
+        "pathway": "mctx",
+        "logo": "ucsb",
+        "label": "RGBX-Next",
+        "bold": false,
+        "key": "zeng2026rgbxnext",
+        "url": "https://arxiv.org/abs/2608.13929",
+        "title": "RGBX-Next: Towards Realistic Generative Rendering from G-Buffers"
+      }
+    ],
+    "t3b_eng": [
+      {
+        "pathway": "mfus",
+        "logo": "skywork",
+        "label": "Matrix-Game 4.0",
+        "bold": true,
+        "key": "zhang2026matrixgame4",
+        "url": "https://arxiv.org/abs/2610.27999",
+        "title": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "nvidia",
+        "label": "StreamRender-H3",
+        "bold": false,
+        "key": "lu2026streamrender",
+        "url": "https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/",
+        "title": "StreamRender-H3: Interactive Coding Worlds with Real-time Streaming Diffusion Render"
+      },
+      {
+        "pathway": "mfus",
+        "logo": "vast",
+        "label": "EdenLive",
+        "bold": true,
+        "key": "huang2026edenlive",
+        "url": "https://assets.vast-eden.ai/assets/edenlive/EdenLive-tech-report.pdf",
+        "title": "EdenLive: Real-Time Generative Rendering from Any Visual Reference"
+      },
+      {
+        "pathway": "mctx",
+        "logo": "oxford",
+        "label": "Fight World Model",
+        "bold": false,
+        "key": "li2026fightwm",
+        "url": "https://arxiv.org/abs/2610.40607",
+        "title": "Fight World Model: Customizable Combat through Visual Interaction Proxies"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "showlab",
+        "label": "SolarRenderer-C.",
+        "bold": false,
+        "key": "fang2026solarrenderer",
+        "url": "https://arxiv.org/abs/2610.28630",
+        "title": "SolarRenderer: Few-Step Generative Reference Rendering"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "tencent",
+        "label": "GameWM",
+        "bold": true,
+        "key": "he2026gamewm",
+        "url": "https://arxiv.org/abs/2611.19247",
+        "title": "GameWM: Toward Next-Generation Video Games with Interaction-Centric World Models"
+      }
+    ],
+    "t3b_agent": [
+      {
+        "pathway": "mfus",
+        "logo": "tencent",
+        "label": "Wizard",
+        "bold": true,
+        "key": "wu2026wizard",
+        "url": "https://arxiv.org/abs/2610.40339",
+        "title": "Wizard: Manipulate Any World in Real Time via Agentic Control"
+      },
+      {
+        "pathway": "mbr",
+        "logo": "ustc",
+        "label": "CoDeR",
+        "bold": false,
+        "key": "fang2026coder",
+        "url": "https://arxiv.org/abs/2609.26458",
+        "title": "Code Plans, Diffusion Renders: Open-Ended Generative World Modeling"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "thu",
+        "label": "Stateful Harness",
+        "bold": false,
+        "key": "chan2026statefulharness",
+        "url": "https://arxiv.org/abs/2610.26811",
+        "title": "State World Models: Execute the Rules, Generate the Pixels"
+      },
+      {
+        "pathway": "mbr",
+        "logo": "alaya",
+        "label": "Programmable WM",
+        "bold": false,
+        "key": "huang2026pwm",
+        "url": "https://arxiv.org/abs/2609.10540",
+        "title": "Programmable World Model"
+      },
+      {
+        "pathway": "mxat",
+        "logo": "ubc",
+        "label": "BoxWorld",
+        "bold": false,
+        "key": "wu2026boxworld",
+        "url": "https://arxiv.org/abs/2610.36371",
+        "title": "BoxWorld: Let World Engines Control and Video Generators Render"
+      },
+      {
+        "pathway": "mctx",
+        "logo": "mirros",
+        "label": "AgentGarten",
+        "bold": false,
+        "key": "chi2026agentgarten",
+        "url": "https://arxiv.org/abs/2610.12374",
+        "title": "AgentGarten: Code Worlds for Evolving Agents"
+      },
+      {
+        "pathway": "mnr",
+        "logo": "pku",
+        "label": "Mallea",
+        "bold": false,
+        "key": "liu2026mallea",
+        "url": "https://arxiv.org/abs/2610.21283",
+        "title": "Mallea: Building, Steering, and Memorizing Worlds with Coding Agent"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "mbzuai",
+        "label": "Streaming CWM",
+        "bold": false,
+        "key": "liao2026streamingcwm",
+        "url": "https://github.com/TingtingLiao/streaming-code-world-model",
+        "title": "Streaming Code World Model"
+      },
+      {
+        "pathway": "mh3",
+        "logo": "inclusionai",
+        "label": "CWM 2.0",
+        "bold": true,
+        "key": "wang2026cwm2",
+        "url": "https://arxiv.org/abs/2611.22925",
+        "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation"
+      }
+    ],
+    "t3b_world": [
+      {
+        "pathway": "mbr",
+        "logo": "hkust",
+        "label": "GSExplorer",
+        "bold": false,
+        "key": "yu2026gsexplorer",
+        "url": "https://arxiv.org/abs/2611.01543",
+        "title": "GSExplorer: Interactive World Generation with a Persistent 3D Gaussian World State"
+      },
+      {
+        "pathway": "mbr",
+        "logo": "fudan",
+        "label": "UniWorld",
+        "bold": false,
+        "key": "zhang2026uniworld",
+        "url": "https://arxiv.org/abs/2610.32381",
+        "title": "UniWorld: A Unified World Model for Real-Time Visual World Simulation"
+      },
+      {
+        "pathway": "mxat",
+        "logo": "cuhk",
+        "label": "PlayGen2",
+        "bold": true,
+        "key": "zhang2026playgen2",
+        "url": "https://arxiv.org/abs/2611.07867",
+        "title": "PlayGen2: Learning Real-Time Playable Worlds with Explicit 3D State"
+      }
+    ],
+    "implicit": [
+      {
+        "pathway": "grblue",
+        "logo": "alaya",
+        "label": "Alaya-EVOKE",
+        "bold": false,
+        "key": "yin2026evoke",
+        "url": "https://arxiv.org/abs/2608.13546",
+        "title": "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World"
+      },
+      {
+        "pathway": "grblue",
+        "logo": "jd",
+        "label": "EchoWM",
+        "bold": false,
+        "key": "zhang2026echowm",
+        "url": "https://arxiv.org/abs/2608.23189",
+        "title": "EchoWM: Open and Enterable Omnimodal World Models"
+      },
+      {
+        "pathway": "grblue",
+        "logo": "riemann",
+        "label": "Matrix-Game 3.5",
+        "bold": false,
+        "key": "qian2026matrixgame35",
+        "url": "https://arxiv.org/abs/2608.29910",
+        "title": "Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory"
+      },
+      {
+        "pathway": "grblue",
+        "logo": "cuhksz",
+        "label": "SolarWM",
+        "bold": false,
+        "key": "huang2026solarwm",
+        "url": "https://arxiv.org/abs/2609.02886",
+        "title": "SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models"
+      },
+      {
+        "pathway": "grblue",
+        "logo": "hunyuan",
+        "label": "Hy-Nomas",
+        "bold": false,
+        "key": "chen2026hynomas",
+        "url": "https://arxiv.org/abs/2610.36729",
+        "title": "Hy-Nomas: Towards Free-form Interactive World Generation"
+      },
+      {
+        "pathway": "grblue",
+        "logo": "deepmind",
+        "label": "Genie 4",
+        "bold": true,
+        "key": "deepmind2026genie4",
+        "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "title": "Genie 4: A New Generation of World Simulation"
+      }
+    ]
+  },
+  "monthly": [
+    {
+      "m": "Jan '25",
+      "yr": 2025,
+      "items": [
+        "mfus",
+        "mfus"
+      ]
+    },
+    {
+      "m": "Mar '25",
+      "yr": 2025,
+      "items": [
+        "mbr"
+      ]
+    },
+    {
+      "m": "Sep '25",
+      "yr": 2025,
+      "items": [
+        "mfus"
+      ]
+    },
+    {
+      "m": "Oct '25",
+      "yr": 2025,
+      "items": [
+        "mfus"
+      ]
+    },
+    {
+      "m": "Dec '25",
+      "yr": 2025,
+      "items": [
+        "mbr"
+      ]
+    },
+    {
+      "m": "Jan '26",
+      "yr": 2026,
+      "items": [
+        "mfus",
+        "mbr"
+      ]
+    },
+    {
+      "m": "Mar '26",
+      "yr": 2026,
+      "items": [
+        "mfus",
+        "mctx"
+      ]
+    },
+    {
+      "m": "Apr '26",
+      "yr": 2026,
+      "items": [
+        "mfus"
+      ]
+    },
+    {
+      "m": "May '26",
+      "yr": 2026,
+      "items": [
+        "mbr"
+      ]
+    },
+    {
+      "m": "Jul '26",
+      "yr": 2026,
+      "items": [
+        "mfus",
+        "mfus",
+        "mfus",
+        "mbr",
+        "mbr",
+        "mtf"
+      ]
+    },
+    {
+      "m": "Aug '26",
+      "yr": 2026,
+      "items": [
+        "mh3",
+        "mctx",
+        "mxat"
+      ]
+    },
+    {
+      "m": "Sep '26",
+      "yr": 2026,
+      "items": [
+        "mh3",
+        "mfus",
+        "mbr",
+        "mbr",
+        "mbr"
+      ]
+    },
+    {
+      "m": "Oct '26",
+      "yr": 2026,
+      "items": [
+        "mh3",
+        "mh3",
+        "mh3",
+        "mh3",
+        "mh3",
+        "mh3",
+        "mfus",
+        "mfus",
+        "mfus",
+        "mfus",
+        "mfus",
+        "mbr",
+        "mbr",
+        "mbr",
+        "mctx",
+        "mctx",
+        "mxat",
+        "mnr"
+      ]
+    },
+    {
+      "m": "Nov '26",
+      "yr": 2026,
+      "items": [
+        "mh3",
+        "mh3",
+        "mh3",
+        "mh3",
+        "mbr",
+        "mxat"
+      ]
+    }
+  ]
+}

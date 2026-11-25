@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Video Models as Generative Renderers: Foundations, Interfaces, Systems, and Beyond — animated renderer studio, 4-lineage interactive metro evolution map, causality vs real-time explorer, 68-system matrix, and 336-paper library." />
+  <meta name="theme-color" content="#1e5246" />
+  <title>GenRender — Video Models as Generative Renderers</title>
+  <link rel="canonical" href="https://genrender-hub.github.io/" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="VideoRender" />
+        <span>GENERATIVE <b>RENDERERS</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#perspective">Specification Ladder</a>
+        <a href="#metro-roadmap">Evolution Roadmap</a>
+        <a href="#orthogonality">T3a/T3b vs RT</a>
+        <a href="#matrix">System Matrix</a>
+        <a href="#library">Library (336)</a>
+        <a class="nav-github" href="https://github.com/GenRender-Hub/Awesome-Generative-Renderers" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ORIGINAL CLASSICAL ATELIER SPLIT HERO WITH INTERACTIVE CLAY <-> CINEMA COURTYARD STAGE -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Survey &amp; Living Hub · November 2026</div>
+          <h1 id="hero-title">Video Models as Generative Renderers</h1>
+          <p class="hero-sub">Foundations, Interfaces, Systems, and Beyond</p>
+          <div class="hero-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+          <p class="hero-thesis">
+            Just as classical graphics separates <b>scene construction</b> from <b>rendering</b>, modern video models are shifting from open-ended content invention toward <b>faithful conditional rendering</b>—preserving externally constructed geometry, rules, and cast identity while synthesizing sunlit surfaces, cloth, and secondary motion.
+          </p>
+
+          <ul class="hero-keywords" aria-label="Survey keywords">
+            <li>Generative Rendering</li>
+            <li>Specification Ladder</li>
+            <li>Structural Proxies</li>
+            <li>Causal Streaming</li>
+            <li>World State vs. Visual Memory</li>
+          </ul>
+
+          <nav class="hero-actions" aria-label="Survey resources">
+            <a class="resource-link is-primary" href="#metro-roadmap">
+              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.5 8l4.2 7.8M17.5 8l-4.2 7.8"/></svg>
+              <span>Evolution Roadmap</span>
+            </a>
+            <a class="resource-link" href="https://github.com/GenRender-Hub/Awesome-Generative-Renderers" target="_blank" rel="noopener">
+              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.4 6.2-6.5a5.1 5.1 0 0 0-1.4-3.5 4.8 4.8 0 0 0-.1-3.5s-1.2-.4-3.8 1.3a13 13 0 0 0-6.8 0C5.6 1.1 4.4 1.5 4.4 1.5a4.8 4.8 0 0 0-.1 3.5 5.1 5.1 0 0 0-1.4 3.5c0 5.1 3.2 6.2 6.2 6.5a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a class="resource-link" href="#matrix">
+              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>
+              <span>System Matrix (68)</span>
+            </a>
+            <a class="resource-link" href="#library">
+              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <span>Library (336)</span>
+            </a>
+            <a class="resource-link" href="#cite">
+              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 11H5a6 6 0 0 1 5-6M5 11h5v7H4v-5a2 2 0 0 1 1-2Zm15 0h-5a6 6 0 0 1 5-6m-5 6h5v7h-6v-5a2 2 0 0 1 1-2Z"/></svg>
+              <span>Cite</span>
+            </a>
+            <a class="resource-link" href="mailto:xyli@se.cuhk.edu.hk">
+              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+              <span>Contact</span>
+            </a>
+          </nav>
+        </div>
+
+        <!-- 100% ORIGINAL INTERACTIVE CLASSICAL COURTYARD: DRAG CLAY WIREFRAME <-> SUNLIT GENERATIVE RENDER! -->
+        <figure class="atelier-stage" id="atelier-stage">
+          <div class="stage-bar">
+            <span class="stage-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-8h6v8"/></svg>
+              Classical Courtyard · Interactive Renderer Wipe
+            </span>
+            <div class="stage-controls">
+              <button type="button" class="stage-btn active" data-moment="duel">0:02 Clash</button>
+              <button type="button" class="stage-btn" data-moment="knockdown">0:04 Red Falls</button>
+              <button type="button" class="stage-btn" id="stage-sweep-btn">⏸ Auto-Wipe</button>
+            </div>
+          </div>
+
+          <div class="stage-viewport" id="stage-viewport" data-moment="duel" style="--split:48%;">
+            <span class="stage-pill left">Upstream 3D Clay Proxy · s(t)</span>
+            <span class="stage-pill right">Generative Video Render · Y(t)</span>
+
+            <!-- LAYER 1 (LEFT / UNDERNEATH): ARCHITECTURAL CLAY & WIREFRAME SPECIFICATION -->
+            <svg class="stage-layer" viewBox="0 0 640 390" fill="none" role="img" aria-label="Upstream 3D clay proxy of a classical courtyard with two wireframe fighters and camera frustum">
+              <defs>
+                <pattern id="bp-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+                  <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#cfd5de" stroke-width="0.7"/>
+                </pattern>
+              </defs>
+              <rect width="640" height="390" fill="#f3f2f6"/>
+              <rect width="640" height="390" fill="url(#bp-grid)" opacity="0.75"/>
+
+              <!-- Clay horizon & perspective courtyard tiles -->
+              <path d="M0 264H640V390H0Z" fill="#e5e3eb"/>
+              <g stroke="#b8b2c7" stroke-width="0.9">
+                <line x1="0" y1="264" x2="640" y2="264"/>
+                <line x1="0" y1="292" x2="640" y2="292"/>
+                <line x1="0" y1="330" x2="640" y2="330"/>
+                <line x1="320" y1="264" x2="320" y2="390"/>
+                <line x1="250" y1="264" x2="170" y2="390"/>
+                <line x1="180" y1="264" x2="35" y2="390"/>
+                <line x1="390" y1="264" x2="470" y2="390"/>
+                <line x1="460" y1="264" x2="605" y2="390"/>
+              </g>
+
+              <!-- Classical colonnade & temple pediment in monochrome clay wireframe -->
+              <g stroke="#7c6d8c" stroke-width="1.3" fill="#e9e6ef">
+                <!-- Pediment -->
+                <polygon points="74,106 320,44 566,106" fill="#ece9f2"/>
+                <polygon points="108,100 320,54 532,100" fill="none" stroke="#9b8ea9" stroke-dasharray="4 3"/>
+                <rect x="78" y="106" width="484" height="16" fill="#e0dce8"/>
+                <!-- 6 Clay fluted columns -->
+                <rect x="96" y="122" width="24" height="142"/><line x1="104" y1="122" x2="104" y2="264" stroke="#b0a5bd"/><line x1="112" y1="122" x2="112" y2="264" stroke="#b0a5bd"/>
+                <rect x="174" y="122" width="24" height="142"/><line x1="182" y1="122" x2="182" y2="264" stroke="#b0a5bd"/><line x1="190" y1="122" x2="190" y2="264" stroke="#b0a5bd"/>
+                <rect x="252" y="122" width="24" height="142"/><line x1="260" y1="122" x2="260" y2="264" stroke="#b0a5bd"/>
+                <rect x="364" y="122" width="24" height="142"/><line x1="372" y1="122" x2="372" y2="264" stroke="#b0a5bd"/>
+                <rect x="442" y="122" width="24" height="142"/><line x1="450" y1="122" x2="450" y2="264" stroke="#b0a5bd"/>
+                <rect x="520" y="122" width="24" height="142"/><line x1="528" y1="122" x2="528" y2="264" stroke="#b0a5bd"/>
+                <!-- Central arch wireframe -->
+                <path d="M276 264V186A44 44 0 0 1 364 186V264" fill="none" stroke="#785c84" stroke-dasharray="5 3" stroke-width="1.5"/>
+              </g>
+
+              <!-- Orbiting Camera Trajectory Frustum C(t) -->
+              <path d="M74 334 C 190 368, 450 368, 566 334" stroke="#785c84" stroke-width="1.5" stroke-dasharray="6 4" fill="none"/>
+              <g class="cam-orbit">
+                <polygon points="86,318 110,308 110,334 86,324" fill="#785c84" fill-opacity="0.22" stroke="#785c84" stroke-width="1.4"/>
+                <rect x="66" y="313" width="20" height="15" rx="3" fill="#785c84"/>
+                <text x="116" y="325" font-size="9.5" font-weight="700" font-family="monospace" fill="#785c84">CAM C(t)</text>
+              </g>
+
+              <!-- Fighter 1 (Red) — Clay Mannequin + 3D Oriented Bounding Box & Skeleton -->
+              <g class="red-bbox">
+                <rect x="218" y="188" width="84" height="128" rx="4" fill="#a75246" fill-opacity="0.07" stroke="#a75246" stroke-width="1.4" stroke-dasharray="5 3"/>
+                <text x="223" y="201" font-size="8.5" font-weight="700" font-family="monospace" fill="#a75246">ID:01 · RED</text>
+                <!-- Clay capsule skeleton -->
+                <circle cx="264" cy="218" r="11" fill="#d9d4e2" stroke="#6f5c80" stroke-width="1.6"/>
+                <path d="M264 229v36M264 238l-22 14M264 238l32-12M264 265l-18 42M264 265l20 42" stroke="#6f5c80" stroke-width="5" stroke-linecap="round"/>
+                <line x1="296" y1="226" x2="338" y2="210" stroke="#a75246" stroke-width="2" stroke-dasharray="3 2"/>
+                <circle cx="264" cy="238" r="3" fill="#a75246"/><circle cx="264" cy="265" r="3" fill="#a75246"/>
+              </g>
+
+              <!-- Fighter 2 (Blue) — Clay Mannequin + 3D Bounding Box -->
+              <g class="blue-fighter">
+                <rect x="348" y="186" width="84" height="130" rx="4" fill="#4e6e91" fill-opacity="0.07" stroke="#4e6e91" stroke-width="1.4" stroke-dasharray="5 3"/>
+                <text x="353" y="199" font-size="8.5" font-weight="700" font-family="monospace" fill="#4e6e91">ID:02 · BLUE</text>
+                <circle cx="386" cy="216" r="11" fill="#d9d4e2" stroke="#4e6e91" stroke-width="1.6"/>
+                <path d="M386 227v36M386 236l-30-6M386 236l22 14M386 263l-18 44M386 263l20 44" stroke="#4e6e91" stroke-width="5" stroke-linecap="round"/>
+                <line x1="356" y1="230" x2="314" y2="214" stroke="#4e6e91" stroke-width="2" stroke-dasharray="3 2"/>
+              </g>
+
+              <!-- Depth / state readout pill -->
+              <rect x="14" y="354" width="194" height="24" rx="5" fill="#ffffff" fill-opacity="0.88" stroke="#cfc6db"/>
+              <text x="24" y="370" font-size="9.5" font-family="monospace" font-weight="600" fill="#5e4b70">STATE: layout+pose+cam ALIGNED</text>
+            </svg>
+
+            <!-- LAYER 2 (RIGHT / CLIPPED OVERLAY): SUNLIT CLASSICAL GENERATIVE VIDEO RENDER -->
+            <svg class="stage-layer stage-layer-cinema" viewBox="0 0 640 390" fill="none" role="img" aria-label="Rendered sunlit classical Mediterranean courtyard with red and blue classical warriors dueling">
+              <defs>
+                <linearGradient id="cl-sky" x1="0" y1="0" x2="0" y2="265" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#bfe0de"/><stop offset=".55" stop-color="#e9f2ea"/><stop offset="1" stop-color="#fae9c8"/>
+                </linearGradient>
+                <linearGradient id="cl-floor" x1="0" y1="264" x2="0" y2="390" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ece1cb"/><stop offset="1" stop-color="#d7c4a1"/>
+                </linearGradient>
+                <linearGradient id="cl-marble" x1="0" y1="0" x2="1" y2="0">
+                  <stop stop-color="#fffdf8"/><stop offset=".6" stop-color="#efe6d5"/><stop offset="1" stop-color="#d8cab0"/>
+                </linearGradient>
+                <radialGradient id="cl-sun" cx="50%" cy="50%" r="50%">
+                  <stop stop-color="#fff3c4" stop-opacity=".95"/><stop offset=".45" stop-color="#f5c976" stop-opacity=".35"/><stop offset="1" stop-color="#f5c976" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Mediterranean sunlit sky + golden sun + drifting clouds -->
+              <rect width="640" height="266" fill="url(#cl-sky)"/>
+              <circle class="sun-glow" cx="534" cy="72" r="68" fill="url(#cl-sun)"/>
+              <circle cx="534" cy="72" r="21" fill="#fff2be"/>
+              <g class="cloud-drift" fill="#ffffff" fill-opacity="0.72">
+                <ellipse cx="140" cy="64" rx="44" ry="13"/><ellipse cx="168" cy="58" rx="30" ry="11"/>
+                <ellipse cx="420" cy="80" rx="48" ry="12"/><ellipse cx="448" cy="74" rx="28" ry="10"/>
+              </g>
+
+              <!-- Distant emerald hills & cypress trees -->
+              <path d="M0 264 L78 206 L154 236 L252 194 L374 230 L492 188 L640 242 V264 Z" fill="#89b09e"/>
+              <path d="M0 264 L110 228 L230 248 L360 218 L510 246 L640 222 V264 Z" fill="#5e8a79"/>
+              <!-- Mediterranean cypress silhouettes -->
+              <g fill="#265446">
+                <ellipse cx="42" cy="204" rx="14" ry="52"/><ellipse cx="64" cy="218" rx="11" ry="40"/>
+                <ellipse cx="596" cy="198" rx="15" ry="56"/><ellipse cx="574" cy="216" rx="11" ry="42"/>
+              </g>
+
+              <!-- Warm travertine courtyard floor + cast sun shadows -->
+              <rect y="264" width="640" height="126" fill="url(#cl-floor)"/>
+              <g stroke="#c6b18e" stroke-width="0.9" opacity="0.75">
+                <line x1="0" y1="264" x2="640" y2="264"/><line x1="0" y1="292" x2="640" y2="292"/><line x1="0" y1="330" x2="640" y2="330"/>
+                <line x1="320" y1="264" x2="320" y2="390"/><line x1="250" y1="264" x2="170" y2="390"/><line x1="390" y1="264" x2="470" y2="390"/>
+              </g>
+
+              <!-- Classical Marble Temple & Colonnade -->
+              <g>
+                <!-- Terracotta roof trim & marble pediment -->
+                <polygon points="70,106 320,40 570,106" fill="#c76f58" stroke="#9e4d3a" stroke-width="1.5"/>
+                <polygon points="84,106 320,49 556,106" fill="#f7f0e2" stroke="#cbb999" stroke-width="1.2"/>
+                <circle cx="320" cy="84" r="11" fill="#d9ad5b" stroke="#a67a2e" stroke-width="1.2"/>
+                <rect x="78" y="106" width="484" height="16" fill="#ebe0cb" stroke="#c7b595" stroke-width="1.2"/>
+                <!-- 6 sunlit fluted marble columns -->
+                <g fill="url(#cl-marble)" stroke="#c7b698" stroke-width="1.1">
+                  <rect x="96" y="122" width="24" height="142"/><rect x="174" y="122" width="24" height="142"/>
+                  <rect x="252" y="122" width="24" height="142"/><rect x="364" y="122" width="24" height="142"/>
+                  <rect x="442" y="122" width="24" height="142"/><rect x="520" y="122" width="24" height="142"/>
+                </g>
+                <!-- Hanging emerald ivy garlands -->
+                <path d="M120 124 Q147 146 174 124 M198 124 Q225 144 252 124 M388 124 Q415 144 442 124 M466 124 Q493 146 520 124" stroke="#36705d" stroke-width="4" stroke-linecap="round" fill="none"/>
+                <!-- Warm sunlight beam across courtyard -->
+                <polygon points="480,122 570,122 390,390 210,390" fill="#fff3c4" fill-opacity="0.16"/>
+              </g>
+
+              <!-- Ground shadows under fighters -->
+              <ellipse cx="268" cy="312" rx="34" ry="8" fill="#8f7856" fill-opacity="0.34"/>
+              <ellipse cx="388" cy="312" rx="34" ry="8" fill="#8f7856" fill-opacity="0.34"/>
+
+              <!-- Classical Red Warrior (Flowing Crimson Cloak, Bronze Helm, Gladius) -->
+              <g class="red-fighter">
+                <!-- Flowing crimson cape -->
+                <path d="M256 232 C 228 242, 212 268, 206 294 L 252 284 Z" fill="#b84a3c"/>
+                <!-- Tunic & bronze cuirass -->
+                <path d="M252 230 h24 l6 42 h-36 Z" fill="#d96754" stroke="#8f3227" stroke-width="1.3"/>
+                <rect x="255" y="232" width="18" height="24" rx="4" fill="#d9aa5b" stroke="#966c27" stroke-width="1.2"/>
+                <!-- Legs & sandals -->
+                <path d="M258 272 l-12 36 M270 272 l14 36" stroke="#c8946e" stroke-width="6.5" stroke-linecap="round"/>
+                <path d="M242 308 h12 M280 308 h12" stroke="#7c4e28" stroke-width="3.5" stroke-linecap="round"/>
+                <!-- Classical plumed helm & head -->
+                <path d="M252 204 Q264 191 278 205" stroke="#c44536" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="264" cy="217" r="11" fill="#e8ba96" stroke="#9c6c4a" stroke-width="1.2"/>
+                <path d="M253 215 A11 11 0 0 1 275 215 Z" fill="#d9aa5b" stroke="#8c6323" stroke-width="1.2"/>
+                <!-- Bronze shield & sword arm -->
+                <ellipse cx="242" cy="252" rx="11" ry="15" fill="#e0b565" stroke="#8f6624" stroke-width="1.8"/>
+                <path d="M273 238 l24 -11" stroke="#e8ba96" stroke-width="5.5" stroke-linecap="round"/>
+                <line x1="296" y1="227" x2="342" y2="208" stroke="#f0f4f7" stroke-width="3.2" stroke-linecap="round"/>
+                <line x1="296" y1="227" x2="342" y2="208" stroke="#8c9fae" stroke-width="1"/>
+              </g>
+
+              <!-- Classical Blue Warrior (Sapphire Cloak, Silver Helm, Blade) -->
+              <g class="blue-fighter">
+                <!-- Flowing azure cape -->
+                <path d="M394 230 C 422 242, 438 268, 444 294 L 398 282 Z" fill="#355e8a"/>
+                <!-- Tunic & silver cuirass -->
+                <path d="M374 228 h24 l6 42 h-36 Z" fill="#4f7fb0" stroke="#28486b" stroke-width="1.3"/>
+                <rect x="377" y="230" width="18" height="24" rx="4" fill="#d6dfe6" stroke="#6d8194" stroke-width="1.2"/>
+                <!-- Legs -->
+                <path d="M380 270 l-12 38 M392 270 l14 38" stroke="#e3b692" stroke-width="6.5" stroke-linecap="round"/>
+                <path d="M364 308 h12 M402 308 h12" stroke="#5c4734" stroke-width="3.5" stroke-linecap="round"/>
+                <!-- Plumed silver helm & head -->
+                <path d="M372 203 Q386 190 398 204" stroke="#3c6e9c" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="386" cy="215" r="11" fill="#f0c8a8" stroke="#a67956" stroke-width="1.2"/>
+                <path d="M375 213 A11 11 0 0 1 397 213 Z" fill="#cdd8e0" stroke="#617587" stroke-width="1.2"/>
+                <!-- Sword arm clashing & round shield -->
+                <path d="M376 236 l-24 -6" stroke="#f0c8a8" stroke-width="5.5" stroke-linecap="round"/>
+                <line x1="353" y1="230" x2="310" y2="213" stroke="#f4f8fb" stroke-width="3.2" stroke-linecap="round"/>
+                <ellipse cx="408" cy="252" rx="11" ry="15" fill="#4f7fb0" stroke="#d9aa5b" stroke-width="2"/>
+                <!-- Golden spark at sword clash -->
+                <path d="M326 206l2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" fill="#ffe184"/>
+              </g>
+
+              <!-- Rendered output badge -->
+              <rect x="436" y="354" width="190" height="24" rx="5" fill="#ffffff" fill-opacity="0.90" stroke="#bdd8ce"/>
+              <text x="446" y="370" font-size="9.5" font-family="monospace" font-weight="700" fill="#1e5246">RENDER: cloth+light+physics</text>
+            </svg>
+
+            <!-- Draggable Golden Shader Wipe Bar -->
+            <div class="stage-divider" id="stage-divider">
+              <div class="stage-handle" aria-hidden="true">⇄</div>
+            </div>
+          </div>
+
+          <div class="stage-slider-row">
+            <span><b>Drag wipe:</b> Clay Proxy</span>
+            <input id="stage-range" type="range" min="6" max="94" value="48" aria-label="Compare upstream 3D clay proxy and rendered sunlit video" />
+            <span>Sunlit Render</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- AUTHORS & 15 OFFICIAL UNIVERSITY CALLIGRAPHY LOCKUPS -->
+    <section class="cover-people" aria-label="Authors and institutions">
+      <div class="wrap">
+        <ul class="authors">
+          <li><a href="https://asdfo123.github.io/" target="_blank" rel="noopener">Xinye Li</a><sup>1</sup><span class="r-star">★</span><span class="r-lead">✦</span></li>
+          <li>Liuzhou Zhang<sup>2</sup><span class="r-star">★</span></li>
+          <li>Te Sun<sup>3</sup><span class="r-star">★</span></li>
+          <li>Shipeng Luo<sup>4</sup><span class="r-star">★</span></li>
+          <li>Lingshuai Lin<sup>5</sup><span class="r-star">★</span></li>
+          <li><a href="https://drewjin.github.io/" target="_blank" rel="noopener">Yijie Jin</a><sup>3</sup><span class="r-star">★</span></li>
+          <li>Zirui Lang<sup>3</sup><span class="r-star">★</span></li>
+          <li><a href="https://enderfga.cn/" target="_blank" rel="noopener">Guian Fang</a><sup>6</sup><span class="r-star">★</span></li>
+          <li><a href="https://haoqinhong.github.io/" target="_blank" rel="noopener">Haoqin Hong</a><sup>7,8</sup></li>
+          <li><a href="https://xuyang-liu16.github.io/" target="_blank" rel="noopener">Xuyang Liu</a><sup>9</sup></li>
+          <li>Yuxuan Tian<sup>4</sup></li>
+          <li>Shihong Huang<sup>4</sup></li>
+          <li>Yuzhe Chen<sup>10</sup></li>
+          <li>Jiarui Chen<sup>5</sup></li>
+          <li>Jiaxin Fang<sup>5</sup></li>
+          <li><a href="https://sediment1024.github.io/" target="_blank" rel="noopener">Kexu Cheng</a><sup>11</sup></li>
+          <li><a href="https://scholar.google.com/citations?user=OeVwcDcAAAAJ" target="_blank" rel="noopener">Hanqing Wang</a><sup>2</sup></li>
+          <li>Xiangnan Wu<sup>4</sup></li>
+          <li>Jingwen Wu<sup>7</sup></li>
+          <li>Haojing Chen<sup>12</sup></li>
+          <li><a href="https://haroldchen19.github.io/" target="_blank" rel="noopener">Haodong Chen</a><sup>13</sup></li>
+          <li><a href="https://landisen.github.io/" target="_blank" rel="noopener">Disen Lan</a><sup>5</sup></li>
+          <li>Yuanlei Wang<sup>14</sup></li>
+          <li><a href="http://yeyeah.life/" target="_blank" rel="noopener">Ye Huang</a><sup>15</sup></li>
+          <li>Zhenhao Zhang<sup>12</sup></li>
+          <li>Dengpeng Wu<sup>12</sup></li>
+          <li>Tinghe Zhang<sup>4</sup></li>
+          <li>Wulin Xie<sup>4</sup></li>
+          <li><a href="http://www.shuwu.name/" target="_blank" rel="noopener">Shu Wu</a><sup>4</sup><span class="r-sen">◆</span></li>
+          <li><a href="https://yanrockhuang.github.io/" target="_blank" rel="noopener">Yan Huang</a><sup>4</sup><span class="r-sen">◆</span></li>
+          <li><a href="https://research.cuhk.edu.hk/en/persons/wai-lam/" target="_blank" rel="noopener">Wai Lam</a><sup>1</sup><span class="r-sen">◆</span></li>
+        </ul>
+
+        <div class="aff-index">
+          <span><sup>1</sup>CUHK</span><span><sup>2</sup>HKUST(GZ)</span><span><sup>3</sup>SJTU</span>
+          <span><sup>4</sup>CASIA</span><span><sup>5</sup>FDU</span><span><sup>6</sup>NUS</span>
+          <span><sup>7</sup>USTC</span><span><sup>8</sup>CityUHK</span><span><sup>9</sup>PolyU</span>
+          <span><sup>10</sup>TJU</span><span><sup>11</sup>UCAS</span><span><sup>12</sup>THU</span>
+          <span><sup>13</sup>HKUST</span><span><sup>14</sup>SYSU</span><span><sup>15</sup>PKU</span>
+        </div>
+
+        <div class="role-legend">
+          <span><span class="r-star">★</span> <b>Core Contributors</b></span>
+          <span><span class="r-lead">✦</span> <b>Project Lead</b></span>
+          <span><span class="r-sen">◆</span> <b>Senior Authors</b></span>
+          <span><b>Contact:</b> <a href="mailto:xyli@se.cuhk.edu.hk" style="color:var(--teal);text-decoration:underline;">xyli@se.cuhk.edu.hk</a></span>
+        </div>
+
+        <div class="lockup-wall" aria-label="Participating institutions">
+          <img class="wide" src="assets/lockups/cuhk.png" alt="CUHK" />
+          <img class="tall" src="assets/lockups/hkustgz.png" alt="HKUST(GZ)" />
+          <img src="assets/lockups/sjtu.png" alt="SJTU" />
+          <img class="wide" src="assets/lockups/casia.png" alt="CASIA" />
+          <img src="assets/lockups/fdu.png" alt="Fudan University" />
+          <img src="assets/lockups/nus.png" alt="NUS" />
+          <img class="wide" src="assets/lockups/ustc.png" alt="USTC" />
+          <img src="assets/lockups/cityuhk.png" alt="CityUHK" />
+          <img src="assets/lockups/polyu.png" alt="PolyU" />
+          <img class="tall" src="assets/lockups/tju.png" alt="Tianjin University" />
+          <img class="wide" src="assets/lockups/ucas.png" alt="UCAS" />
+          <img class="tall" src="assets/lockups/thu.png" alt="Tsinghua University" />
+          <img class="tall" src="assets/lockups/hkust.png" alt="HKUST" />
+          <img class="tall" src="assets/lockups/sysu.png" alt="Sun Yat-sen University" />
+          <img class="tall" src="assets/lockups/pku.png" alt="Peking University" />
+        </div>
+
+        <div class="stats-row">
+          <div><strong id="stat-cited">336</strong><span>Cited Works</span></div>
+          <div><strong id="stat-systems">68</strong><span>Compared Systems</span></div>
+          <div><strong id="stat-t3">50</strong><span>Tier-3 Renderers</span></div>
+          <div><strong id="stat-bench">29</strong><span>Benchmarks</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSPECTIVE: SPECIFICATION LADDER WITH BESPOKE SVG GLYPHS -->
+    <section class="sec alt" id="perspective">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow"><span class="status-dot"></span> Perspective · Ch. 2</div>
+            <h2>The Specification Ladder</h2>
+          </div>
+          <p>Click any tier card below to inspect its 2×4 factor precision contract (Appearance <i>A</i> vs. Structure <i>S</i>) and the exact failure mode traded into on our courtyard duel scenario.</p>
+        </div>
+
+        <div class="paths" id="ladder-paths">
+          <!-- T0 -->
+          <button type="button" class="path t0" data-tier="T0">
+            <div class="path-top"><span>Tier 0</span><span>Described</span></div>
+            <div class="path-glyph" aria-hidden="true">
+              <svg viewBox="0 0 90 50" fill="none"><rect x="2" y="6" width="60" height="36" rx="6" fill="#fff" stroke="#1e5246" stroke-width="1.8"/><path d="M12 17h38M12 25h30M12 33h20" stroke="#1e5246" stroke-width="2.2" stroke-linecap="round"/><path d="M74 12l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5Z" fill="#ad803b"/></svg>
+            </div>
+            <h3>Text Specification</h3>
+            <p>Dense captions and LLM rewriters describe the scene in words; the generator invents concrete faces, layout, and timing.</p>
+            <div class="path-footer"><span>Generator interprets</span><span>Inspect →</span></div>
+          </button>
+
+          <!-- T1 -->
+          <button type="button" class="path t1" data-tier="T1">
+            <div class="path-top"><span>Tier 1</span><span>Exemplified</span></div>
+            <div class="path-glyph" aria-hidden="true">
+              <svg viewBox="0 0 90 50" fill="none"><rect x="4" y="8" width="38" height="34" rx="5" fill="#fff" stroke="#ad803b" stroke-width="1.8"/><circle cx="23" cy="20" r="6" fill="#f0d5a4" stroke="#ad803b" stroke-width="1.5"/><path d="M12 37c2-6 20-6 22 0" stroke="#ad803b" stroke-width="1.8" stroke-linecap="round"/><rect x="48" y="14" width="32" height="24" rx="4" fill="#fff" fill-opacity=".65" stroke="#ad803b" stroke-dasharray="3 3" stroke-width="1.4"/><circle cx="42" cy="11" r="4" fill="#ad803b"/></svg>
+            </div>
+            <h3>Appearance Anchoring</h3>
+            <p>Subject reference portraits anchor identity and wardrobe while the video prior decides motion, camera, and layout.</p>
+            <div class="path-footer"><span>R2V lineage</span><span>Inspect →</span></div>
+          </button>
+
+          <!-- T2 -->
+          <button type="button" class="path t2" data-tier="T2">
+            <div class="path-top"><span>Tier 2</span><span>Composed</span></div>
+            <div class="path-glyph" aria-hidden="true">
+              <svg viewBox="0 0 96 50" fill="none"><rect x="3" y="6" width="26" height="18" rx="3.5" fill="#fff" stroke="#a75246" stroke-width="1.6"/><circle cx="16" cy="15" r="4" fill="#e6b6ae"/><rect x="3" y="28" width="26" height="16" rx="3.5" fill="#fff" stroke="#a75246" stroke-width="1.6"/><path d="M8 36h3l2-5 3 9 2-4h6" stroke="#a75246" stroke-width="1.6" stroke-linecap="round"/><path d="M32 16l18 9M32 36l18-9" stroke="#a75246" stroke-width="1.6"/><rect x="52" y="10" width="36" height="30" rx="5" fill="#a75246" fill-opacity=".14" stroke="#a75246" stroke-width="1.8"/><path d="M62 25h16M70 17v16" stroke="#a75246" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Compositional Spec</h3>
+            <p>Multi-modal bundles of images, driving clips, audio, timed text, or extracted pose/depth routed across factors by the model.</p>
+            <div class="path-footer"><span>18 T1–2 systems</span><span>Inspect →</span></div>
+          </button>
+
+          <!-- T3a -->
+          <button type="button" class="path t3a active" data-tier="T3a">
+            <div class="path-top"><span>Tier 3a</span><span>Pre-Fixed</span></div>
+            <div class="path-glyph" aria-hidden="true">
+              <svg viewBox="0 0 96 50" fill="none"><polygon points="30,6 52,17 52,37 30,46 8,37 8,17" fill="#785c84" fill-opacity=".18" stroke="#785c84" stroke-width="1.8"/><path d="M30 6v40M8 17l22 11 22-11" stroke="#785c84" stroke-width="1.5"/><path d="M58 25h12" stroke="#785c84" stroke-width="1.8" stroke-dasharray="3 2"/><rect x="72" y="12" width="20" height="26" rx="4" fill="#785c84"/><path d="M78 21l7 4-7 4Z" fill="#fff"/></svg>
+            </div>
+            <h3>Pre-Fixed Structure</h3>
+            <p>Editable frame-aligned structure (clay, G-buffers, Blender/Three.js code, simulator passes) finalized before sampling.</p>
+            <div class="path-footer"><span>26 T3a systems</span><span>Inspect →</span></div>
+          </button>
+
+          <!-- T3b -->
+          <button type="button" class="path t3b" data-tier="T3b">
+            <div class="path-top"><span>Tier 3b</span><span>Causal Stream</span></div>
+            <div class="path-glyph" aria-hidden="true">
+              <svg viewBox="0 0 96 50" fill="none"><rect x="4" y="10" width="26" height="22" rx="5" fill="#4e6e91" fill-opacity=".18" stroke="#4e6e91" stroke-width="1.8"/><text x="17" y="24" text-anchor="middle" fill="#4e6e91" font-size="9" font-weight="700" font-family="monospace">s(t)</text><path d="M33 21h22" stroke="#4e6e91" stroke-width="2" class="flow-wire"/><rect x="58" y="8" width="32" height="26" rx="5" fill="#4e6e91"/><path d="M68 16l10 5-10 5Z" fill="#fff"/><path d="M74 36v7H17v-8" stroke="#1e5246" stroke-width="1.6" stroke-dasharray="3 3" fill="none"/></svg>
+            </div>
+            <h3>Evolving-State Stream</h3>
+            <p>Live structural chunks stream causally from an interactive engine or harness while visual memory stays subordinate to state.</p>
+            <div class="path-footer"><span>24 T3b systems</span><span>Inspect →</span></div>
+          </button>
+        </div>
+
+        <!-- Live synchronized 2x4 Factor Matrix + Courtyard Duel Diagnostic -->
+        <div class="ladder-live-bar" id="ladder-live-bar">
+          <div>
+            <div class="factor-row" id="row-appearance"></div>
+            <div class="factor-row" id="row-structure"></div>
+          </div>
+          <div class="duel-panel">
+            <div class="duel-kicker" id="duel-kicker">Tier 3a · Two Fighters in a Courtyard (0:04 Knockdown)</div>
+            <div><b>Upstream:</b> <span id="duel-up"></span> · <b>Renderer adds:</b> <span id="duel-syn"></span></div>
+            <div class="duel-warn"><b>Failure traded into:</b> <span id="duel-fail"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         INTERACTIVE 4-LINE METRO EVOLUTION MAP (ORIGINAL PAPER FIG 2!)
+         ================================================================ -->
+    <section class="sec" id="metro-roadmap">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow"><span class="status-dot"></span> Evolution Roadmap · Figure 2</div>
+            <h2>Four Converging Lineages &amp; Late-2026 Tier-3 Surge</h2>
+          </div>
+          <p>Interactive web edition of the survey's 4-line metro evolution map (2016–Nov 2026): 57 chronological stations with institution emblems converging into 36 late-2026 terminal systems, plus the monthly injection-pathway surge chart.</p>
+        </div>
+
+        <div class="metro-shell">
+          <div class="metro-toolbar">
+            <div class="line-pills" id="metro-line-pills">
+              <button type="button" class="line-pill active" data-mline="all" style="--lc:#1e5246;"><i></i>All 4 Lineages</button>
+              <button type="button" class="line-pill" data-mline="llm" style="--lc:#315B51;"><i></i>LLM Scene Authoring</button>
+              <button type="button" class="line-pill" data-mline="r2v" style="--lc:#AD803B;"><i></i>Subject &amp; Multi-Ref R2V</button>
+              <button type="button" class="line-pill" data-mline="geo" style="--lc:#806886;"><i></i>Graphics &amp; Streamed Branch</button>
+              <button type="button" class="line-pill" data-mline="wm" style="--lc:#526F91;"><i></i>Action WMs &amp; Distillation</button>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+              <button type="button" class="stage-btn" id="metro-zoom-btn">🔍 Zoom 145%</button>
+              <span style="font-size:11.5px;color:var(--muted);">Click any station/chip to open paper · click Panel (b) legend to highlight pathway</span>
+            </div>
+          </div>
+
+          <div class="metro-svg-scroll" id="metro-svg-scroll">
+            <div id="metro-svg-host" style="min-height:420px;display:grid;place-items:center;color:var(--muted);font-size:13px;">Loading 1:1 interactive Figure 2 metro map...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAUSALITY vs REAL-TIME ORTHOGONALITY QUADRANT -->
+    <section class="sec alt" id="orthogonality">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow"><span class="status-dot"></span> Key Distinction · Sec. 2.3 &amp; Ch. 7</div>
+            <h2>T3a vs. T3b Causality Is Orthogonal to Real-Time Speed</h2>
+          </div>
+          <p>Fast few-step rendering of a pre-fixed clip stays <b>T3a</b> (e.g., distilled 8-step CoCode-World or SolarRenderer's primary clip release + 28 FPS causal variant); slow causal/stateful updates (~1 FPS FrameDiffuser) stay <b>T3b</b>.</p>
+        </div>
+
+        <div class="ortho-shell">
+          <div class="ortho-axis">
+            <span>Causality ↓</span>
+            <span>← Sub-Real-Time / Multi-Step Diffusion</span>
+            <span>Real-Time / Fast Distilled Variants →</span>
+          </div>
+          <div class="quad-grid">
+            <div class="y-lbl t3a"><span>Tier 3a</span><small>Pre-fixed clip S(1:T)<br/>before sampling</small></div>
+            <div class="quad-cell">
+              <div class="quad-head"><h4>T3a · Clip-Level Quality Renderers</h4><span class="quad-cnt" id="q-t3a-slow-cnt"></span></div>
+              <p class="quad-desc">Full-sequence bidirectional denoising (20–50 steps) over pre-authored clay, G-buffers, or code drafts.</p>
+              <div class="chip-cloud" id="q-t3a-slow"></div>
+            </div>
+            <div class="quad-cell var">
+              <div class="quad-head"><h4>T3a · Fast Distilled / Streaming Variants</h4><span class="quad-cnt" id="q-t3a-fast-cnt"></span></div>
+              <p class="quad-desc">Fast few-step T3a clip models (CoCode-World 8-step) plus T3a systems shipping secondary T3b causal/streaming variants.</p>
+              <div class="chip-cloud" id="q-t3a-fast"></div>
+            </div>
+
+            <div class="y-lbl t3b"><span>Tier 3b</span><small>Causal stream from<br/>evolving state s(t)</small></div>
+            <div class="quad-cell">
+              <div class="quad-head"><h4>T3b · Sub-Real-Time Causal &amp; Multi-Turn</h4><span class="quad-cnt" id="q-t3b-slow-cnt"></span></div>
+              <p class="quad-desc">Strictly causal or multi-turn stateful execution that cannot peek ahead, even at ~1 FPS or several seconds per turn.</p>
+              <div class="chip-cloud" id="q-t3b-slow"></div>
+            </div>
+            <div class="quad-cell rt">
+              <div class="quad-head"><h4>T3b · Real-Time Interactive Renderers</h4><span class="quad-cnt" id="q-t3b-fast-cnt"></span></div>
+              <p class="quad-desc">Few-step distilled causal chunk/frame renderers driven live by engines and simulators at 13–83 FPS.</p>
+              <div class="chip-cloud" id="q-t3b-fast"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM COMPARISON MATRIX (68 SYSTEMS) -->
+    <section class="sec" id="matrix">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow"><span class="status-dot"></span> Master Table · 68 Systems</div>
+            <h2>System Comparison Matrix</h2>
+          </div>
+          <p>Synchronized directly from Appendix Table 23 (24 T3b + 26 T3a + 18 T1–2), cleanly formatted with speed badges and zero LaTeX leaks.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="pills" id="matrix-pills">
+            <button type="button" class="pill active" data-mt="all">All (68)</button>
+            <button type="button" class="pill" data-mt="T3b">T3b Streamed (24)</button>
+            <button type="button" class="pill" data-mt="T3a">T3a Pre-fixed (26)</button>
+            <button type="button" class="pill" data-mt="T1-2">T1–T2 Ref (18)</button>
+            <button type="button" class="pill" data-mt="rt">⚡ Real-Time Only</button>
+          </div>
+          <input id="matrix-search" class="search-in" type="search" placeholder="Filter system, engine, injection, dataset..." />
+        </div>
+
+        <div class="table-scroll" tabindex="0">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>System</th><th>Settled Upstream</th><th>Renderer Inputs</th><th>State Owner</th><th>Injection</th><th>Training Data</th><th>RT / Speed</th>
+              </tr>
+            </thead>
+            <tbody id="matrix-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCHABLE RESEARCH LIBRARY (336 CITED WORKS) -->
+    <section class="sec alt" id="library">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow"><span class="status-dot"></span> Verified Bibliography · 336 Works</div>
+            <h2>Searchable Research Library</h2>
+          </div>
+          <p>Every cited work in the survey, filterable by research track, year, and real-time capability, with one-click BibTeX copy.</p>
+        </div>
+
+        <div class="lib-grid">
+          <aside class="lib-side">
+            <span class="flbl">Research Track</span>
+            <div id="track-filters"></div>
+
+            <label class="flbl" for="year-filter">Publication Year</label>
+            <select id="year-filter"><option value="all">All years</option></select>
+
+            <label class="chk"><input type="checkbox" id="rt-only" /><span>Real-time systems only</span></label>
+            <button type="button" class="reset-lnk" id="reset-filters">Reset all filters</button>
+            <a class="bib-dl" href="references.bib" download>↓ Download references.bib (336)</a>
+          </aside>
+
+          <div>
+            <div class="lib-search-row">
+              <input id="lib-search" class="search-in" type="search" placeholder="Search title, author, arXiv ID, backbone, benchmark..." />
+              <select id="lib-sort" class="search-in" style="min-width:140px;flex:none;">
+                <option value="newest">Newest first</option>
+                <option value="oldest">Oldest first</option>
+                <option value="title">Title A–Z</option>
+              </select>
+            </div>
+            <div class="lib-meta">
+              <span id="results-count">Loading...</span>
+              <span>Click Copy BibTeX on any entry</span>
+            </div>
+            <div id="paper-list"></div>
+            <div style="text-align:center;margin-top:20px;">
+              <button type="button" class="resource-link" id="load-more" style="display:none;">Show more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CITE & CONTRIBUTE -->
+    <section class="sec" id="cite">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow"><span class="status-dot"></span> Citation &amp; Community</div>
+            <h2>Cite or Contribute</h2>
+          </div>
+          <p>Help keep this living catalog current as new Tier-3 renderers, streaming runtimes, and adherence benchmarks appear.</p>
+        </div>
+        <div class="cite-grid">
+          <div class="bib-card">
+            <div class="bib-head">
+              <span>BibTeX · Survey Citation</span>
+              <button type="button" class="bib-copy" id="copy-survey-bib">Copy BibTeX</button>
+            </div>
+            <pre id="survey-bibtex">@article{li2026generativerenderers,
+  title   = {Video Models as Generative Renderers: Foundations, Interfaces, Systems, and Beyond},
+  author  = {Li, Xinye and Zhang, Liuzhou and Sun, Te and Luo, Shipeng and Lin, Lingshuai
+             and Jin, Yijie and Lang, Zirui and Fang, Guian and others
+             and Wu, Shu and Huang, Yan and Lam, Wai},
+  journal = {arXiv preprint},
+  year    = {2026}
+}</pre>
+          </div>
+          <div class="contrib-box">
+            <h3>Submit a Paper or Correction</h3>
+            <p>Open a Pull Request on <b>GenRender-Hub/Awesome-Generative-Renderers</b> with a verified arXiv link, tier placement, and BibTeX entry.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+              <a class="resource-link is-primary" href="https://github.com/GenRender-Hub/Awesome-Generative-Renderers/issues/new" target="_blank" rel="noopener">Open Issue / PR ↗</a>
+              <a class="resource-link" href="mailto:xyli@se.cuhk.edu.hk">Email Lead</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-inner">
+      <span>GenRender-Hub · Video Models as Generative Renderers (November 2026)</span>
+      <div class="foot-links">
+        <a href="https://github.com/GenRender-Hub/Awesome-Generative-Renderers" target="_blank" rel="noopener">GitHub Repo</a>
+        <a href="references.bib" download>references.bib</a>
+        <a href="mailto:xyli@se.cuhk.edu.hk">xyli@se.cuhk.edu.hk</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

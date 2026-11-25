@@ -1,0 +1,1015 @@
+<svg id="metro-exact-svg" class="metro-exact-svg" viewBox="0 0 1612 1418" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figure 2: Four converging lineages and the 2026 surge of Tier-3 generative video renderers">
+<defs>
+      <marker id="ma-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0 1L10 5L0 9Z" fill="#315B51"/></marker>
+      <marker id="ma-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L10 5L0 9Z" fill="#AD803B"/></marker>
+      <marker id="ma-plum" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0 1L10 5L0 9Z" fill="#806886"/></marker>
+      <marker id="ma-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0 1L10 5L0 9Z" fill="#526F91"/></marker>
+    </defs>
+<rect x="0" y="0" width="1612" height="1418" rx="14" fill="#FFFFFF"/>
+<text x="10.0" y="51.0" font-size="19.5" font-weight="700" fill="#293431">a. Four converging lineages &amp; Late-2026 Tier-3 Generative Renderer Terminal</text>
+<rect x="820.0" y="20.0" width="782.0" height="46.0" rx="8.5" fill="#FFFFFF" stroke="#D6D0C3" stroke-width="1.3"/>
+<circle cx="844.0" cy="43.0" r="5.5" fill="#fff" stroke="#293431" stroke-width="2.2"/><text x="858.0" y="48.0" font-size="14.5" fill="#293431">paper</text>
+<rect x="931.0" y="38.0" width="10.5" height="10.5" rx="2" fill="#fff" stroke="#293431" stroke-width="2.2"/><text x="949.0" y="48.0" font-size="14.5" fill="#293431">product / workflow</text>
+<circle cx="1132.0" cy="43.0" r="7" fill="#fff" stroke="#293431" stroke-width="2.5"/><circle cx="1132.0" cy="43.0" r="2.6" fill="#293431"/><text x="1148.0" y="48.0" font-size="14.5" fill="#293431">one work on two lines</text>
+<line x1="1344.0" y1="43.0" x2="1374.0" y2="43.0" stroke="#806886" stroke-width="6"/><line x1="1345.0" y1="43.0" x2="1373.0" y2="43.0" stroke="#fff" stroke-width="1.8" stroke-dasharray="4 3"/><text x="1382.0" y="48.0" font-size="14.5" fill="#293431">streamed / stateful (3b)</text>
+<rect x="8.0" y="102.0" width="207.0" height="46.0" rx="8.5" fill="#FAF7EF" stroke="#D6D0C3" stroke-width="1.3"/>
+<text x="111.5" y="132.0" text-anchor="middle" font-size="15.5" font-weight="700" fill="#293431">I. 2016–22</text>
+<rect x="222.0" y="102.0" width="473.0" height="46.0" rx="8.5" fill="#EDF1EB" stroke="#9AB5AE" stroke-width="1.3"/>
+<text x="458.5" y="132.0" text-anchor="middle" font-size="15.5" font-weight="700" fill="#293431">II. 2023–25 · Controllable Priors &amp; R2V</text>
+<rect x="702.0" y="102.0" width="204.0" height="46.0" rx="8.5" fill="#F4F0F5" stroke="#B8A8BC" stroke-width="1.3"/>
+<text x="804.0" y="132.0" text-anchor="middle" font-size="15.5" font-weight="700" fill="#293431">IIIa. Jan–Jul 2026</text>
+<rect x="922.0" y="102.0" width="678.0" height="46.0" rx="8.5" fill="#EFE9F1" stroke="#9C84A2" stroke-width="1.3"/>
+<text x="1261.0" y="132.0" text-anchor="middle" font-size="15.5" font-weight="700" fill="#5F4964">IIIb. Aug – Mid-Nov 2026 · Tier-3 Generative Renderer Terminal</text>
+<rect x="8.0" y="158.0" width="207.0" height="953.0" rx="11" fill="#FBF9F4"/>
+<rect x="222.0" y="158.0" width="473.0" height="953.0" rx="11" fill="#F2F6F1"/>
+<rect x="702.0" y="158.0" width="204.0" height="953.0" rx="11" fill="#F8F6F9"/>
+<rect x="922.0" y="158.0" width="678.0" height="953.0" rx="12" fill="#F5F1F6" stroke="#CCBECD" stroke-width="1.3"/>
+<line x1="332.4" y1="256.0" x2="332.4" y2="674.0" stroke="#22453C" stroke-width="2.6" stroke-dasharray="5 4"/>
+<line x1="523.8" y1="440.0" x2="523.8" y2="674.0" stroke="#91682A" stroke-width="2.6" stroke-dasharray="5 4"/>
+<g class="metro-track-grp" data-mline="llm">
+<path d="M 909.0 256.0 L 909.0 705.0 Q 909.0 715.0 919.0 715.0 L 931.0 715.0" fill="none" stroke="#315B51" stroke-width="2.8" stroke-dasharray="7 4" marker-end="url(#ma-teal)"/>
+<line x1="289.2" y1="256.0" x2="930.0" y2="256.0" stroke="#315B51" stroke-width="6.2" stroke-linecap="round" marker-end="url(#ma-teal)"/>
+<rect x="101.2" y="234.0" width="186.0" height="44.0" rx="8" fill="#315B51"/><text x="194.2" y="262.0" text-anchor="middle" font-size="12.6" font-weight="700" fill="#fff">LLM Scene Authoring</text>
+</g>
+<g class="metro-track-grp" data-mline="r2v">
+<line x1="418.1" y1="440.0" x2="892.0" y2="440.0" stroke="#AD803B" stroke-width="6.2" stroke-linecap="round"/>
+<path d="M 888.0 440.0 L 893.0 440.0 Q 900.0 440.0 900.0 432.0 L 900.0 319.0 Q 900.0 311.0 908.0 311.0 L 931.0 311.0" fill="none" stroke="#AD803B" stroke-width="4.0" marker-end="url(#ma-gold)"/>
+<path d="M 900.0 440.0 L 900.0 623.0 Q 900.0 633.0 910.0 633.0 L 931.0 633.0" fill="none" stroke="#AD803B" stroke-width="2.8" stroke-dasharray="7 4" marker-end="url(#ma-gold)"/>
+<line x1="320.0" y1="412.0" x2="418.1" y2="440.0" stroke="#AD803B" stroke-width="1.4"/>
+<rect x="122.0" y="384.0" width="200.0" height="44.0" rx="8" fill="#AD803B"/><text x="222.0" y="412.0" text-anchor="middle" font-size="12.6" font-weight="700" fill="#fff">Subject &amp; Multi-Ref R2V</text>
+</g>
+<g class="metro-track-grp" data-mline="geo">
+<line x1="35.6" y1="674.0" x2="698.0" y2="674.0" stroke="#A391A8" stroke-width="6.2" stroke-linecap="round"/>
+<path d="M 698.0 674.0 L 872.0 674.0 Q 888.0 674.0 888.0 658.0 L 888.0 409.0 Q 888.0 393.0 904.0 393.0 L 930.0 393.0" fill="none" stroke="#806886" stroke-width="6.0" stroke-linecap="round" marker-end="url(#ma-plum)"/>
+<path d="M 665.0 674.0 L 680.5 821.0 L 930.0 821.0" fill="none" stroke="#806886" stroke-width="6.0" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ma-plum)"/>
+<path d="M 668.0 685.0 L 680.5 821.0 L 914.0 821.0" fill="none" stroke="#fff" stroke-width="1.8" stroke-dasharray="5 4"/>
+<line x1="48.0" y1="570.0" x2="35.6" y2="674.0" stroke="#A391A8" stroke-width="1.4"/>
+<circle cx="35.6" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.2"/>
+<rect x="18.0" y="535.0" width="240.0" height="44.0" rx="8" fill="#806886"/><text x="138.0" y="563.0" text-anchor="middle" font-size="12.6" font-weight="700" fill="#fff">Graphics &amp; Buffer Synthesis</text>
+</g>
+<g class="metro-track-grp" data-mline="wm">
+<path d="M 874.0 975.0 L 898.0 975.0 Q 906.0 975.0 906.0 967.0 L 906.0 896.0 Q 906.0 888.0 914.0 888.0 L 931.0 888.0" fill="none" stroke="#526F91" stroke-width="4.0" marker-end="url(#ma-blue)"/>
+<line x1="131.1" y1="975.0" x2="930.0" y2="975.0" stroke="#526F91" stroke-width="6.2" stroke-linecap="round" marker-end="url(#ma-blue)"/>
+<rect x="15.1" y="953.0" width="114.0" height="44.0" rx="8" fill="#526F91"/><text x="72.1" y="981.0" text-anchor="middle" font-size="12.6" font-weight="700" fill="#fff">Action WMs</text>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 313.2 256.0 L 313.2 196.0 L 288.2 196.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="313.2" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2309.15091" target="_blank" rel="noopener">
+<title>VideoDirectorGPT: Consistent Multi-scene Video Generation via LLM-Guided Planning (2023-09)</title>
+<rect class="m-pill-bg" x="221.9" y="169.0" width="132.6" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/unc.png" x="227.4" y="174.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="247.4" y="186.8" font-size="10.4" font-weight="500" fill="#293431">VideoDirectorGPT</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 313.2 256.0 L 313.2 279.0 L 273.2 279.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="313.2" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://cdn.openai.com/papers/dall-e-3.pdf" target="_blank" rel="noopener">
+<title>Improving Image Generation with Better Captions (2023-09)</title>
+<rect class="m-pill-bg" x="231.2" y="279.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/openai.png" x="236.7" y="284.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="256.7" y="296.8" font-size="10.4" font-weight="700" fill="#293431">DALL·E 3</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 332.4 256.0 L 332.4 233.0 L 398.4 233.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="332.4" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2311.12631" target="_blank" rel="noopener">
+<title>GPT4Motion: Scripting Physical Motions in Text-to-Video Generation via Blender-Oriented GPT Planning (2023-11)</title>
+<rect class="m-pill-bg" x="350.4" y="206.0" width="96.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/cas.png" x="355.9" y="211.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="375.9" y="223.8" font-size="10.4" font-weight="500" fill="#293431">GPT4Motion</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 433.6 256.0 L 433.6 279.0 L 438.6 279.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="433.6" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2408.10453" target="_blank" rel="noopener">
+<title>Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation (2024-08)</title>
+<rect class="m-pill-bg" x="396.6" y="279.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/purdue.png" x="402.1" y="284.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="422.1" y="296.8" font-size="10.4" font-weight="500" fill="#293431">Kubrick</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 471.3 256.0 L 471.3 196.0 L 481.3 196.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="471.3" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2411.18644" target="_blank" rel="noopener">
+<title>Scene Co-pilot: Procedural Text to Video Generation with Human in the Loop (2024-11)</title>
+<rect class="m-pill-bg" x="421.1" y="169.0" width="120.4" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/ucf.png" x="426.6" y="174.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="446.6" y="186.8" font-size="10.4" font-weight="500" fill="#293431">Scene Co-pilot</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 532.7 256.0 L 532.7 279.0 L 537.7 279.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="532.7" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2503.20491" target="_blank" rel="noopener">
+<title>VPO: Aligning Text-to-Video Generation Models with Prompt Optimization (2025-03)</title>
+<rect class="m-pill-bg" x="495.7" y="279.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/thu.png" x="501.2" y="284.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="521.2" y="296.8" font-size="10.4" font-weight="500" fill="#293431">VPO</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 652.3 256.0 L 652.3 233.0 L 627.3 233.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="652.3" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2510.24134" target="_blank" rel="noopener">
+<title>VC4VG: Optimizing Video Captions for Text-to-Video Generation (2025-10)</title>
+<rect class="m-pill-bg" x="585.3" y="206.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/ruc.png" x="590.8" y="211.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="610.8" y="223.8" font-size="10.4" font-weight="500" fill="#293431">VC4VG</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 672.2 256.0 L 672.2 279.0 L 668.2 279.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="672.2" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2512.04221" target="_blank" rel="noopener">
+<title>MoReGen: Multi-Agent Motion-Reasoning Engine for Code-based Text-to-Video Synthesis (2025-12)</title>
+<rect class="m-pill-bg" x="626.2" y="279.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/northeastern.png" x="631.7" y="284.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="651.7" y="296.8" font-size="10.4" font-weight="500" fill="#293431">MoReGen</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 823.4 256.0 L 823.4 196.0 L 786.4 196.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="823.4" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2605.14398" target="_blank" rel="noopener">
+<title>ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction (2026-05)</title>
+<rect class="m-pill-bg" x="729.3" y="169.0" width="114.3" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/uwmadison.png" x="734.8" y="174.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="754.8" y="186.8" font-size="10.4" font-weight="500" fill="#293431">ChronoAgentic</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="llm">
+<path d="M 886.2 256.0 L 886.2 279.0 L 818.2 279.0" fill="none" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="886.2" cy="256.0" r="5.5" fill="#fff" stroke="#315B51" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2607.27380" target="_blank" rel="noopener">
+<title>VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System (2026-07)</title>
+<rect class="m-pill-bg" x="773.2" y="279.0" width="89.9" height="27.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/cuhk.png" x="778.7" y="284.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="798.7" y="296.8" font-size="10.4" font-weight="700" fill="#293431">VideoCoCo</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 426.1 440.0 L 426.1 417.0 L 394.1 417.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="420.90000000000003" y="434.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://finance.yahoo.com/news/sora-finds-rival-china-start-093000105.html" target="_blank" rel="noopener">
+<title>Sora Finds a New Rival in China as Start-up Shengshu AI Rolls out Text-to-Video Tool (2024-07)</title>
+<rect class="m-pill-bg" x="352.1" y="390.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/shengshu.png" x="357.6" y="395.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="377.6" y="407.8" font-size="10.4" font-weight="500" fill="#293431">Vidu C2V</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 435.1 440.0 L 435.1 463.0 L 410.1 463.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="435.1" cy="440.0" r="5.5" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2408.13239" target="_blank" rel="noopener">
+<title>CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities (2024-08)</title>
+<rect class="m-pill-bg" x="353.0" y="463.0" width="114.3" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/zju.png" x="358.5" y="468.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="378.5" y="480.8" font-size="10.4" font-weight="500" fill="#293431">CustomCrafter</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 471.3 440.0 L 471.3 380.0 L 473.3 380.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="471.3" cy="440.0" r="5.5" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2411.17440" target="_blank" rel="noopener">
+<title>Identity-Preserving Text-to-Video Generation by Frequency Decomposition (2024-11)</title>
+<rect class="m-pill-bg" x="431.3" y="353.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/pku.png" x="436.8" y="358.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="456.8" y="370.8" font-size="10.4" font-weight="500" fill="#293431">ConsisID</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 510.3 440.0 L 510.3 500.0 L 461.3 500.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="510.3" cy="440.0" r="5.5" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2502.11079" target="_blank" rel="noopener">
+<title>Phantom: Subject-consistent video generation via cross-modal alignment (2025-02)</title>
+<rect class="m-pill-bg" x="419.3" y="500.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/bytedance.png" x="424.8" y="505.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="444.8" y="517.8" font-size="10.4" font-weight="500" fill="#293431">Phantom</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 536.9 440.0 L 536.9 417.0 L 538.9 417.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="536.9" cy="440.0" r="5.5" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2504.02436" target="_blank" rel="noopener">
+<title>SkyReels-A2: Compose Anything in Video Diffusion Transformers (2025-04)</title>
+<rect class="m-pill-bg" x="487.8" y="390.0" width="102.1" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/skywork.png" x="493.3" y="395.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="513.3" y="407.8" font-size="10.4" font-weight="500" fill="#293431">SkyReels-A2</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 556.0 440.0 L 556.0 500.0 L 610.0 500.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="556.0" cy="440.0" r="5.5" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2505.04512" target="_blank" rel="noopener">
+<title>HunyuanCustom: A Multimodal-Driven Architecture for Customized Video Generation (2025-05)</title>
+<rect class="m-pill-bg" x="552.9" y="500.0" width="114.3" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/hunyuan.png" x="558.4" y="505.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="578.4" y="517.8" font-size="10.4" font-weight="500" fill="#293431">HunyuanCustom</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 617.3 440.0 L 617.3 343.0 L 539.3 343.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="617.3" cy="440.0" r="5.5" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2508.19209" target="_blank" rel="noopener">
+<title>OmniHuman-1.5: Instilling an Active Mind in Avatars via Cognitive Simulation (2025-08)</title>
+<rect class="m-pill-bg" x="482.2" y="316.0" width="114.3" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/bytedance.png" x="487.7" y="321.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="507.7" y="333.8" font-size="10.4" font-weight="500" fill="#293431">OmniHuman-1.5</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 617.3 440.0 L 617.3 380.0 L 671.3 380.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="617.3" cy="440.0" r="5.5" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2508.18621" target="_blank" rel="noopener">
+<title>Wan-S2V: Audio-Driven Cinematic Video Generation (2025-08)</title>
+<rect class="m-pill-bg" x="629.3" y="353.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/wan.png" x="634.8" y="358.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="654.8" y="370.8" font-size="10.4" font-weight="700" fill="#293431">Wan-S2V</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 645.0 440.0 L 645.0 417.0 L 651.0 417.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="639.8" y="434.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation" target="_blank" rel="noopener">
+<title>Use Reference Images to Guide Video Generation (Veo) (2025-10)</title>
+<rect class="m-pill-bg" x="609.0" y="390.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/google.png" x="614.5" y="395.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="634.5" y="407.8" font-size="10.4" font-weight="500" fill="#293431">Veo 3.1</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 680.5 440.0 L 680.5 463.0 L 658.5 463.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="675.3" y="434.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2512.16776" target="_blank" rel="noopener">
+<title>Kling-Omni Technical Report (2025-12)</title>
+<rect class="m-pill-bg" x="610.5" y="463.0" width="96.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/kuaishou.png" x="616.0" y="468.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="636.0" y="480.8" font-size="10.4" font-weight="500" fill="#293431">Kling-Omni</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 741.3 440.0 L 741.3 417.0 L 813.3 417.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="736.0999999999999" y="434.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://kling.ai/quickstart/klingai-video-3-omni-model-user-guide" target="_blank" rel="noopener">
+<title>Kling VIDEO 3.0 Omni Model User Guide (2026-02)</title>
+<rect class="m-pill-bg" x="753.1" y="390.0" width="120.4" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/kuaishou.png" x="758.6" y="395.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="778.6" y="407.8" font-size="10.4" font-weight="500" fill="#293431">Kling 3.0 Omni</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 741.3 440.0 L 741.3 500.0 L 765.3 500.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="736.0999999999999" y="434.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://docs.byteplus.com/en/docs/modelark/seedance-2-0" target="_blank" rel="noopener">
+<title>Seedance 2.0 (2026-02)</title>
+<rect class="m-pill-bg" x="711.2" y="500.0" width="108.2" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/bytedance.png" x="716.7" y="505.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="736.7" y="517.8" font-size="10.4" font-weight="500" fill="#293431">Seedance 2.0</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 887.8 440.0 L 887.8 463.0 L 818.8 463.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="882.5999999999999" y="434.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3" target="_blank" rel="noopener">
+<title>MiniMax H3: Model Card (2026-07)</title>
+<rect class="m-pill-bg" x="770.8" y="463.0" width="96.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/minimax.png" x="776.3" y="468.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="796.3" y="480.8" font-size="10.4" font-weight="700" fill="#293431">MiniMax-H3</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="r2v">
+<path d="M 887.8 440.0 L 887.8 380.0 L 812.8 380.0" fill="none" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="882.5999999999999" y="434.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#AD803B" stroke-width="2.4"/>
+<a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5" target="_blank" rel="noopener">
+<title>One-Take Creation, Flexible Referencing: Introducing Seedance 2.5 (2026-07)</title>
+<rect class="m-pill-bg" x="758.7" y="353.0" width="108.2" height="27.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/bytedance.png" x="764.2" y="358.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="784.2" y="370.8" font-size="10.4" font-weight="700" fill="#293431">Seedance 2.5</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 52.8 674.0 L 52.8 697.0 L 67.8 697.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="52.8" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/1611.07004" target="_blank" rel="noopener">
+<title>Image-to-Image Translation with Conditional Adversarial Networks (2016-11)</title>
+<rect class="m-pill-bg" x="25.8" y="697.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/berkeley.png" x="31.3" y="702.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="51.3" y="714.8" font-size="10.4" font-weight="500" fill="#293431">pix2pix</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 97.8 674.0 L 97.8 651.0 L 102.8 651.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="97.8" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/1808.06601" target="_blank" rel="noopener">
+<title>Video-to-Video Synthesis (2018-08)</title>
+<rect class="m-pill-bg" x="60.8" y="624.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/nvidia.png" x="66.3" y="629.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="86.3" y="641.8" font-size="10.4" font-weight="700" fill="#293431">vid2vid</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 115.5 674.0 L 115.5 734.0 L 135.5 734.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="115.5" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/1904.12356" target="_blank" rel="noopener">
+<title>Deferred Neural Rendering: Image Synthesis using Neural Textures (2019-04)</title>
+<rect class="m-pill-bg" x="84.4" y="734.0" width="102.1" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/tum.png" x="89.9" y="739.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="109.9" y="751.8" font-size="10.4" font-weight="500" fill="#293431">Deferred NR</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 167.8 674.0 L 167.8 614.0 L 172.8 614.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="167.8" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2105.04619" target="_blank" rel="noopener">
+<title>Enhancing Photorealism Enhancement (2021-05)</title>
+<rect class="m-pill-bg" x="109.5" y="587.0" width="126.5" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/intel.png" x="115.0" y="592.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="135.0" y="604.8" font-size="10.4" font-weight="500" fill="#293431">Photoreal. Enh.</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 244.2 674.0 L 244.2 697.0 L 254.2 697.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="244.2" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2302.05543" target="_blank" rel="noopener">
+<title>Adding Conditional Control to Text-to-Image Diffusion Models (2023-02)</title>
+<rect class="m-pill-bg" x="206.2" y="697.0" width="96.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/stanford.png" x="211.7" y="702.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="231.7" y="714.8" font-size="10.4" font-weight="500" fill="#293431">ControlNet</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 291.3 674.0 L 291.3 651.0 L 259.3 651.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="286.1" y="668.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2307.04725" target="_blank" rel="noopener">
+<title>AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning (2023-07)</title>
+<rect class="m-pill-bg" x="208.2" y="624.0" width="102.1" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/cuhk.png" x="213.7" y="629.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="233.7" y="641.8" font-size="10.4" font-weight="500" fill="#293431">AnimateDiff</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 336.2 674.0 L 336.2 734.0 L 351.2 734.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="336.2" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2312.01409" target="_blank" rel="noopener">
+<title>Generative Rendering: Controllable 4D-Guided Video Generation with 2D Diffusion Models (2023-12)</title>
+<rect class="m-pill-bg" x="291.0" y="734.0" width="120.4" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/stanford.png" x="296.5" y="739.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="316.5" y="751.8" font-size="10.4" font-weight="700" fill="#293431">Gen. Rendering</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 488.3 674.0 L 488.3 614.0 L 438.3 614.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="488.3" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2501.03847" target="_blank" rel="noopener">
+<title>Diffusion as Shader: 3D-aware Video Diffusion for Versatile Video Generation Control (2025-01)</title>
+<rect class="m-pill-bg" x="375.1" y="587.0" width="126.5" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/hkust.png" x="380.6" y="592.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="400.6" y="604.8" font-size="10.4" font-weight="500" fill="#293431">Diff. as Shader</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 501.1 674.0 L 501.1 697.0 L 439.1 697.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="501.1" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2501.18590" target="_blank" rel="noopener">
+<title>DiffusionRenderer: Neural Inverse and Forward Rendering with Video Diffusion Models (2025-01)</title>
+<rect class="m-pill-bg" x="369.8" y="697.0" width="138.7" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/nvidia.png" x="375.3" y="702.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="395.3" y="714.8" font-size="10.4" font-weight="500" fill="#293431">DiffusionRenderer</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 523.8 674.0 L 523.8 651.0 L 571.8 651.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="523.8" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2503.07598" target="_blank" rel="noopener">
+<title>VACE: All-in-One Video Creation and Editing (2025-03)</title>
+<rect class="m-pill-bg" x="529.8" y="624.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/wan.png" x="535.3" y="629.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="555.3" y="641.8" font-size="10.4" font-weight="700" fill="#293431">VACE</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 528.3 674.0 L 528.3 734.0 L 553.3 734.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="528.3" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2503.14492" target="_blank" rel="noopener">
+<title>Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal Control (2025-03)</title>
+<rect class="m-pill-bg" x="487.0" y="734.0" width="132.6" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/nvidia.png" x="492.5" y="739.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="512.5" y="751.8" font-size="10.4" font-weight="500" fill="#293431">Cosmos-Transfer1</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 633.7 674.0 L 633.7 614.0 L 599.7 614.0" fill="none" stroke="#A391A8" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="633.7" cy="674.0" r="5.5" fill="#fff" stroke="#A391A8" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2509.21541" target="_blank" rel="noopener">
+<title>ControlHair: Synergizing Physics Simulator and Video Diffusion for Controllable Dynamic Hair Rendering (2025-09)</title>
+<rect class="m-pill-bg" x="548.6" y="587.0" width="102.1" height="27.0" rx="5" fill="#FFFFFF" stroke="#A391A8" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/rochester.png" x="554.1" y="592.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="574.1" y="604.8" font-size="10.4" font-weight="500" fill="#293431">ControlHair</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 717.8 674.0 L 717.8 651.0 L 712.8 651.0" fill="none" stroke="#806886" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="717.8" cy="674.0" r="5.5" fill="#fff" stroke="#806886" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2601.05138" target="_blank" rel="noopener">
+<title>VerseCrafter: Dynamic Realistic Video World Model with 4D Geometric Control (2026-01)</title>
+<rect class="m-pill-bg" x="658.7" y="624.0" width="108.2" height="27.0" rx="5" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/fudan.png" x="664.2" y="629.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="684.2" y="641.8" font-size="10.4" font-weight="500" fill="#293431">VerseCrafter</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 774.7 674.0 L 774.7 697.0 L 769.7 697.0" fill="none" stroke="#806886" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="769.5" y="668.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#806886" stroke-width="2.4"/>
+<a href="https://nvidianews.nvidia.com/news/nvidia-dlss-5-delivers-ai-powered-breakthrough-in-visual-fidelity-for-games" target="_blank" rel="noopener">
+<title>NVIDIA DLSS 5 Delivers AI-Powered Breakthrough in Visual Fidelity for Games (2026-03)</title>
+<rect class="m-pill-bg" x="727.7" y="697.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/nvidia.png" x="733.2" y="702.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="753.2" y="714.8" font-size="10.4" font-weight="700" fill="#293431">DLSS 5</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 788.3 674.0 L 788.3 614.0 L 794.3 614.0" fill="none" stroke="#806886" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="788.3" cy="674.0" r="5.5" fill="#fff" stroke="#806886" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2604.02329" target="_blank" rel="noopener">
+<title>Generative World Renderer (2026-04)</title>
+<rect class="m-pill-bg" x="728.0" y="587.0" width="132.6" height="27.0" rx="5" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/alaya.png" x="733.5" y="592.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="753.5" y="604.8" font-size="10.4" font-weight="500" fill="#293431">Gen. World Rend.</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 887.0 674.0 L 887.0 734.0 L 822.0 734.0" fill="none" stroke="#806886" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="887.0" cy="674.0" r="5.5" fill="#fff" stroke="#806886" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2608.00094" target="_blank" rel="noopener">
+<title>Video Models as Native 4D Renderers: World-Grounded Conditioning from Animated Mesh (2026-07)</title>
+<rect class="m-pill-bg" x="780.0" y="734.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/thu.png" x="785.5" y="739.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="805.5" y="751.8" font-size="10.4" font-weight="700" fill="#293431">DAR</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 680.5 821.0 L 680.5 844.0 L 635.5 844.0" fill="none" stroke="#806886" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="680.5" cy="821.0" r="5.5" fill="#fff" stroke="#806886" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2512.16670" target="_blank" rel="noopener">
+<title>FrameDiffuser: G-Buffer-Conditioned Diffusion for Neural Forward Frame Rendering (2025-12)</title>
+<rect class="m-pill-bg" x="578.4" y="844.0" width="114.3" height="27.0" rx="5" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/tuebingen.png" x="583.9" y="849.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="603.9" y="861.8" font-size="10.4" font-weight="500" fill="#293431">FrameDiffuser</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 765.6 821.0 L 765.6 844.0 L 773.6 844.0" fill="none" stroke="#806886" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="765.6" cy="821.0" r="5.5" fill="#fff" stroke="#806886" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2603.05449" target="_blank" rel="noopener">
+<title>RealWonder: Real-Time Physical Action-Conditioned Video Generation (2026-03)</title>
+<rect class="m-pill-bg" x="725.6" y="844.0" width="96.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/stanford.png" x="731.1" y="849.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="751.1" y="861.8" font-size="10.4" font-weight="500" fill="#293431">RealWonder</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="geo">
+<path d="M 879.5 821.0 L 879.5 798.0 L 817.5 798.0" fill="none" stroke="#806886" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="879.5" cy="821.0" r="5.5" fill="#fff" stroke="#806886" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2607.18703" target="_blank" rel="noopener">
+<title>Generative World Renderer at the Speed of Play (2026-07)</title>
+<rect class="m-pill-bg" x="769.5" y="771.0" width="96.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/alaya.png" x="775.0" y="776.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="795.0" y="788.8" font-size="10.4" font-weight="700" fill="#293431">AlayaFlash</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 143.1 975.0 L 143.1 998.0 L 168.1 998.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="143.1" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2005.12126" target="_blank" rel="noopener">
+<title>Learning to Simulate Dynamic Environments with GameGAN (2020-05)</title>
+<rect class="m-pill-bg" x="126.1" y="998.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/nvidia.png" x="131.6" y="1003.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="151.6" y="1015.8" font-size="10.4" font-weight="500" fill="#293431">GameGAN</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 365.1 975.0 L 365.1 952.0 L 325.1 952.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="365.1" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2402.15391" target="_blank" rel="noopener">
+<title>Genie: Generative Interactive Environments (2024-02)</title>
+<rect class="m-pill-bg" x="283.1" y="925.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/deepmind.png" x="288.6" y="930.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="308.6" y="942.8" font-size="10.4" font-weight="500" fill="#293431">Genie</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 436.6 975.0 L 436.6 998.0 L 388.6 998.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="436.6" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2408.14837" target="_blank" rel="noopener">
+<title>Diffusion Models Are Real-Time Game Engines (2024-08)</title>
+<rect class="m-pill-bg" x="346.6" y="998.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/google.png" x="352.1" y="1003.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="372.1" y="1015.8" font-size="10.4" font-weight="500" fill="#293431">GameNGen</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 461.5 975.0 L 461.5 915.0 L 426.5 915.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="456.3" y="969.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://oasis-model.github.io/" target="_blank" rel="noopener">
+<title>Oasis: A Universe in a Transformer (2024-10)</title>
+<rect class="m-pill-bg" x="384.5" y="888.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/decart.png" x="390.0" y="893.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="410.0" y="905.8" font-size="10.4" font-weight="500" fill="#293431">Oasis</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 476.8 975.0 L 476.8 1035.0 L 444.8 1035.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="476.8" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2412.07772" target="_blank" rel="noopener">
+<title>From Slow Bidirectional to Fast Autoregressive Video Diffusion Models (2024-12)</title>
+<rect class="m-pill-bg" x="402.8" y="1035.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/mit.png" x="408.3" y="1040.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="428.3" y="1052.8" font-size="10.4" font-weight="500" fill="#293431">CausVid</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 574.0 975.0 L 574.0 952.0 L 529.0 952.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="574.0" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2506.08009" target="_blank" rel="noopener">
+<title>Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion (2025-06)</title>
+<rect class="m-pill-bg" x="474.9" y="925.0" width="108.2" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/adobe.png" x="480.4" y="930.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="500.4" y="942.8" font-size="10.4" font-weight="500" fill="#293431">Self-Forcing</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 575.1 975.0 L 575.1 998.0 L 573.1 998.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="575.1" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2506.09350" target="_blank" rel="noopener">
+<title>Autoregressive Adversarial Post-Training for Real-Time Interactive Video Generation (2025-06)</title>
+<rect class="m-pill-bg" x="531.1" y="998.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/bytedance.png" x="536.6" y="1003.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="556.6" y="1015.8" font-size="10.4" font-weight="500" fill="#293431">AAPT</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 605.6 975.0 L 605.6 915.0 L 585.6 915.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<rect x="600.4" y="969.8" width="10.4" height="10.4" rx="2" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/" target="_blank" rel="noopener">
+<title>Genie 3: A New Frontier for World Models (2025-08)</title>
+<rect class="m-pill-bg" x="543.6" y="888.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/deepmind.png" x="549.1" y="893.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="569.1" y="905.8" font-size="10.4" font-weight="700" fill="#293431">Genie 3</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 634.2 975.0 L 634.2 1035.0 L 619.2 1035.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="634.2" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2509.22622" target="_blank" rel="noopener">
+<title>LongLive: Real-time Interactive Long Video Generation (2025-09)</title>
+<rect class="m-pill-bg" x="577.2" y="1035.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/nvidia.png" x="582.7" y="1040.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="602.7" y="1052.8" font-size="10.4" font-weight="500" fill="#293431">LongLive</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 679.4 975.0 L 679.4 952.0 L 667.4 952.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="679.4" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2512.14614" target="_blank" rel="noopener">
+<title>WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling (2025-12)</title>
+<rect class="m-pill-bg" x="613.3" y="925.0" width="108.2" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/hunyuan.png" x="618.8" y="930.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="638.8" y="942.8" font-size="10.4" font-weight="700" fill="#293431">HY-WorldPlay</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 734.3 975.0 L 734.3 998.0 L 714.3 998.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="734.3" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2601.20540" target="_blank" rel="noopener">
+<title>Advancing Open-source World Models (2026-01)</title>
+<rect class="m-pill-bg" x="657.2" y="998.0" width="114.3" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/robbyant.png" x="662.7" y="1003.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="682.7" y="1015.8" font-size="10.4" font-weight="500" fill="#293431">LingBot-World</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 794.9 975.0 L 794.9 1035.0 L 754.9 1035.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="794.9" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2604.08995" target="_blank" rel="noopener">
+<title>Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory (2026-04)</title>
+<rect class="m-pill-bg" x="691.7" y="1035.0" width="126.5" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/skywork.png" x="697.2" y="1040.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="717.2" y="1052.8" font-size="10.4" font-weight="500" fill="#293431">Matrix-Game 3.0</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 794.9 975.0 L 794.9 952.0 L 842.9 952.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="794.9" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://www.alibabacloud.com/blog/603048" target="_blank" rel="noopener">
+<title>Alibaba Launches HappyOyster (2026-04)</title>
+<rect class="m-pill-bg" x="791.9" y="925.0" width="102.1" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/alibaba.png" x="797.4" y="930.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="817.4" y="942.8" font-size="10.4" font-weight="500" fill="#293431">HappyOyster</text>
+</a>
+</g>
+<g class="metro-track-grp metro-station" data-mline="wm">
+<path d="M 837.8 975.0 L 837.8 1072.0 L 829.8 1072.0" fill="none" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.2"/>
+<circle cx="837.8" cy="975.0" r="5.5" fill="#fff" stroke="#526F91" stroke-width="2.4"/>
+<a href="https://arxiv.org/abs/2606.02800" target="_blank" rel="noopener">
+<title>Cosmos 3: Omnimodal World Models for Physical AI (2026-06)</title>
+<rect class="m-pill-bg" x="787.8" y="1072.0" width="84.0" height="27.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.55" stroke-width="1.05"/>
+<image href="assets/org_icons/nvidia.png" x="793.3" y="1077.2" width="16.5" height="16.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="813.3" y="1089.8" font-size="10.4" font-weight="500" fill="#293431">Cosmos 3</text>
+</a>
+</g>
+<circle cx="332.4" cy="256.0" r="7.5" fill="#fff" stroke="#293431" stroke-width="2.6"/><circle cx="332.4" cy="256.0" r="2.8" fill="#293431"/>
+<circle cx="332.4" cy="674.0" r="7.5" fill="#fff" stroke="#293431" stroke-width="2.6"/><circle cx="332.4" cy="674.0" r="2.8" fill="#293431"/>
+<circle cx="523.8" cy="440.0" r="7.5" fill="#fff" stroke="#293431" stroke-width="2.6"/><circle cx="523.8" cy="440.0" r="2.8" fill="#293431"/>
+<circle cx="523.8" cy="674.0" r="7.5" fill="#fff" stroke="#293431" stroke-width="2.6"/><circle cx="523.8" cy="674.0" r="2.8" fill="#293431"/>
+<line x1="332.4" y1="557.0" x2="345.4" y2="557.0" stroke="#315B51" stroke-width="1.3"/>
+<circle cx="332.4" cy="557.0" r="3.0" fill="#315B51"/>
+<rect x="345.4" y="531.5" width="115.0" height="51.0" rx="5" fill="#FFFFFF" stroke="#315B51" stroke-opacity="0.58" stroke-width="1.05"/>
+<text x="402.9" y="550.0" text-anchor="middle" font-size="9.9" font-style="italic" fill="#46534F">LLM-written scenes</text>
+<text x="402.9" y="569.5" text-anchor="middle" font-size="9.9" font-style="italic" fill="#46534F">condition diffusion</text>
+<line x1="523.8" y1="557.0" x2="536.8" y2="557.0" stroke="#AD803B" stroke-width="1.3"/>
+<circle cx="523.8" cy="557.0" r="3.0" fill="#AD803B"/>
+<rect x="536.8" y="531.5" width="135.0" height="51.0" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.05"/>
+<text x="604.3" y="550.0" text-anchor="middle" font-size="9.9" font-style="italic" fill="#46534F">control videos and</text>
+<text x="604.3" y="569.5" text-anchor="middle" font-size="9.9" font-style="italic" fill="#46534F">references in one model</text>
+<line x1="676.5" y1="790.5" x2="657.5" y2="790.5" stroke="#806886" stroke-width="1.3"/>
+<circle cx="676.5" cy="790.5" r="3.0" fill="#806886"/>
+<rect x="507.5" y="765.0" width="150.0" height="51.0" rx="5" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.58" stroke-width="1.05"/>
+<text x="582.5" y="783.5" text-anchor="middle" font-size="9.9" font-style="italic" fill="#46534F">from fixed clips to causal</text>
+<text x="582.5" y="803.0" text-anchor="middle" font-size="9.9" font-style="italic" fill="#46534F">streams of engine state</text>
+<line x1="906.0" y1="898.0" x2="896.0" y2="898.0" stroke="#526F91" stroke-width="1.3"/>
+<circle cx="906.0" cy="898.0" r="3.0" fill="#526F91"/>
+<rect x="801.0" y="872.5" width="95.0" height="51.0" rx="5" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.58" stroke-width="1.05"/>
+<text x="848.5" y="891.0" text-anchor="middle" font-size="9.9" font-style="italic" fill="#46534F">causal few-step</text>
+<text x="848.5" y="910.5" text-anchor="middle" font-size="9.9" font-style="italic" fill="#46534F">distillation</text>
+<line x1="900.0" y1="331.5" x2="880.0" y2="331.5" stroke="#AD803B" stroke-width="1.3"/>
+<circle cx="900.0" cy="331.5" r="3.0" fill="#AD803B"/>
+<rect x="710.0" y="315.8" width="170.0" height="31.5" rx="5" fill="#FFFFFF" stroke="#AD803B" stroke-opacity="0.58" stroke-width="1.05"/>
+<text x="795.0" y="334.2" text-anchor="middle" font-size="9.9" font-style="italic" fill="#46534F">appearance slot &amp; H3 ref. seq.</text>
+<rect x="934.0" y="168.0" width="658.0" height="306.0" rx="10" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.72" stroke-width="1.6"/>
+<text x="948.0" y="194.0" font-size="15.2" font-weight="700" fill="#5F4964">T3a Clip Renderers · Pre-Fixed Structure (12 representative)</text>
+<line x1="1492.0" y1="190.0" x2="1522.0" y2="190.0" stroke="#806886" stroke-width="5.2"/><text x="1528.0" y="197.0" font-size="14" font-weight="700" fill="#5F4964">3a</text>
+<text x="948.0" y="225.0" font-size="13.2" font-weight="700" font-style="italic" fill="#6B5271">Executable code &amp; programmable proxies</text>
+<text x="948.0" y="360.0" font-size="13.2" font-weight="700" font-style="italic" fill="#6B5271">Engine buffers, 3D scaffolds &amp; simulators</text>
+<rect x="934.0" y="490.0" width="658.0" height="441.0" rx="10" fill="#FFFFFF" stroke="#806886" stroke-opacity="0.72" stroke-width="1.6"/>
+<text x="948.0" y="516.0" font-size="15.2" font-weight="700" fill="#5F4964">T3b Stream &amp; Stateful Renderers (18 representative)</text>
+<line x1="1492.0" y1="512.0" x2="1522.0" y2="512.0" stroke="#806886" stroke-width="5.2"/><line x1="1493.0" y1="512.0" x2="1521.0" y2="512.0" stroke="#fff" stroke-width="1.6" stroke-dasharray="4 3"/><text x="1528.0" y="519.0" font-size="14" font-weight="700" fill="#5F4964">3b</text>
+<text x="948.0" y="547.0" font-size="13.2" font-weight="700" font-style="italic" fill="#6B5271">Interactive game engines &amp; live structure streams</text>
+<text x="948.0" y="682.0" font-size="13.2" font-weight="700" font-style="italic" fill="#6B5271">Coding agents &amp; executable rule harnesses</text>
+<text x="948.0" y="870.0" font-size="13.2" font-weight="700" font-style="italic" fill="#6B5271">Persistent world state &amp; rolling geometric streams</text>
+<rect x="934.0" y="947.0" width="658.0" height="133.0" rx="10" fill="#F2F6FA" stroke="#526F91" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="948.0" y="970.0" font-size="14.6" font-weight="700" fill="#3C5877">Contrasting Route: Implicit End-to-End WMs (Aug–Nov, Ch. 9)</text>
+<a class="metro-tchip" data-pw="mh3" href="https://arxiv.org/abs/2608.25927" target="_blank" rel="noopener">
+<title>Code World Model: Coding Agent as World Brain</title>
+<rect class="m-pill-bg" x="941.0" y="238.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/westlake.png" x="948.0" y="248.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="262.5" font-size="11.6" font-weight="700" fill="#293431">Code World Model</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://code-video-model.github.io/tech_report.pdf" target="_blank" rel="noopener">
+<title>Code Video Model: Conditioning Video Generation on Code</title>
+<rect class="m-pill-bg" x="1159.0" y="238.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/microsoft.png" x="1166.0" y="248.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="262.5" font-size="11.6" font-weight="500" fill="#293431">Code Video Model</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://arxiv.org/abs/2611.09894" target="_blank" rel="noopener">
+<title>Video-Coder: Reinforcing Agentic Coding for Video Generation</title>
+<rect class="m-pill-bg" x="1377.0" y="238.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/ucf.png" x="1384.0" y="248.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="262.5" font-size="11.6" font-weight="500" fill="#293431">Video-Coder</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://arxiv.org/abs/2610.28630" target="_blank" rel="noopener">
+<title>SolarRenderer: Few-Step Generative Reference Rendering</title>
+<rect class="m-pill-bg" x="941.0" y="291.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/showlab.png" x="948.0" y="301.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="315.5" font-size="11.6" font-weight="700" fill="#293431">SolarRenderer</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://arxiv.org/abs/2610.31466" target="_blank" rel="noopener">
+<title>AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark</title>
+<rect class="m-pill-bg" x="1159.0" y="291.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/alaya.png" x="1166.0" y="301.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="315.5" font-size="11.6" font-weight="500" fill="#293431">AnyGameRenderer</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://arxiv.org/abs/2611.15602" target="_blank" rel="noopener">
+<title>CoCode-World: Shared 3D Proxy Representation for Multi-Player World Models</title>
+<rect class="m-pill-bg" x="1377.0" y="291.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/teleai.png" x="1384.0" y="301.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="315.5" font-size="11.6" font-weight="500" fill="#293431">CoCode-World</text>
+</a>
+<a class="metro-tchip" data-pw="mbr" href="https://arxiv.org/abs/2610.02180" target="_blank" rel="noopener">
+<title>Generative Cinematographer: Composing Camera and Object Motion in 3D</title>
+<rect class="m-pill-bg" x="941.0" y="373.8" width="208.0" height="38.5" rx="6" fill="#F6F3F7" stroke="#C6B9C9" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/jhu.png" x="948.0" y="383.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="397.5" font-size="11.6" font-weight="500" fill="#293431">GenCine</text>
+</a>
+<a class="metro-tchip" data-pw="mbr" href="https://arxiv.org/abs/2610.24436" target="_blank" rel="noopener">
+<title>BodyBridge: Grounded Body Layers for Sim-to-Real Translation of Vulnerable Road Users</title>
+<rect class="m-pill-bg" x="1159.0" y="373.8" width="208.0" height="38.5" rx="6" fill="#F6F3F7" stroke="#C6B9C9" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/hmmunich.png" x="1166.0" y="383.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="397.5" font-size="11.6" font-weight="500" fill="#293431">BodyBridge</text>
+</a>
+<a class="metro-tchip" data-pw="mfus" href="https://arxiv.org/abs/2609.35023" target="_blank" rel="noopener">
+<title>Proxy2World: Learning to Generate Worlds From Lightweight Proxies without Seeing Them</title>
+<rect class="m-pill-bg" x="1377.0" y="373.8" width="208.0" height="38.5" rx="6" fill="#EFEBF0" stroke="#806886" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/tencent.png" x="1384.0" y="383.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="397.5" font-size="11.6" font-weight="500" fill="#293431">Proxy2World</text>
+</a>
+<a class="metro-tchip" data-pw="mbr" href="https://arxiv.org/abs/2609.34221" target="_blank" rel="noopener">
+<title>WorldWeave: Growing Persistent Geometric Worlds for Video Generation</title>
+<rect class="m-pill-bg" x="941.0" y="426.8" width="208.0" height="38.5" rx="6" fill="#F6F3F7" stroke="#C6B9C9" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/zju.png" x="948.0" y="436.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="450.5" font-size="11.6" font-weight="500" fill="#293431">WorldWeave</text>
+</a>
+<a class="metro-tchip" data-pw="mfus" href="https://arxiv.org/abs/2610.29200" target="_blank" rel="noopener">
+<title>NeuralSRender: G-Buffer Guided Video Diffusion for Sim-to-Real Rendering</title>
+<rect class="m-pill-bg" x="1159.0" y="426.8" width="208.0" height="38.5" rx="6" fill="#EFEBF0" stroke="#806886" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/whu.png" x="1166.0" y="436.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="450.5" font-size="11.6" font-weight="500" fill="#293431">NeuralSRender</text>
+</a>
+<a class="metro-tchip" data-pw="mctx" href="https://arxiv.org/abs/2608.13929" target="_blank" rel="noopener">
+<title>RGBX-Next: Towards Realistic Generative Rendering from G-Buffers</title>
+<rect class="m-pill-bg" x="1377.0" y="426.8" width="208.0" height="38.5" rx="6" fill="#EAEFF4" stroke="#526F91" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/ucsb.png" x="1384.0" y="436.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="450.5" font-size="11.6" font-weight="500" fill="#293431">RGBX-Next</text>
+</a>
+<a class="metro-tchip" data-pw="mfus" href="https://arxiv.org/abs/2610.27999" target="_blank" rel="noopener">
+<title>Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds</title>
+<rect class="m-pill-bg" x="941.0" y="560.8" width="208.0" height="38.5" rx="6" fill="#EFEBF0" stroke="#806886" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/skywork.png" x="948.0" y="570.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="584.5" font-size="11.6" font-weight="700" fill="#293431">Matrix-Game 4.0</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/" target="_blank" rel="noopener">
+<title>StreamRender-H3: Interactive Coding Worlds with Real-time Streaming Diffusion Render</title>
+<rect class="m-pill-bg" x="1159.0" y="560.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/nvidia.png" x="1166.0" y="570.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="584.5" font-size="11.6" font-weight="500" fill="#293431">StreamRender-H3</text>
+</a>
+<a class="metro-tchip" data-pw="mfus" href="https://assets.vast-eden.ai/assets/edenlive/EdenLive-tech-report.pdf" target="_blank" rel="noopener">
+<title>EdenLive: Real-Time Generative Rendering from Any Visual Reference</title>
+<rect class="m-pill-bg" x="1377.0" y="560.8" width="208.0" height="38.5" rx="6" fill="#EFEBF0" stroke="#806886" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/vast.png" x="1384.0" y="570.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="584.5" font-size="11.6" font-weight="700" fill="#293431">EdenLive</text>
+</a>
+<a class="metro-tchip" data-pw="mctx" href="https://arxiv.org/abs/2610.40607" target="_blank" rel="noopener">
+<title>Fight World Model: Customizable Combat through Visual Interaction Proxies</title>
+<rect class="m-pill-bg" x="941.0" y="613.8" width="208.0" height="38.5" rx="6" fill="#EAEFF4" stroke="#526F91" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/oxford.png" x="948.0" y="623.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="637.5" font-size="11.6" font-weight="500" fill="#293431">Fight World Model</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://arxiv.org/abs/2610.28630" target="_blank" rel="noopener">
+<title>SolarRenderer: Few-Step Generative Reference Rendering</title>
+<rect class="m-pill-bg" x="1159.0" y="613.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/showlab.png" x="1166.0" y="623.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="637.5" font-size="11.6" font-weight="500" fill="#293431">SolarRenderer-C.</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://arxiv.org/abs/2611.19247" target="_blank" rel="noopener">
+<title>GameWM: Toward Next-Generation Video Games with Interaction-Centric World Models</title>
+<rect class="m-pill-bg" x="1377.0" y="613.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/tencent.png" x="1384.0" y="623.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="637.5" font-size="11.6" font-weight="700" fill="#293431">GameWM</text>
+</a>
+<a class="metro-tchip" data-pw="mfus" href="https://arxiv.org/abs/2610.40339" target="_blank" rel="noopener">
+<title>Wizard: Manipulate Any World in Real Time via Agentic Control</title>
+<rect class="m-pill-bg" x="941.0" y="695.8" width="208.0" height="38.5" rx="6" fill="#EFEBF0" stroke="#806886" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/tencent.png" x="948.0" y="705.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="719.5" font-size="11.6" font-weight="700" fill="#293431">Wizard</text>
+</a>
+<a class="metro-tchip" data-pw="mbr" href="https://arxiv.org/abs/2609.26458" target="_blank" rel="noopener">
+<title>Code Plans, Diffusion Renders: Open-Ended Generative World Modeling</title>
+<rect class="m-pill-bg" x="1159.0" y="695.8" width="208.0" height="38.5" rx="6" fill="#F6F3F7" stroke="#C6B9C9" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/ustc.png" x="1166.0" y="705.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="719.5" font-size="11.6" font-weight="500" fill="#293431">CoDeR</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://arxiv.org/abs/2610.26811" target="_blank" rel="noopener">
+<title>State World Models: Execute the Rules, Generate the Pixels</title>
+<rect class="m-pill-bg" x="1377.0" y="695.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/thu.png" x="1384.0" y="705.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="719.5" font-size="11.6" font-weight="500" fill="#293431">Stateful Harness</text>
+</a>
+<a class="metro-tchip" data-pw="mbr" href="https://arxiv.org/abs/2609.10540" target="_blank" rel="noopener">
+<title>Programmable World Model</title>
+<rect class="m-pill-bg" x="941.0" y="748.8" width="208.0" height="38.5" rx="6" fill="#F6F3F7" stroke="#C6B9C9" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/alaya.png" x="948.0" y="758.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="772.5" font-size="11.6" font-weight="500" fill="#293431">Programmable WM</text>
+</a>
+<a class="metro-tchip" data-pw="mxat" href="https://arxiv.org/abs/2610.36371" target="_blank" rel="noopener">
+<title>BoxWorld: Let World Engines Control and Video Generators Render</title>
+<rect class="m-pill-bg" x="1159.0" y="748.8" width="208.0" height="38.5" rx="6" fill="#EAF0EE" stroke="#5A7C74" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/ubc.png" x="1166.0" y="758.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="772.5" font-size="11.6" font-weight="500" fill="#293431">BoxWorld</text>
+</a>
+<a class="metro-tchip" data-pw="mctx" href="https://arxiv.org/abs/2610.12374" target="_blank" rel="noopener">
+<title>AgentGarten: Code Worlds for Evolving Agents</title>
+<rect class="m-pill-bg" x="1377.0" y="748.8" width="208.0" height="38.5" rx="6" fill="#EAEFF4" stroke="#526F91" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/mirros.png" x="1384.0" y="758.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="772.5" font-size="11.6" font-weight="500" fill="#293431">AgentGarten</text>
+</a>
+<a class="metro-tchip" data-pw="mnr" href="https://arxiv.org/abs/2610.21283" target="_blank" rel="noopener">
+<title>Mallea: Building, Steering, and Memorizing Worlds with Coding Agent</title>
+<rect class="m-pill-bg" x="941.0" y="801.8" width="208.0" height="38.5" rx="6" fill="#F2F3F3" stroke="#AEB3B2" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/pku.png" x="948.0" y="811.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="825.5" font-size="11.6" font-weight="500" fill="#293431">Mallea</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://github.com/TingtingLiao/streaming-code-world-model" target="_blank" rel="noopener">
+<title>Streaming Code World Model</title>
+<rect class="m-pill-bg" x="1159.0" y="801.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/mbzuai.png" x="1166.0" y="811.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="825.5" font-size="11.6" font-weight="500" fill="#293431">Streaming CWM</text>
+</a>
+<a class="metro-tchip" data-pw="mh3" href="https://arxiv.org/abs/2611.22925" target="_blank" rel="noopener">
+<title>Code World Model 2.0: Towards Infinite Controllable Video Generation</title>
+<rect class="m-pill-bg" x="1377.0" y="801.8" width="208.0" height="38.5" rx="6" fill="#F5EFE6" stroke="#AD803B" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/inclusionai.png" x="1384.0" y="811.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="825.5" font-size="11.6" font-weight="700" fill="#293431">CWM 2.0</text>
+</a>
+<a class="metro-tchip" data-pw="mbr" href="https://arxiv.org/abs/2611.01543" target="_blank" rel="noopener">
+<title>GSExplorer: Interactive World Generation with a Persistent 3D Gaussian World State</title>
+<rect class="m-pill-bg" x="941.0" y="883.8" width="208.0" height="38.5" rx="6" fill="#F6F3F7" stroke="#C6B9C9" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/hkust.png" x="948.0" y="893.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="907.5" font-size="11.6" font-weight="500" fill="#293431">GSExplorer</text>
+</a>
+<a class="metro-tchip" data-pw="mbr" href="https://arxiv.org/abs/2610.32381" target="_blank" rel="noopener">
+<title>UniWorld: A Unified World Model for Real-Time Visual World Simulation</title>
+<rect class="m-pill-bg" x="1159.0" y="883.8" width="208.0" height="38.5" rx="6" fill="#F6F3F7" stroke="#C6B9C9" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/fudan.png" x="1166.0" y="893.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="907.5" font-size="11.6" font-weight="500" fill="#293431">UniWorld</text>
+</a>
+<a class="metro-tchip" data-pw="mxat" href="https://arxiv.org/abs/2611.07867" target="_blank" rel="noopener">
+<title>PlayGen2: Learning Real-Time Playable Worlds with Explicit 3D State</title>
+<rect class="m-pill-bg" x="1377.0" y="883.8" width="208.0" height="38.5" rx="6" fill="#EAF0EE" stroke="#5A7C74" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/cuhk.png" x="1384.0" y="893.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="907.5" font-size="11.6" font-weight="700" fill="#293431">PlayGen2</text>
+</a>
+<a class="metro-tchip" data-pw="implicit" href="https://arxiv.org/abs/2608.13546" target="_blank" rel="noopener">
+<title>Alaya-EVOKE: From Linear-Scaling Supervision to Endless World</title>
+<rect class="m-pill-bg" x="941.0" y="982.8" width="208.0" height="38.5" rx="6" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/alaya.png" x="948.0" y="992.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="1006.5" font-size="11.6" font-weight="500" fill="#293431">Alaya-EVOKE</text>
+</a>
+<a class="metro-tchip" data-pw="implicit" href="https://arxiv.org/abs/2608.23189" target="_blank" rel="noopener">
+<title>EchoWM: Open and Enterable Omnimodal World Models</title>
+<rect class="m-pill-bg" x="1159.0" y="982.8" width="208.0" height="38.5" rx="6" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/jd.png" x="1166.0" y="992.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="1006.5" font-size="11.6" font-weight="500" fill="#293431">EchoWM</text>
+</a>
+<a class="metro-tchip" data-pw="implicit" href="https://arxiv.org/abs/2608.29910" target="_blank" rel="noopener">
+<title>Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory</title>
+<rect class="m-pill-bg" x="1377.0" y="982.8" width="208.0" height="38.5" rx="6" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/riemann.png" x="1384.0" y="992.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="1006.5" font-size="11.6" font-weight="500" fill="#293431">Matrix-Game 3.5</text>
+</a>
+<a class="metro-tchip" data-pw="implicit" href="https://arxiv.org/abs/2609.02886" target="_blank" rel="noopener">
+<title>SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models</title>
+<rect class="m-pill-bg" x="941.0" y="1034.8" width="208.0" height="38.5" rx="6" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/cuhksz.png" x="948.0" y="1044.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="970.0" y="1058.5" font-size="11.6" font-weight="500" fill="#293431">SolarWM</text>
+</a>
+<a class="metro-tchip" data-pw="implicit" href="https://arxiv.org/abs/2610.36729" target="_blank" rel="noopener">
+<title>Hy-Nomas: Towards Free-form Interactive World Generation</title>
+<rect class="m-pill-bg" x="1159.0" y="1034.8" width="208.0" height="38.5" rx="6" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/hunyuan.png" x="1166.0" y="1044.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1188.0" y="1058.5" font-size="11.6" font-weight="500" fill="#293431">Hy-Nomas</text>
+</a>
+<a class="metro-tchip" data-pw="implicit" href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank" rel="noopener">
+<title>Genie 4: A New Generation of World Simulation</title>
+<rect class="m-pill-bg" x="1377.0" y="1034.8" width="208.0" height="38.5" rx="6" fill="#FFFFFF" stroke="#526F91" stroke-opacity="0.78" stroke-width="1.2"/>
+<image href="assets/org_icons/deepmind.png" x="1384.0" y="1044.8" width="18.5" height="18.5" preserveAspectRatio="xMidYMid meet"/>
+<text x="1406.0" y="1058.5" font-size="11.6" font-weight="700" fill="#293431">Genie 4</text>
+</a>
+<line x1="20.0" y1="1123.0" x2="906.0" y2="1123.0" stroke="#697471" stroke-width="1.6"/>
+<line x1="30.0" y1="1115.0" x2="30.0" y2="1131.0" stroke="#697471" stroke-width="1.3"/>
+<text x="30.0" y="1150.0" text-anchor="middle" font-size="14" font-weight="700" fill="#293431">2016</text>
+<line x1="132.9" y1="1115.0" x2="132.9" y2="1131.0" stroke="#697471" stroke-width="1.3"/>
+<text x="132.9" y="1150.0" text-anchor="middle" font-size="14" font-weight="700" fill="#293431">2020</text>
+<line x1="232.0" y1="1115.0" x2="232.0" y2="1131.0" stroke="#697471" stroke-width="1.3"/>
+<text x="232.0" y="1150.0" text-anchor="middle" font-size="14" font-weight="700" fill="#293431">2023</text>
+<line x1="345.0" y1="1115.0" x2="345.0" y2="1131.0" stroke="#697471" stroke-width="1.3"/>
+<text x="345.0" y="1150.0" text-anchor="middle" font-size="14" font-weight="700" fill="#293431">2024</text>
+<line x1="485.0" y1="1115.0" x2="485.0" y2="1131.0" stroke="#697471" stroke-width="1.3"/>
+<text x="485.0" y="1150.0" text-anchor="middle" font-size="14" font-weight="700" fill="#293431">2025</text>
+<line x1="712.0" y1="1115.0" x2="712.0" y2="1131.0" stroke="#697471" stroke-width="1.3"/>
+<text x="712.0" y="1150.0" text-anchor="middle" font-size="14" font-weight="700" fill="#293431">Jan '26</text>
+<line x1="863.0" y1="1115.0" x2="863.0" y2="1131.0" stroke="#697471" stroke-width="1.3"/>
+<text x="863.0" y="1150.0" text-anchor="middle" font-size="14" font-weight="700" fill="#293431">Jul '26</text>
+<text x="1263.0" y="1150.0" text-anchor="middle" font-size="14.2" font-weight="700" fill="#5F4964">Aug – Mid-Nov 2026 Terminal (chip colours match pathways in b)</text>
+<rect x="8.0" y="1168.0" width="1592.0" height="228.0" rx="11" fill="#FFFFFF" stroke="#D6D0C3" stroke-width="1.4"/>
+<text x="24.0" y="1192.0" font-size="16.5" font-weight="700" fill="#293431">b. Injection pathways (all 50 Tier-3 systems)</text>
+<rect x="24.0" y="1208.0" width="340.0" height="31.0" rx="7" fill="#F2ECF4" stroke="#B6A3BC" stroke-width="1.1"/>
+<text x="194.0" y="1229.0" text-anchor="middle" font-size="13.2" font-weight="700" fill="#5F4964">32 since mid-Aug '26 · 18 in October alone</text>
+<g class="metro-pw-legend" data-pw="mfus" style="cursor:pointer;">
+<rect x="24.0" y="1257.0" width="17.5" height="13.5" rx="3" fill="#806886" stroke="rgba(0,0,0,0.18)" stroke-width="0.8"/>
+<text x="47.0" y="1269.5" font-size="13.5" fill="#293431">Input or feature fusion (16)</text>
+</g>
+<g class="metro-pw-legend" data-pw="mbr" style="cursor:pointer;">
+<rect x="298.0" y="1257.0" width="17.5" height="13.5" rx="3" fill="#C6B9C9" stroke="rgba(0,0,0,0.18)" stroke-width="0.8"/>
+<text x="321.0" y="1269.5" font-size="13.5" fill="#293431">Control branch or adapter (13)</text>
+</g>
+<g class="metro-pw-legend" data-pw="mh3" style="cursor:pointer;">
+<rect x="24.0" y="1289.0" width="17.5" height="13.5" rx="3" fill="#AD803B" stroke="rgba(0,0,0,0.18)" stroke-width="0.8"/>
+<text x="47.0" y="1301.5" font-size="13.5" fill="#293431">MiniMax-H3 ref. seq. (12)</text>
+</g>
+<g class="metro-pw-legend" data-pw="mctx" style="cursor:pointer;">
+<rect x="298.0" y="1289.0" width="17.5" height="13.5" rx="3" fill="#526F91" stroke="rgba(0,0,0,0.18)" stroke-width="0.8"/>
+<text x="321.0" y="1301.5" font-size="13.5" fill="#293431">Other in-context seq. (4)</text>
+</g>
+<g class="metro-pw-legend" data-pw="mxat" style="cursor:pointer;">
+<rect x="24.0" y="1321.0" width="17.5" height="13.5" rx="3" fill="#5A7C74" stroke="rgba(0,0,0,0.18)" stroke-width="0.8"/>
+<text x="47.0" y="1333.5" font-size="13.5" fill="#293431">Cross-attention (3)</text>
+</g>
+<g class="metro-pw-legend" data-pw="mtf" style="cursor:pointer;">
+<rect x="298.0" y="1321.0" width="17.5" height="13.5" rx="3" fill="#B9756B" stroke="rgba(0,0,0,0.18)" stroke-width="0.8"/>
+<text x="321.0" y="1333.5" font-size="13.5" fill="#293431">Training-free inv. (1)</text>
+</g>
+<g class="metro-pw-legend" data-pw="mnr" style="cursor:pointer;">
+<rect x="24.0" y="1353.0" width="17.5" height="13.5" rx="3" fill="#AEB3B2" stroke="rgba(0,0,0,0.18)" stroke-width="0.8"/>
+<text x="47.0" y="1365.5" font-size="13.5" fill="#293431">Undisclosed (1)</text>
+</g>
+<line x1="580.0" y1="1324.0" x2="1518.0" y2="1324.0" stroke="#848E8B" stroke-width="1.3"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="596.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="596.5" y="1297.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<text x="610.0" y="1292.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">2</text>
+<text x="610.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Jan</text>
+<rect class="metro-bar-blk" data-pw="mbr" x="656.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<text x="670.0" y="1305.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">1</text>
+<text x="670.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Mar</text>
+<rect class="metro-bar-blk" data-pw="mfus" x="716.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<text x="730.0" y="1305.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">1</text>
+<text x="730.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Sep</text>
+<rect class="metro-bar-blk" data-pw="mfus" x="776.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<text x="790.0" y="1305.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">1</text>
+<text x="790.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Oct</text>
+<rect class="metro-bar-blk" data-pw="mbr" x="836.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<text x="850.0" y="1305.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">1</text>
+<text x="850.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Dec</text>
+<rect class="metro-bar-blk" data-pw="mfus" x="908.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="908.5" y="1297.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<text x="922.0" y="1292.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">2</text>
+<text x="922.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Jan</text>
+<rect class="metro-bar-blk" data-pw="mfus" x="969.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mctx" x="969.5" y="1297.4" width="27" height="11.6" rx="2.2" fill="#526F91" stroke="#fff" stroke-width="0.9"/>
+<text x="983.0" y="1292.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">2</text>
+<text x="983.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Mar</text>
+<rect class="metro-bar-blk" data-pw="mfus" x="1030.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<text x="1044.0" y="1305.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">1</text>
+<text x="1044.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Apr</text>
+<rect class="metro-bar-blk" data-pw="mbr" x="1091.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<text x="1105.0" y="1305.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">1</text>
+<text x="1105.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">May</text>
+<rect class="metro-bar-blk" data-pw="mfus" x="1154.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="1154.5" y="1297.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="1154.5" y="1284.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="1154.5" y="1271.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="1154.5" y="1258.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mtf" x="1154.5" y="1245.4" width="27" height="11.6" rx="2.2" fill="#B9756B" stroke="#fff" stroke-width="0.9"/>
+<text x="1168.0" y="1240.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">6</text>
+<text x="1168.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Jul</text>
+<rect class="metro-bar-blk" data-pw="mh3" x="1232.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mctx" x="1232.5" y="1297.4" width="27" height="11.6" rx="2.2" fill="#526F91" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mxat" x="1232.5" y="1284.4" width="27" height="11.6" rx="2.2" fill="#5A7C74" stroke="#fff" stroke-width="0.9"/>
+<text x="1246.0" y="1279.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">3</text>
+<text x="1246.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Aug</text>
+<rect class="metro-bar-blk" data-pw="mh3" x="1302.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="1302.5" y="1297.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="1302.5" y="1284.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="1302.5" y="1271.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="1302.5" y="1258.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<text x="1316.0" y="1253.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">5</text>
+<text x="1316.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Sep</text>
+<rect class="metro-bar-blk" data-pw="mh3" x="1376.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mh3" x="1376.5" y="1297.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mh3" x="1376.5" y="1284.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mh3" x="1376.5" y="1271.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mh3" x="1376.5" y="1258.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mh3" x="1376.5" y="1245.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="1376.5" y="1232.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="1376.5" y="1219.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="1376.5" y="1206.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="1406.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mfus" x="1406.5" y="1297.4" width="27" height="11.6" rx="2.2" fill="#806886" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="1406.5" y="1284.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="1406.5" y="1271.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="1406.5" y="1258.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mctx" x="1406.5" y="1245.4" width="27" height="11.6" rx="2.2" fill="#526F91" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mctx" x="1406.5" y="1232.4" width="27" height="11.6" rx="2.2" fill="#526F91" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mxat" x="1406.5" y="1219.4" width="27" height="11.6" rx="2.2" fill="#5A7C74" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mnr" x="1406.5" y="1206.4" width="27" height="11.6" rx="2.2" fill="#AEB3B2" stroke="#fff" stroke-width="0.9"/>
+<text x="1405.0" y="1201.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#5F4964">18</text>
+<text x="1405.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="800" fill="#293431">Oct</text>
+<rect class="metro-bar-blk" data-pw="mh3" x="1476.5" y="1310.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mh3" x="1476.5" y="1297.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mh3" x="1476.5" y="1284.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mh3" x="1476.5" y="1271.4" width="27" height="11.6" rx="2.2" fill="#AD803B" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mbr" x="1476.5" y="1258.4" width="27" height="11.6" rx="2.2" fill="#C6B9C9" stroke="#fff" stroke-width="0.9"/>
+<rect class="metro-bar-blk" data-pw="mxat" x="1476.5" y="1245.4" width="27" height="11.6" rx="2.2" fill="#5A7C74" stroke="#fff" stroke-width="0.9"/>
+<text x="1490.0" y="1240.5" text-anchor="middle" font-size="13.5" font-weight="700" fill="#293431">6</text>
+<text x="1490.0" y="1344.0" text-anchor="middle" font-size="13.2" font-weight="500" fill="#293431">Nov</text>
+<path d="M 1226.0 1190.0 L 1226.0 1181.0 L 1506.0 1181.0 L 1506.0 1190.0" fill="none" stroke="#5F4964" stroke-width="1.4"/>
+<text x="1220.0" y="1188.0" text-anchor="end" font-size="13.5" font-weight="700" fill="#5F4964">Late-2026 surge (32) →</text>
+<path d="M 595.0 1355.0 L 595.0 1362.0 L 865.0 1362.0 L 865.0 1355.0" fill="none" stroke="#8C9693" stroke-width="1.2"/>
+<text x="730.0" y="1380.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#4E5B57">2025 (6)</text>
+<path d="M 907.0 1355.0 L 907.0 1362.0 L 1506.0 1362.0 L 1506.0 1355.0" fill="none" stroke="#7A6082" stroke-width="1.2"/>
+<text x="1206.5" y="1380.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#5F4964">2026 (44)</text>
+</svg>
