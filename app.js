@@ -153,41 +153,6 @@
     });
   }
 
-  /* ---- Orthogonality Quadrants ---- */
-  function renderQuadrants() {
-    const t3aSlow = [], t3aFast = [], t3bSlow = [], t3bFast = [];
-    for (const s of CATALOG.systems) {
-      if (s.tier === "T3a") {
-        const note = (s.realtime_note || "").toLowerCase();
-        if (s.realtime || note.includes("var.") || s.name === "CoCode-World") t3aFast.push(s);
-        else t3aSlow.push(s);
-      } else if (s.tier === "T3b") {
-        if (s.realtime) t3bFast.push(s);
-        else t3bSlow.push(s);
-      }
-    }
-    const chips = (list, isVar = false) =>
-      list
-        .map((s) => {
-          let tag = "";
-          if (s.realtime && s.realtime_note && s.realtime_note !== "Yes") tag = s.realtime_note.replace(/^Yes\s*\((.*)\)$/, "$1");
-          else if (s.name === "CoCode-World") tag = "8-step";
-          else if (s.realtime_note && !["No", "Yes", "NR"].includes(s.realtime_note)) tag = s.realtime_note;
-          const href = s.url ? `href="${esc(s.url)}" target="_blank" rel="noopener"` : `href="#matrix"`;
-          return `<a class="sys-chip ${isVar ? "var" : ""}" ${href}>${esc(s.name)}${tag ? ` <span class="fps">${esc(tag)}</span>` : ""}</a>`;
-        })
-        .join("");
-
-    document.getElementById("q-t3a-slow-cnt").textContent = `${t3aSlow.length} systems`;
-    document.getElementById("q-t3a-fast-cnt").textContent = `${t3aFast.length} systems`;
-    document.getElementById("q-t3b-slow-cnt").textContent = `${t3bSlow.length} systems`;
-    document.getElementById("q-t3b-fast-cnt").textContent = `${t3bFast.length} systems`;
-    document.getElementById("q-t3a-slow").innerHTML = chips(t3aSlow);
-    document.getElementById("q-t3a-fast").innerHTML = chips(t3aFast, true);
-    document.getElementById("q-t3b-slow").innerHTML = chips(t3bSlow);
-    document.getElementById("q-t3b-fast").innerHTML = chips(t3bFast);
-  }
-
   /* ---- System Matrix ---- */
   function formatRtBadge(s) {
     const note = s.realtime_note || (s.realtime ? "Yes" : "No");
@@ -384,7 +349,6 @@
     document.getElementById("stat-bench").textContent = c.benchmarks;
 
     wireExactMetro(metroSvgText);
-    renderQuadrants();
     populateYears();
     renderTrackFilters();
     renderMatrix();

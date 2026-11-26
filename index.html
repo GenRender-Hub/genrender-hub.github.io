@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Video Models as Generative Renderers: Foundations, Interfaces, Systems, and Beyond — animated renderer studio, 4-lineage interactive metro evolution map, causality vs real-time explorer, 68-system matrix, and 336-paper library." />
+  <meta name="description" content="Video Models as Generative Renderers: Foundations, Interfaces, Systems, and Beyond — animated renderer studio, 4-lineage interactive metro evolution map, 68-system matrix, and 336-paper library." />
   <meta name="theme-color" content="#1e5246" />
   <title>GenRender — Video Models as Generative Renderers</title>
   <link rel="canonical" href="https://genrender-hub.github.io/" />
@@ -23,7 +23,6 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#perspective">Specification Ladder</a>
         <a href="#metro-roadmap">Evolution Roadmap</a>
-        <a href="#orthogonality">T3a/T3b vs RT</a>
         <a href="#matrix">System Matrix</a>
         <a href="#library">Library (336)</a>
         <a class="nav-github" href="https://github.com/GenRender-Hub/Awesome-Generative-Renderers" target="_blank" rel="noopener">GitHub ↗</a>
@@ -499,54 +498,8 @@
       </div>
     </section>
 
-    <!-- CAUSALITY vs REAL-TIME ORTHOGONALITY QUADRANT -->
-    <section class="sec alt" id="orthogonality">
-      <div class="wrap">
-        <div class="sec-head">
-          <div>
-            <div class="eyebrow"><span class="status-dot"></span> Key Distinction · Sec. 2.3 &amp; Ch. 7</div>
-            <h2>T3a vs. T3b Causality Is Orthogonal to Real-Time Speed</h2>
-          </div>
-          <p>Fast few-step rendering of a pre-fixed clip stays <b>T3a</b> (e.g., distilled 8-step CoCode-World or SolarRenderer's primary clip release + 28 FPS causal variant); slow causal/stateful updates (~1 FPS FrameDiffuser) stay <b>T3b</b>.</p>
-        </div>
-
-        <div class="ortho-shell">
-          <div class="ortho-axis">
-            <span>Causality ↓</span>
-            <span>← Sub-Real-Time / Multi-Step Diffusion</span>
-            <span>Real-Time / Fast Distilled Variants →</span>
-          </div>
-          <div class="quad-grid">
-            <div class="y-lbl t3a"><span>Tier 3a</span><small>Pre-fixed clip S(1:T)<br/>before sampling</small></div>
-            <div class="quad-cell">
-              <div class="quad-head"><h4>T3a · Clip-Level Quality Renderers</h4><span class="quad-cnt" id="q-t3a-slow-cnt"></span></div>
-              <p class="quad-desc">Full-sequence bidirectional denoising (20–50 steps) over pre-authored clay, G-buffers, or code drafts.</p>
-              <div class="chip-cloud" id="q-t3a-slow"></div>
-            </div>
-            <div class="quad-cell var">
-              <div class="quad-head"><h4>T3a · Fast Distilled / Streaming Variants</h4><span class="quad-cnt" id="q-t3a-fast-cnt"></span></div>
-              <p class="quad-desc">Fast few-step T3a clip models (CoCode-World 8-step) plus T3a systems shipping secondary T3b causal/streaming variants.</p>
-              <div class="chip-cloud" id="q-t3a-fast"></div>
-            </div>
-
-            <div class="y-lbl t3b"><span>Tier 3b</span><small>Causal stream from<br/>evolving state s(t)</small></div>
-            <div class="quad-cell">
-              <div class="quad-head"><h4>T3b · Sub-Real-Time Causal &amp; Multi-Turn</h4><span class="quad-cnt" id="q-t3b-slow-cnt"></span></div>
-              <p class="quad-desc">Strictly causal or multi-turn stateful execution that cannot peek ahead, even at ~1 FPS or several seconds per turn.</p>
-              <div class="chip-cloud" id="q-t3b-slow"></div>
-            </div>
-            <div class="quad-cell rt">
-              <div class="quad-head"><h4>T3b · Real-Time Interactive Renderers</h4><span class="quad-cnt" id="q-t3b-fast-cnt"></span></div>
-              <p class="quad-desc">Few-step distilled causal chunk/frame renderers driven live by engines and simulators at 13–83 FPS.</p>
-              <div class="chip-cloud" id="q-t3b-fast"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- SYSTEM COMPARISON MATRIX (68 SYSTEMS) -->
-    <section class="sec" id="matrix">
+    <section class="sec alt" id="matrix">
       <div class="wrap">
         <div class="sec-head">
           <div>
@@ -581,7 +534,7 @@
     </section>
 
     <!-- SEARCHABLE RESEARCH LIBRARY (336 CITED WORKS) -->
-    <section class="sec alt" id="library">
+    <section class="sec" id="library">
       <div class="wrap">
         <div class="sec-head">
           <div>
@@ -627,7 +580,7 @@
     </section>
 
     <!-- CITE & CONTRIBUTE -->
-    <section class="sec" id="cite">
+    <section class="sec alt" id="cite">
       <div class="wrap">
         <div class="sec-head">
           <div>
