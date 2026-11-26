@@ -68,7 +68,7 @@ img { max-width: 100%; height: auto; }
   white-space: nowrap;
 }
 .brand b { color: var(--teal); font-weight: 800; }
-.brand img { height: 28px; width: auto; display: block; }
+.brand img { height: 32px; width: auto; display: block; }
 .site-nav { display: flex; align-items: center; gap: 24px; font-size: 13px; color: var(--ink-soft); }
 .site-nav a:hover { color: var(--teal); }
 .nav-github {
@@ -1049,7 +1049,8 @@ footer { padding: 26px 0 36px; font-size: 12.5px; color: var(--muted); border-to
 @media (max-width: 680px) {
   .wrap, .header-inner { padding: 0 16px; }
   .brand { font-size: 11px; gap: 7px; letter-spacing: 0.6px; }
-  .brand img { height: 22px; }
+  .brand span { display: none; }
+  .brand img { height: 26px; }
   .nav-github { white-space: nowrap; padding: 5px 10px; font-size: 12px; }
   .site-nav a:not(.nav-github) { display: none; }
   .paths { grid-template-columns: 1fr; }
