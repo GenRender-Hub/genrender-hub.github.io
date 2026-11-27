@@ -34,9 +34,9 @@
   <main id="top">
     <!-- FULL-BLEED CINEMATIC SHADER-SCAN OPENING SPLASH (3D CLAY PROXY <-> MINIMAX-H3 2K RENDER) -->
     <section class="opening-cinema" id="opening-cinema" aria-labelledby="hero-title" style="--split:50%;">
-      <!-- Synchronized Dual HD Video Background Layers -->
-      <video class="cinema-vid cinema-vid-proxy" id="hero-vid-proxy" src="assets/ramp/proxy_robot.mp4" autoplay loop muted playsinline preload="auto"></video>
-      <video class="cinema-vid cinema-vid-render" id="hero-vid-render" src="assets/ramp/render_robot.mp4" poster="assets/ramp/poster_robot.jpg" autoplay loop muted playsinline preload="auto"></video>
+      <!-- Synchronized Dual 1080p Full-HD Video Background Layers -->
+      <video class="cinema-vid cinema-vid-proxy" id="hero-vid-proxy" src="assets/ramp/proxy_robot.mp4" autoplay muted playsinline preload="auto"></video>
+      <video class="cinema-vid cinema-vid-render" id="hero-vid-render" src="assets/ramp/render_robot.mp4" poster="assets/ramp/poster_robot.jpg" autoplay muted playsinline preload="auto"></video>
 
       <!-- Subtle top & bottom cinema scrims (middle action band stays 100% bright & unobstructed!) -->
       <div class="cinema-scrim-top" aria-hidden="true"></div>
@@ -64,7 +64,7 @@
         <div class="cad-corner br"></div>
         <div class="hud-badge hud-right-badge">
           <span class="hud-dot-live"></span>
-          <span>GENERATIVE RENDER · Y(t) · MINIMAX-H3 2K</span>
+          <span>GENERATIVE RENDER · Y(t) · SEEDANCE 2.5 · 1080P</span>
         </div>
       </div>
 
@@ -131,6 +131,10 @@
             <div class="dock-tools">
               <button type="button" class="dock-tool" id="hero-play-btn" title="Play / Pause" aria-label="Play or Pause">
                 <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><rect x="3" y="2.5" width="3.5" height="11" rx="1"/><rect x="9.5" y="2.5" width="3.5" height="11" rx="1"/></svg>
+              </button>
+              <button type="button" class="dock-tool active" id="stage-reel-btn" title="Auto-cycle through all 4 scenarios (20s showreel)">
+                <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 8a5.5 5.5 0 1 1-1.3-3.6"/><path d="M13.5 2.8v2.7h-2.7"/></svg>
+                <span>20s Reel</span>
               </button>
               <button type="button" class="dock-tool active" id="stage-sweep-btn" title="Toggle auto-scan beam">
                 <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 1.5v13M4.5 5 1.8 8l2.7 3M11.5 5l2.7 3-2.7 3"/></svg>
@@ -276,7 +280,7 @@
             <div class="eyebrow"><span class="status-dot"></span> Chapter 3 · Driving Domains</div>
             <h2>Who Decides What Happens Next When Video Models Become Renderers?</h2>
           </div>
-          <p>One ramp shot—a red ball rolling down to knock aside a blue ball blocking the exit—splits into <b>three closed decision loops</b> depending on who owns the final say. Click a domain below to watch the paired <b>3D Proxy → MiniMax-H3 2K Render</b> and trace how authority flows around the renderer.</p>
+          <p>One ramp shot—a red ball rolling down to knock aside a blue ball blocking the exit—splits into <b>three closed decision loops</b> depending on who owns the final say. Click a domain below to watch the paired <b>3D Proxy → Seedance 2.5 (1080p)</b> and trace how authority flows around the renderer.</p>
         </div>
 
         <div class="wd-grid">
@@ -351,10 +355,10 @@
               </div>
               <div class="wd-v-arrow" aria-hidden="true">
                 <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16h22M19 8l8 8-8 8"/></svg>
-                <span>H3 2K</span>
+                <span>S2.5</span>
               </div>
               <div class="wd-vbox">
-                <span class="wd-vpill is-right" id="wd-right-pill">Generative Video Render · Y(t)</span>
+                <span class="wd-vpill is-right" id="wd-right-pill">Seedance 2.5 · 1080p Render</span>
                 <video id="wd-vid-right" src="assets/ramp/render_director.mp4" poster="assets/ramp/poster_director.jpg" autoplay loop muted playsinline></video>
               </div>
             </div>

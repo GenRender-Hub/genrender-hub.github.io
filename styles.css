@@ -1065,7 +1065,9 @@ img { max-width: 100%; height: auto; }
   object-position: center 54%;
   pointer-events: none;
   display: block;
+  transition: opacity 0.24s ease;
 }
+.cinema-vid.is-swapping { opacity: 0.72; }
 .cinema-vid-render {
   clip-path: inset(0 0 0 var(--split, 50%));
   z-index: 2;

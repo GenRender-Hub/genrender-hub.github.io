@@ -566,6 +566,7 @@
     const vp = document.getElementById("opening-cinema");
     const dock = document.getElementById("cinema-dock");
     const range = document.getElementById("stage-range");
+    const reelBtn = document.getElementById("stage-reel-btn");
     const sweepBtn = document.getElementById("stage-sweep-btn");
     const cursorBtn = document.getElementById("stage-cursor-btn");
     const playBtn = document.getElementById("hero-play-btn");
@@ -578,13 +579,61 @@
     const heroTc = document.getElementById("hero-tc");
     const heroState = document.getElementById("hero-state");
 
+    const REEL_ORDER = ["robot", "director", "engine", "base"];
     let activeHeroSc = "robot";
+    let autoReel = true;
     let splitVal = 50;
     let targetSplit = 50;
     let sweepPhase = 0;
     let autoSweep = true;
     let cursorFollow = false;
     let dragging = false;
+
+    const activateHeroScenario = (sc, keepReel = false) => {
+      const meta = RAMP_SCENARIOS[sc];
+      if (!meta) return;
+      activeHeroSc = sc;
+      if (!keepReel) {
+        autoReel = false;
+        if (reelBtn) reelBtn.classList.remove("active");
+      }
+      document.querySelectorAll("#hero-scenario-btns .dock-sc").forEach((b) => {
+        b.classList.toggle("active", b.dataset.sc === sc);
+        const bar = b.querySelector(".dsc-bar i");
+        if (bar) bar.style.width = "0%";
+      });
+      capDot.style.background = meta.dot;
+      capDot.style.boxShadow = `0 0 0 3px ${meta.dot}55`;
+      capText.innerHTML = meta.caption;
+      tlEvent.style.left = `${meta.eventPct}%`;
+      playBtn.innerHTML = '<svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><rect x="3" y="2.5" width="3.5" height="11" rx="1"/><rect x="9.5" y="2.5" width="3.5" height="11" rx="1"/></svg>';
+      vProxy.classList.add("is-swapping");
+      vRender.classList.add("is-swapping");
+      loadSyncedVideos(vProxy, vRender, `assets/ramp/proxy_${sc}.mp4`, `assets/ramp/render_${sc}.mp4`, `assets/ramp/poster_${sc}.jpg`);
+      setTimeout(() => {
+        vProxy.classList.remove("is-swapping");
+        vRender.classList.remove("is-swapping");
+      }, 240);
+    };
+
+    vProxy.addEventListener("ended", () => {
+      if (autoReel) {
+        const nextIdx = (REEL_ORDER.indexOf(activeHeroSc) + 1) % REEL_ORDER.length;
+        activateHeroScenario(REEL_ORDER[nextIdx], true);
+      } else {
+        vProxy.currentTime = 0;
+        vRender.currentTime = 0;
+        vProxy.play().catch(() => {});
+        vRender.play().catch(() => {});
+      }
+    });
+
+    if (reelBtn) {
+      reelBtn.addEventListener("click", () => {
+        autoReel = !autoReel;
+        reelBtn.classList.toggle("active", autoReel);
+      });
+    }
 
     const setSplit = (pct) => {
       splitVal = Math.max(4, Math.min(96, pct));
@@ -616,7 +665,7 @@
       wdSvgHost.innerHTML = d.svg();
       if (activeVMode === "pair") {
         wdLeftPill.textContent = "Upstream 3D Clay Proxy · S(t)";
-        wdRightPill.textContent = "MiniMax-H3 2K Render · Y(t)";
+        wdRightPill.textContent = "Seedance 2.5 · 1080p Render";
         loadSyncedVideos(wdLeft, wdRight, `assets/ramp/proxy_${key}.mp4`, `assets/ramp/render_${key}.mp4`, `assets/ramp/poster_${key}.jpg`);
       } else {
         wdLeftPill.textContent = d.baseCompareLabel;
@@ -722,24 +771,7 @@
     });
 
     document.querySelectorAll("#hero-scenario-btns .dock-sc[data-sc]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const sc = btn.dataset.sc;
-        const meta = RAMP_SCENARIOS[sc];
-        if (!meta) return;
-        activeHeroSc = sc;
-        document.querySelectorAll("#hero-scenario-btns .dock-sc").forEach((b) => {
-          b.classList.remove("active");
-          const bar = b.querySelector(".dsc-bar i");
-          if (bar) bar.style.width = "0%";
-        });
-        btn.classList.add("active");
-        capDot.style.background = meta.dot;
-        capDot.style.boxShadow = `0 0 0 3px ${meta.dot}55`;
-        capText.innerHTML = meta.caption;
-        tlEvent.style.left = `${meta.eventPct}%`;
-        playBtn.innerHTML = ICO_PAUSE;
-        loadSyncedVideos(vProxy, vRender, `assets/ramp/proxy_${sc}.mp4`, `assets/ramp/render_${sc}.mp4`, `assets/ramp/poster_${sc}.jpg`);
-      });
+      btn.addEventListener("click", () => activateHeroScenario(btn.dataset.sc, false));
     });
 
     setActiveTier("T3a");
