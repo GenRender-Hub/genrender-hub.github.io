@@ -268,36 +268,369 @@
     }
   }
 
+  /* ---- Chapter 3 Ramp Story & Animated Decision Loops ---- */
+  const RAMP_SCENARIOS = {
+    base: {
+      dot: "#c0392b",
+      eventPct: 40,
+      caption: "<b>Baseline Ramp Shot:</b> Red ball rolls down and knocks the blue ball through the exit archway (~2.0 s).",
+    },
+    director: {
+      dot: "#ad803b",
+      eventPct: 54,
+      caption: "<b>Creative Production · Director Decides:</b> Red ball delays +0.6 s on a locked camera—edit one thing without reshooting.",
+    },
+    engine: {
+      dot: "#785c84",
+      eventPct: 16,
+      caption: "<b>Interactive Worlds · Engine Decides:</b> Player removes the blue ball at 0.7 s—authoritative state overrides visual memory.",
+    },
+    robot: {
+      dot: "#1e5246",
+      eventPct: 31,
+      caption: "<b>Physical &amp; Embodied · Simulator &amp; Scene Decide:</b> Robot gripper picks up the blue ball before the red ball glides underneath.",
+    },
+  };
+
+  const WD_DOMAINS = {
+    director: {
+      color: "#ad803b",
+      kicker: "CREATIVE PRODUCTION · THE DIRECTOR DECIDES",
+      title: "Targeted Revision: Delay Impact +0.6 s on a Locked Camera",
+      loopStatus: "Loop closes via director review · T1 / T2 / T3a",
+      baseCompareLabel: "Baseline Render (t ≈ 2.0 s hit)",
+      editCompareLabel: "Director Revision (+0.6 s delayed hit)",
+      svg: () => `
+        <svg viewBox="0 0 680 184" fill="none" role="img" aria-label="Creative production closed decision loop">
+          <defs>
+            <marker id="wd-arr-d" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M1 1.5 L8.5 5 L1 8.5 Z" fill="#ad803b"/>
+            </marker>
+            <marker id="wd-arr-ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+              <path d="M1 1.5 L8.5 5 L1 8.5 Z" fill="#2d7868"/>
+            </marker>
+          </defs>
+          <!-- Column labels -->
+          <g font-family="Inter,sans-serif" font-size="9.5" font-weight="700" fill="#5e6d68" letter-spacing="0.8">
+            <text x="86" y="16" text-anchor="middle">FINAL SAY</text>
+            <text x="256" y="16" text-anchor="middle">SPECIFICATION</text>
+            <text x="434" y="16" text-anchor="middle">RENDERS</text>
+            <text x="594" y="16" text-anchor="middle">RESULT</text>
+          </g>
+          <!-- Outside agent drafting into specification -->
+          <rect x="200" y="25" width="112" height="26" rx="13" fill="#e8f4ef" stroke="#2d7868" stroke-width="1.3"/>
+          <text x="256" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#1e5246">Agents draft</text>
+          <path d="M256 51 V68" stroke="#2d7868" stroke-width="1.5" class="wd-dash-flow" marker-end="url(#wd-arr-ag)"/>
+
+          <!-- Main loop paths -->
+          <path id="loop-dir-main" d="M148 102 H188 M324 102 H372 M496 102 H538" stroke="#ad803b" stroke-width="2" marker-end="url(#wd-arr-d)"/>
+          <path d="M148 102 H186" stroke="#ad803b" stroke-width="2" marker-end="url(#wd-arr-d)"/>
+          <path d="M324 102 H370" stroke="#ad803b" stroke-width="2" marker-end="url(#wd-arr-d)"/>
+          <path d="M496 102 H536" stroke="#ad803b" stroke-width="2" marker-end="url(#wd-arr-d)"/>
+          <!-- Closing feedback return wire -->
+          <path id="loop-dir-ret" d="M594 128 V158 Q594 166 586 166 H94 Q86 166 86 158 V130" stroke="#ad803b" stroke-width="1.9" class="wd-dash-flow" fill="none" marker-end="url(#wd-arr-d)"/>
+          <rect x="250" y="154" width="180" height="22" rx="11" fill="#fdf8ee" stroke="#e4cfa5" stroke-width="1"/>
+          <text x="340" y="169" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="600" fill="#8b6220">review, change one thing</text>
+
+          <!-- Final Say: Director (double border + pulse halo) -->
+          <rect class="wd-final-pulse" x="20" y="74" width="132" height="56" rx="12" fill="none" stroke="#ad803b" stroke-width="3.5"/>
+          <rect x="24" y="78" width="124" height="48" rx="9" fill="#fffdf8" stroke="#ad803b" stroke-width="2.2"/>
+          <rect x="28" y="82" width="116" height="40" rx="6" fill="none" stroke="#ad803b" stroke-width="0.9" stroke-opacity="0.55"/>
+          <text x="86" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" fill="#182723">Director</text>
+          <text x="86" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#8b6220">hit 0.5 s later</text>
+
+          <!-- Specification stack (T1/T2/T3a) -->
+          <rect x="190" y="69" width="132" height="66" rx="9" fill="#ffffff" stroke="#cfd8d3" stroke-width="1.2"/>
+          <rect x="197" y="75" width="118" height="16" rx="4" fill="#fbf3e2" stroke="#d4a653" stroke-width="0.9"/>
+          <text x="256" y="86.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" font-weight="700" fill="#8a6121">T1 references</text>
+          <rect x="197" y="94" width="118" height="16" rx="4" fill="#faeae7" stroke="#c86b5e" stroke-width="0.9"/>
+          <text x="256" y="105.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" font-weight="700" fill="#943f34">T2 storyboard</text>
+          <rect x="197" y="113" width="118" height="16" rx="4" fill="#f3ecf7" stroke="#8b6a98" stroke-width="1.2"/>
+          <text x="256" y="124.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" font-weight="700" fill="#634570">T3a white-box clay</text>
+
+          <!-- Video model node -->
+          <rect x="374" y="78" width="122" height="48" rx="9" fill="#1c2f2a" stroke="#1c2f2a" stroke-width="1.5"/>
+          <text x="435" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#ffffff">Video Model</text>
+          <text x="435" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.2" fill="#9cd0be">renders pixels</text>
+
+          <!-- Result: Draft shot -->
+          <rect x="540" y="78" width="110" height="48" rx="9" fill="#ffffff" stroke="#b9c6c0" stroke-width="1.4"/>
+          <text x="595" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#182723">Draft Shot</text>
+          <text x="595" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.2" fill="#5b6d68">locked layout</text>
+
+          <!-- Glowing animated pulse traveling around closed loop -->
+          <circle r="4.5" fill="#ad803b" stroke="#ffffff" stroke-width="1.5">
+            <animateMotion dur="4.2s" repeatCount="indefinite" path="M148 102 H594 V158 Q594 166 586 166 H94 Q86 166 86 158 V102 Z"/>
+          </circle>
+        </svg>`,
+    },
+    engine: {
+      color: "#785c84",
+      kicker: "INTERACTIVE WORLDS · THE ENGINE DECIDES",
+      title: "Live State Intervention: Player Removes Blue Ball (Zero Memory Revival)",
+      loopStatus: "Loop closes in real-time play · T3b Streamed",
+      baseCompareLabel: "Baseline Render (blue ball hit)",
+      editCompareLabel: "Engine State Edit (blue ball removed)",
+      svg: () => `
+        <svg viewBox="0 0 680 184" fill="none" role="img" aria-label="Interactive worlds closed decision loop">
+          <defs>
+            <marker id="wd-arr-e" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M1 1.5 L8.5 5 L1 8.5 Z" fill="#785c84"/>
+            </marker>
+            <marker id="wd-arr-ag2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+              <path d="M1 1.5 L8.5 5 L1 8.5 Z" fill="#2d7868"/>
+            </marker>
+          </defs>
+          <g font-family="Inter,sans-serif" font-size="9.5" font-weight="700" fill="#5e6d68" letter-spacing="0.8">
+            <text x="86" y="16" text-anchor="middle">FINAL SAY</text>
+            <text x="256" y="16" text-anchor="middle">SPECIFICATION</text>
+            <text x="434" y="16" text-anchor="middle">RENDERS</text>
+            <text x="594" y="16" text-anchor="middle">RESULT</text>
+          </g>
+          <!-- Outside coding agent writing rules into engine -->
+          <rect x="26" y="25" width="120" height="26" rx="13" fill="#e8f4ef" stroke="#2d7868" stroke-width="1.3"/>
+          <text x="86" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#1e5246">Coding agent</text>
+          <path d="M86 51 V75" stroke="#2d7868" stroke-width="1.5" class="wd-dash-flow" marker-end="url(#wd-arr-ag2)"/>
+          <text x="95" y="66" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#1e5246">rules</text>
+
+          <!-- Main horizontal arrows -->
+          <path d="M148 102 H186" stroke="#785c84" stroke-width="2" marker-end="url(#wd-arr-e)"/>
+          <path d="M324 102 H370" stroke="#785c84" stroke-width="2" marker-end="url(#wd-arr-e)"/>
+          <path d="M496 102 H536" stroke="#785c84" stroke-width="2" marker-end="url(#wd-arr-e)"/>
+          <!-- Closing feedback return wire -->
+          <path d="M594 128 V158 Q594 166 586 166 H94 Q86 166 86 158 V130" stroke="#785c84" stroke-width="1.9" class="wd-dash-flow" fill="none" marker-end="url(#wd-arr-e)"/>
+          <rect x="246" y="154" width="188" height="22" rx="11" fill="#f6f1fa" stroke="#d5c2df" stroke-width="1"/>
+          <text x="340" y="169" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="600" fill="#634570">live player action: remove ball</text>
+
+          <!-- Final Say: Engine state and rules -->
+          <rect class="wd-final-pulse" x="20" y="74" width="132" height="56" rx="12" fill="none" stroke="#785c84" stroke-width="3.5"/>
+          <rect x="24" y="78" width="124" height="48" rx="9" fill="#fcfafe" stroke="#785c84" stroke-width="2.2"/>
+          <rect x="28" y="82" width="116" height="40" rx="6" fill="none" stroke="#785c84" stroke-width="0.9" stroke-opacity="0.55"/>
+          <text x="86" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" fill="#182723">Engine</text>
+          <text x="86" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#634570">state &amp; rules</text>
+
+          <!-- Specification: T3b White-box frames -->
+          <rect x="190" y="78" width="132" height="48" rx="9" fill="#f3ecf7" stroke="#785c84" stroke-width="1.5"/>
+          <text x="256" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#5e416b">White-Box Frames</text>
+          <text x="256" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.2" fill="#785c84">T3b chunk stream</text>
+
+          <!-- Video model -->
+          <rect x="374" y="78" width="122" height="48" rx="9" fill="#1c2f2a" stroke="#1c2f2a" stroke-width="1.5"/>
+          <text x="435" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#ffffff">Video Model</text>
+          <text x="435" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.2" fill="#9cd0be">causal memory</text>
+
+          <!-- Player -->
+          <rect x="540" y="78" width="110" height="48" rx="9" fill="#ffffff" stroke="#b9c6c0" stroke-width="1.4"/>
+          <text x="595" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#182723">Player</text>
+          <text x="595" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.2" fill="#5b6d68">interactive play</text>
+
+          <!-- Glowing animated pulse -->
+          <circle r="4.5" fill="#785c84" stroke="#ffffff" stroke-width="1.5">
+            <animateMotion dur="3.4s" repeatCount="indefinite" path="M148 102 H594 V158 Q594 166 586 166 H94 Q86 166 86 158 V102 Z"/>
+          </circle>
+        </svg>`,
+    },
+    robot: {
+      color: "#1e5246",
+      kicker: "PHYSICAL & EMBODIED · SIMULATOR & SCENE DECIDE",
+      title: "Embodied Grounding: Robot Picks Up Blue Ball While Red Ball Passes",
+      loopStatus: "Sim renders T3a training data · Real table closes loop",
+      baseCompareLabel: "Baseline Render (blue ball blocks)",
+      editCompareLabel: "Embodied Control (robot lifts ball)",
+      svg: () => `
+        <svg viewBox="0 0 680 184" fill="none" role="img" aria-label="Physical and embodied simulation decision loop">
+          <defs>
+            <marker id="wd-arr-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M1 1.5 L8.5 5 L1 8.5 Z" fill="#1e5246"/>
+            </marker>
+            <marker id="wd-arr-sim" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+              <path d="M1 1.5 L8.5 5 L1 8.5 Z" fill="#785c84"/>
+            </marker>
+          </defs>
+          <g font-family="Inter,sans-serif" font-size="9.5" font-weight="700" fill="#5e6d68" letter-spacing="0.8">
+            <text x="86" y="16" text-anchor="middle">FINAL SAY</text>
+            <text x="256" y="16" text-anchor="middle">OBSERVATION / SIM</text>
+            <text x="434" y="16" text-anchor="middle">ACTS / RENDERS</text>
+            <text x="594" y="16" text-anchor="middle">RESULT</text>
+          </g>
+
+          <!-- Top training / prediction branch: Simulator -> Video Model -> Planner -->
+          <rect x="196" y="24" width="120" height="32" rx="8" fill="#f7f2fa" stroke="#785c84" stroke-width="1.8"/>
+          <rect x="200" y="28" width="112" height="24" rx="5" fill="none" stroke="#785c84" stroke-width="0.8" stroke-opacity="0.5"/>
+          <text x="256" y="44" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#5e416b">Simulator (T3a)</text>
+
+          <path d="M316 40 H370" stroke="#785c84" stroke-width="1.5" class="wd-dash-flow" marker-end="url(#wd-arr-sim)"/>
+          <rect x="374" y="24" width="122" height="32" rx="8" fill="#1c2f2a" stroke="#1c2f2a" stroke-width="1.3"/>
+          <text x="435" y="44" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#ffffff">Video Model</text>
+
+          <path d="M435 56 V75" stroke="#785c84" stroke-width="1.5" class="wd-dash-flow" marker-end="url(#wd-arr-sim)"/>
+          <text x="444" y="69" font-family="JetBrains Mono,monospace" font-size="9.2" fill="#634570">sim2real data / rollouts</text>
+
+          <!-- Main physical control loop -->
+          <path d="M148 102 H186" stroke="#1e5246" stroke-width="2" marker-end="url(#wd-arr-r)"/>
+          <path d="M324 102 H370" stroke="#1e5246" stroke-width="2" marker-end="url(#wd-arr-r)"/>
+          <path d="M496 102 H536" stroke="#1e5246" stroke-width="2" marker-end="url(#wd-arr-r)"/>
+          <path d="M594 128 V158 Q594 166 586 166 H94 Q86 166 86 158 V130" stroke="#1e5246" stroke-width="1.9" class="wd-dash-flow" fill="none" marker-end="url(#wd-arr-r)"/>
+          <rect x="242" y="154" width="196" height="22" rx="11" fill="#ebf6f1" stroke="#bdd9ce" stroke-width="1"/>
+          <text x="340" y="169" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="600" fill="#1e5246">physical grasp confirms contact</text>
+
+          <!-- Final Say: Physical scene (the real table) -->
+          <rect class="wd-final-pulse" x="20" y="74" width="132" height="56" rx="12" fill="none" stroke="#1e5246" stroke-width="3.5"/>
+          <rect x="24" y="78" width="124" height="48" rx="9" fill="#f7fcfa" stroke="#1e5246" stroke-width="2.2"/>
+          <rect x="28" y="82" width="116" height="40" rx="6" fill="none" stroke="#1e5246" stroke-width="0.9" stroke-opacity="0.55"/>
+          <text x="86" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#182723">Physical Scene</text>
+          <text x="86" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.5" fill="#1e5246">the real table</text>
+
+          <!-- Camera observation -->
+          <rect x="190" y="78" width="132" height="48" rx="9" fill="#ffffff" stroke="#b9c6c0" stroke-width="1.4"/>
+          <text x="256" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11.5" font-weight="700" fill="#182723">Camera Obs.</text>
+          <text x="256" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.2" fill="#5b6d68">realigns state</text>
+
+          <!-- Planner -->
+          <rect x="374" y="78" width="122" height="48" rx="20" fill="#e8f4ef" stroke="#1e5246" stroke-width="1.6"/>
+          <text x="435" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e5246">Planner / Policy</text>
+          <text x="435" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.2" fill="#2d6e5e">robot control</text>
+
+          <!-- Robot arm -->
+          <rect x="540" y="78" width="110" height="48" rx="9" fill="#ffffff" stroke="#b9c6c0" stroke-width="1.4"/>
+          <text x="595" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#182723">Robot Arm</text>
+          <text x="595" y="115" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.2" fill="#5b6d68">lifts blue ball</text>
+
+          <!-- Glowing pulse on real-world loop + secondary sim-to-real pulse -->
+          <circle r="4.5" fill="#1e5246" stroke="#ffffff" stroke-width="1.5">
+            <animateMotion dur="3.8s" repeatCount="indefinite" path="M148 102 H594 V158 Q594 166 586 166 H94 Q86 166 86 158 V102 Z"/>
+          </circle>
+          <circle r="3.5" fill="#785c84" stroke="#ffffff" stroke-width="1.2">
+            <animateMotion dur="2.6s" repeatCount="indefinite" path="M316 40 H435 V78"/>
+          </circle>
+        </svg>`,
+    },
+  };
+
+  function syncVideoPair(master, slave) {
+    if (!master || !slave) return;
+    if (master.readyState >= 2 && slave.readyState >= 2) {
+      if (Math.abs(master.currentTime - slave.currentTime) > 0.06) {
+        slave.currentTime = master.currentTime;
+      }
+      if (!master.paused && slave.paused) slave.play().catch(() => {});
+      if (master.paused && !slave.paused) slave.pause();
+    }
+  }
+
+  function loadSyncedVideos(vA, vB, srcA, srcB, posterB) {
+    vA.pause();
+    vB.pause();
+    vA.src = srcA;
+    vB.src = srcB;
+    if (posterB) vB.poster = posterB;
+    vA.currentTime = 0;
+    vB.currentTime = 0;
+    let readyA = false, readyB = false;
+    const go = () => {
+      if (readyA && readyB) {
+        vA.currentTime = 0;
+        vB.currentTime = 0;
+        vA.play().catch(() => {});
+        vB.play().catch(() => {});
+      }
+    };
+    vA.addEventListener("canplay", () => { readyA = true; go(); }, { once: true });
+    vB.addEventListener("canplay", () => { readyB = true; go(); }, { once: true });
+    vA.load();
+    vB.load();
+  }
+
   async function init() {
-    // Interactive Classical Courtyard Clay <-> Cinema Wipe Controller
+    // 1. Live Synchronized Dual-Video Ramp Studio in Hero
     const vp = document.getElementById("stage-viewport");
     const range = document.getElementById("stage-range");
     const sweepBtn = document.getElementById("stage-sweep-btn");
-    let splitVal = 48;
+    const playBtn = document.getElementById("hero-play-btn");
+    const vProxy = document.getElementById("hero-vid-proxy");
+    const vRender = document.getElementById("hero-vid-render");
+    const tlFill = document.getElementById("hero-tl-fill");
+    const tlEvent = document.getElementById("hero-tl-event");
+    const capDot = document.getElementById("hero-cap-dot");
+    const capText = document.getElementById("hero-cap-text");
+
+    let splitVal = 50;
     let sweepDir = 1;
     let autoSweep = true;
     let dragging = false;
 
     const setSplit = (pct) => {
-      splitVal = Math.max(6, Math.min(94, pct));
+      splitVal = Math.max(4, Math.min(96, pct));
       vp.style.setProperty("--split", `${splitVal.toFixed(1)}%`);
       range.value = Math.round(splitVal);
     };
 
-    const tickSweep = () => {
+    // 2. Chapter 3 "Who Decides?" Interactive Decision-Loop Theatre
+    const wdLeft = document.getElementById("wd-vid-left");
+    const wdRight = document.getElementById("wd-vid-right");
+    const wdLeftPill = document.getElementById("wd-left-pill");
+    const wdRightPill = document.getElementById("wd-right-pill");
+    const wdKicker = document.getElementById("wd-stage-kicker");
+    const wdTitle = document.getElementById("wd-stage-title");
+    const wdStatus = document.getElementById("wd-loop-status");
+    const wdSvgHost = document.getElementById("wd-loop-svg-host");
+    let activeWd = "director";
+    let activeVMode = "pair";
+
+    const setWhoDecides = (key) => {
+      const d = WD_DOMAINS[key];
+      if (!d) return;
+      activeWd = key;
+      document.querySelectorAll("#wd-cards .wd-card").forEach((c) => c.classList.toggle("active", c.dataset.wd === key));
+      wdKicker.textContent = d.kicker;
+      wdKicker.style.color = d.color;
+      wdTitle.textContent = d.title;
+      wdStatus.textContent = d.loopStatus;
+      wdSvgHost.innerHTML = d.svg();
+      if (activeVMode === "pair") {
+        wdLeftPill.textContent = "Upstream 3D Clay Proxy · S(t)";
+        wdRightPill.textContent = "MiniMax-H3 2K Render · Y(t)";
+        loadSyncedVideos(wdLeft, wdRight, `assets/ramp/proxy_${key}.mp4`, `assets/ramp/render_${key}.mp4`, `assets/ramp/poster_${key}.jpg`);
+      } else {
+        wdLeftPill.textContent = d.baseCompareLabel;
+        wdRightPill.textContent = d.editCompareLabel;
+        loadSyncedVideos(wdLeft, wdRight, `assets/ramp/render_base.mp4`, `assets/ramp/render_${key}.mp4`, `assets/ramp/poster_${key}.jpg`);
+      }
+    };
+
+    document.querySelectorAll("#wd-cards .wd-card").forEach((card) => {
+      card.addEventListener("click", () => setWhoDecides(card.dataset.wd));
+    });
+    document.querySelectorAll("#wd-mode-toggle .wd-mbtn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("#wd-mode-toggle .wd-mbtn").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeVMode = btn.dataset.vmode;
+        setWhoDecides(activeWd);
+      });
+    });
+    setWhoDecides("director");
+
+    // Combined RAF loop for hero auto-wipe + strict frame-lock sync of both video pairs
+    const tickFrame = () => {
       if (autoSweep && !dragging) {
-        splitVal += sweepDir * 0.22;
+        splitVal += sweepDir * 0.24;
         if (splitVal >= 82) sweepDir = -1;
         if (splitVal <= 18) sweepDir = 1;
         setSplit(splitVal);
       }
-      requestAnimationFrame(tickSweep);
+      syncVideoPair(vProxy, vRender);
+      syncVideoPair(wdLeft, wdRight);
+      if (vProxy && vProxy.duration > 0) {
+        tlFill.style.width = `${Math.min(100, (vProxy.currentTime / vProxy.duration) * 100).toFixed(1)}%`;
+      }
+      requestAnimationFrame(tickFrame);
     };
-    requestAnimationFrame(tickSweep);
+    requestAnimationFrame(tickFrame);
 
     const stopAuto = () => {
       autoSweep = false;
-      sweepBtn.textContent = "▶ Auto-Wipe";
+      sweepBtn.textContent = "▶ Wipe";
     };
 
     range.addEventListener("input", (e) => {
@@ -322,14 +655,34 @@
 
     sweepBtn.addEventListener("click", () => {
       autoSweep = !autoSweep;
-      sweepBtn.textContent = autoSweep ? "⏸ Auto-Wipe" : "▶ Auto-Wipe";
+      sweepBtn.textContent = autoSweep ? "⏸ Wipe" : "▶ Wipe";
     });
 
-    document.querySelectorAll(".stage-btn[data-moment]").forEach((btn) => {
+    playBtn.addEventListener("click", () => {
+      if (vProxy.paused) {
+        vProxy.play().catch(() => {});
+        vRender.play().catch(() => {});
+        playBtn.textContent = "⏸";
+      } else {
+        vProxy.pause();
+        vRender.pause();
+        playBtn.textContent = "▶";
+      }
+    });
+
+    document.querySelectorAll("#hero-scenario-btns .stage-btn[data-sc]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        document.querySelectorAll(".stage-btn[data-moment]").forEach((b) => b.classList.remove("active"));
+        const sc = btn.dataset.sc;
+        const meta = RAMP_SCENARIOS[sc];
+        if (!meta) return;
+        document.querySelectorAll("#hero-scenario-btns .stage-btn[data-sc]").forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
-        vp.dataset.moment = btn.dataset.moment;
+        capDot.style.background = meta.dot;
+        capDot.style.boxShadow = `0 0 0 3px ${meta.dot}44`;
+        capText.innerHTML = meta.caption;
+        tlEvent.style.left = `${meta.eventPct}%`;
+        playBtn.textContent = "⏸";
+        loadSyncedVideos(vProxy, vRender, `assets/ramp/proxy_${sc}.mp4`, `assets/ramp/render_${sc}.mp4`, `assets/ramp/poster_${sc}.jpg`);
       });
     });
 

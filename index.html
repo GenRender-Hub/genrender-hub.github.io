@@ -21,6 +21,7 @@
         <span>GENERATIVE <b>RENDERERS</b></span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
+        <a href="#who-decides">Who Decides?</a>
         <a href="#perspective">Specification Ladder</a>
         <a href="#metro-roadmap">Evolution Roadmap</a>
         <a href="#matrix">System Matrix</a>
@@ -80,220 +81,50 @@
           </nav>
         </div>
 
-        <!-- 100% ORIGINAL INTERACTIVE CLASSICAL COURTYARD: DRAG CLAY WIREFRAME <-> SUNLIT GENERATIVE RENDER! -->
+        <!-- LIVE SYNCHRONIZED 3D CLAY PROXY <-> MINIMAX-H3 2K GENERATIVE RENDER STAGE (CH. 3 RAMP STORY) -->
         <figure class="atelier-stage" id="atelier-stage">
           <div class="stage-bar">
             <span class="stage-title">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-8h6v8"/></svg>
-              Classical Courtyard · Interactive Renderer Wipe
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Live Render · 3D Proxy ⇄ MiniMax-H3 2K
             </span>
-            <div class="stage-controls">
-              <button type="button" class="stage-btn active" data-moment="duel">0:02 Clash</button>
-              <button type="button" class="stage-btn" data-moment="knockdown">0:04 Red Falls</button>
-              <button type="button" class="stage-btn" id="stage-sweep-btn">⏸ Auto-Wipe</button>
+            <div class="stage-controls" id="hero-scenario-btns">
+              <button type="button" class="stage-btn active" data-sc="robot">Robot</button>
+              <button type="button" class="stage-btn" data-sc="director">Director</button>
+              <button type="button" class="stage-btn" data-sc="engine">Engine</button>
+              <button type="button" class="stage-btn" data-sc="base">Base</button>
+              <button type="button" class="stage-btn is-wipe" id="stage-sweep-btn" title="Toggle auto-wipe">⏸ Wipe</button>
             </div>
           </div>
 
-          <div class="stage-viewport" id="stage-viewport" data-moment="duel" style="--split:48%;">
-            <span class="stage-pill left">Upstream 3D Clay Proxy · s(t)</span>
-            <span class="stage-pill right">Generative Video Render · Y(t)</span>
+          <div class="stage-viewport stage-video-vp" id="stage-viewport" style="--split:50%;">
+            <span class="stage-pill left">3D Clay Proxy · S(t)</span>
+            <span class="stage-pill right">MiniMax-H3 2K Render · Y(t)</span>
 
-            <!-- LAYER 1 (LEFT / UNDERNEATH): ARCHITECTURAL CLAY & WIREFRAME SPECIFICATION -->
-            <svg class="stage-layer" viewBox="0 0 640 390" fill="none" role="img" aria-label="Upstream 3D clay proxy of a classical courtyard with two wireframe fighters and camera frustum">
-              <defs>
-                <pattern id="bp-grid" width="24" height="24" patternUnits="userSpaceOnUse">
-                  <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#cfd5de" stroke-width="0.7"/>
-                </pattern>
-              </defs>
-              <rect width="640" height="390" fill="#f3f2f6"/>
-              <rect width="640" height="390" fill="url(#bp-grid)" opacity="0.75"/>
+            <video class="stage-layer stage-vid" id="hero-vid-proxy" src="assets/ramp/proxy_robot.mp4" autoplay loop muted playsinline preload="auto"></video>
+            <video class="stage-layer stage-layer-cinema stage-vid" id="hero-vid-render" src="assets/ramp/render_robot.mp4" poster="assets/ramp/poster_robot.jpg" autoplay loop muted playsinline preload="auto"></video>
 
-              <!-- Clay horizon & perspective courtyard tiles -->
-              <path d="M0 264H640V390H0Z" fill="#e5e3eb"/>
-              <g stroke="#b8b2c7" stroke-width="0.9">
-                <line x1="0" y1="264" x2="640" y2="264"/>
-                <line x1="0" y1="292" x2="640" y2="292"/>
-                <line x1="0" y1="330" x2="640" y2="330"/>
-                <line x1="320" y1="264" x2="320" y2="390"/>
-                <line x1="250" y1="264" x2="170" y2="390"/>
-                <line x1="180" y1="264" x2="35" y2="390"/>
-                <line x1="390" y1="264" x2="470" y2="390"/>
-                <line x1="460" y1="264" x2="605" y2="390"/>
-              </g>
-
-              <!-- Classical colonnade & temple pediment in monochrome clay wireframe -->
-              <g stroke="#7c6d8c" stroke-width="1.3" fill="#e9e6ef">
-                <!-- Pediment -->
-                <polygon points="74,106 320,44 566,106" fill="#ece9f2"/>
-                <polygon points="108,100 320,54 532,100" fill="none" stroke="#9b8ea9" stroke-dasharray="4 3"/>
-                <rect x="78" y="106" width="484" height="16" fill="#e0dce8"/>
-                <!-- 6 Clay fluted columns -->
-                <rect x="96" y="122" width="24" height="142"/><line x1="104" y1="122" x2="104" y2="264" stroke="#b0a5bd"/><line x1="112" y1="122" x2="112" y2="264" stroke="#b0a5bd"/>
-                <rect x="174" y="122" width="24" height="142"/><line x1="182" y1="122" x2="182" y2="264" stroke="#b0a5bd"/><line x1="190" y1="122" x2="190" y2="264" stroke="#b0a5bd"/>
-                <rect x="252" y="122" width="24" height="142"/><line x1="260" y1="122" x2="260" y2="264" stroke="#b0a5bd"/>
-                <rect x="364" y="122" width="24" height="142"/><line x1="372" y1="122" x2="372" y2="264" stroke="#b0a5bd"/>
-                <rect x="442" y="122" width="24" height="142"/><line x1="450" y1="122" x2="450" y2="264" stroke="#b0a5bd"/>
-                <rect x="520" y="122" width="24" height="142"/><line x1="528" y1="122" x2="528" y2="264" stroke="#b0a5bd"/>
-                <!-- Central arch wireframe -->
-                <path d="M276 264V186A44 44 0 0 1 364 186V264" fill="none" stroke="#785c84" stroke-dasharray="5 3" stroke-width="1.5"/>
-              </g>
-
-              <!-- Orbiting Camera Trajectory Frustum C(t) -->
-              <path d="M74 334 C 190 368, 450 368, 566 334" stroke="#785c84" stroke-width="1.5" stroke-dasharray="6 4" fill="none"/>
-              <g class="cam-orbit">
-                <polygon points="86,318 110,308 110,334 86,324" fill="#785c84" fill-opacity="0.22" stroke="#785c84" stroke-width="1.4"/>
-                <rect x="66" y="313" width="20" height="15" rx="3" fill="#785c84"/>
-                <text x="116" y="325" font-size="9.5" font-weight="700" font-family="monospace" fill="#785c84">CAM C(t)</text>
-              </g>
-
-              <!-- Fighter 1 (Red) — Clay Mannequin + 3D Oriented Bounding Box & Skeleton -->
-              <g class="red-bbox">
-                <rect x="218" y="188" width="84" height="128" rx="4" fill="#a75246" fill-opacity="0.07" stroke="#a75246" stroke-width="1.4" stroke-dasharray="5 3"/>
-                <text x="223" y="201" font-size="8.5" font-weight="700" font-family="monospace" fill="#a75246">ID:01 · RED</text>
-                <!-- Clay capsule skeleton -->
-                <circle cx="264" cy="218" r="11" fill="#d9d4e2" stroke="#6f5c80" stroke-width="1.6"/>
-                <path d="M264 229v36M264 238l-22 14M264 238l32-12M264 265l-18 42M264 265l20 42" stroke="#6f5c80" stroke-width="5" stroke-linecap="round"/>
-                <line x1="296" y1="226" x2="338" y2="210" stroke="#a75246" stroke-width="2" stroke-dasharray="3 2"/>
-                <circle cx="264" cy="238" r="3" fill="#a75246"/><circle cx="264" cy="265" r="3" fill="#a75246"/>
-              </g>
-
-              <!-- Fighter 2 (Blue) — Clay Mannequin + 3D Bounding Box -->
-              <g class="blue-fighter">
-                <rect x="348" y="186" width="84" height="130" rx="4" fill="#4e6e91" fill-opacity="0.07" stroke="#4e6e91" stroke-width="1.4" stroke-dasharray="5 3"/>
-                <text x="353" y="199" font-size="8.5" font-weight="700" font-family="monospace" fill="#4e6e91">ID:02 · BLUE</text>
-                <circle cx="386" cy="216" r="11" fill="#d9d4e2" stroke="#4e6e91" stroke-width="1.6"/>
-                <path d="M386 227v36M386 236l-30-6M386 236l22 14M386 263l-18 44M386 263l20 44" stroke="#4e6e91" stroke-width="5" stroke-linecap="round"/>
-                <line x1="356" y1="230" x2="314" y2="214" stroke="#4e6e91" stroke-width="2" stroke-dasharray="3 2"/>
-              </g>
-
-              <!-- Depth / state readout pill -->
-              <rect x="14" y="354" width="194" height="24" rx="5" fill="#ffffff" fill-opacity="0.88" stroke="#cfc6db"/>
-              <text x="24" y="370" font-size="9.5" font-family="monospace" font-weight="600" fill="#5e4b70">STATE: layout+pose+cam ALIGNED</text>
-            </svg>
-
-            <!-- LAYER 2 (RIGHT / CLIPPED OVERLAY): SUNLIT CLASSICAL GENERATIVE VIDEO RENDER -->
-            <svg class="stage-layer stage-layer-cinema" viewBox="0 0 640 390" fill="none" role="img" aria-label="Rendered sunlit classical Mediterranean courtyard with red and blue classical warriors dueling">
-              <defs>
-                <linearGradient id="cl-sky" x1="0" y1="0" x2="0" y2="265" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#bfe0de"/><stop offset=".55" stop-color="#e9f2ea"/><stop offset="1" stop-color="#fae9c8"/>
-                </linearGradient>
-                <linearGradient id="cl-floor" x1="0" y1="264" x2="0" y2="390" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#ece1cb"/><stop offset="1" stop-color="#d7c4a1"/>
-                </linearGradient>
-                <linearGradient id="cl-marble" x1="0" y1="0" x2="1" y2="0">
-                  <stop stop-color="#fffdf8"/><stop offset=".6" stop-color="#efe6d5"/><stop offset="1" stop-color="#d8cab0"/>
-                </linearGradient>
-                <radialGradient id="cl-sun" cx="50%" cy="50%" r="50%">
-                  <stop stop-color="#fff3c4" stop-opacity=".95"/><stop offset=".45" stop-color="#f5c976" stop-opacity=".35"/><stop offset="1" stop-color="#f5c976" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-
-              <!-- Mediterranean sunlit sky + golden sun + drifting clouds -->
-              <rect width="640" height="266" fill="url(#cl-sky)"/>
-              <circle class="sun-glow" cx="534" cy="72" r="68" fill="url(#cl-sun)"/>
-              <circle cx="534" cy="72" r="21" fill="#fff2be"/>
-              <g class="cloud-drift" fill="#ffffff" fill-opacity="0.72">
-                <ellipse cx="140" cy="64" rx="44" ry="13"/><ellipse cx="168" cy="58" rx="30" ry="11"/>
-                <ellipse cx="420" cy="80" rx="48" ry="12"/><ellipse cx="448" cy="74" rx="28" ry="10"/>
-              </g>
-
-              <!-- Distant emerald hills & cypress trees -->
-              <path d="M0 264 L78 206 L154 236 L252 194 L374 230 L492 188 L640 242 V264 Z" fill="#89b09e"/>
-              <path d="M0 264 L110 228 L230 248 L360 218 L510 246 L640 222 V264 Z" fill="#5e8a79"/>
-              <!-- Mediterranean cypress silhouettes -->
-              <g fill="#265446">
-                <ellipse cx="42" cy="204" rx="14" ry="52"/><ellipse cx="64" cy="218" rx="11" ry="40"/>
-                <ellipse cx="596" cy="198" rx="15" ry="56"/><ellipse cx="574" cy="216" rx="11" ry="42"/>
-              </g>
-
-              <!-- Warm travertine courtyard floor + cast sun shadows -->
-              <rect y="264" width="640" height="126" fill="url(#cl-floor)"/>
-              <g stroke="#c6b18e" stroke-width="0.9" opacity="0.75">
-                <line x1="0" y1="264" x2="640" y2="264"/><line x1="0" y1="292" x2="640" y2="292"/><line x1="0" y1="330" x2="640" y2="330"/>
-                <line x1="320" y1="264" x2="320" y2="390"/><line x1="250" y1="264" x2="170" y2="390"/><line x1="390" y1="264" x2="470" y2="390"/>
-              </g>
-
-              <!-- Classical Marble Temple & Colonnade -->
-              <g>
-                <!-- Terracotta roof trim & marble pediment -->
-                <polygon points="70,106 320,40 570,106" fill="#c76f58" stroke="#9e4d3a" stroke-width="1.5"/>
-                <polygon points="84,106 320,49 556,106" fill="#f7f0e2" stroke="#cbb999" stroke-width="1.2"/>
-                <circle cx="320" cy="84" r="11" fill="#d9ad5b" stroke="#a67a2e" stroke-width="1.2"/>
-                <rect x="78" y="106" width="484" height="16" fill="#ebe0cb" stroke="#c7b595" stroke-width="1.2"/>
-                <!-- 6 sunlit fluted marble columns -->
-                <g fill="url(#cl-marble)" stroke="#c7b698" stroke-width="1.1">
-                  <rect x="96" y="122" width="24" height="142"/><rect x="174" y="122" width="24" height="142"/>
-                  <rect x="252" y="122" width="24" height="142"/><rect x="364" y="122" width="24" height="142"/>
-                  <rect x="442" y="122" width="24" height="142"/><rect x="520" y="122" width="24" height="142"/>
-                </g>
-                <!-- Hanging emerald ivy garlands -->
-                <path d="M120 124 Q147 146 174 124 M198 124 Q225 144 252 124 M388 124 Q415 144 442 124 M466 124 Q493 146 520 124" stroke="#36705d" stroke-width="4" stroke-linecap="round" fill="none"/>
-                <!-- Warm sunlight beam across courtyard -->
-                <polygon points="480,122 570,122 390,390 210,390" fill="#fff3c4" fill-opacity="0.16"/>
-              </g>
-
-              <!-- Ground shadows under fighters -->
-              <ellipse cx="268" cy="312" rx="34" ry="8" fill="#8f7856" fill-opacity="0.34"/>
-              <ellipse cx="388" cy="312" rx="34" ry="8" fill="#8f7856" fill-opacity="0.34"/>
-
-              <!-- Classical Red Warrior (Flowing Crimson Cloak, Bronze Helm, Gladius) -->
-              <g class="red-fighter">
-                <!-- Flowing crimson cape -->
-                <path d="M256 232 C 228 242, 212 268, 206 294 L 252 284 Z" fill="#b84a3c"/>
-                <!-- Tunic & bronze cuirass -->
-                <path d="M252 230 h24 l6 42 h-36 Z" fill="#d96754" stroke="#8f3227" stroke-width="1.3"/>
-                <rect x="255" y="232" width="18" height="24" rx="4" fill="#d9aa5b" stroke="#966c27" stroke-width="1.2"/>
-                <!-- Legs & sandals -->
-                <path d="M258 272 l-12 36 M270 272 l14 36" stroke="#c8946e" stroke-width="6.5" stroke-linecap="round"/>
-                <path d="M242 308 h12 M280 308 h12" stroke="#7c4e28" stroke-width="3.5" stroke-linecap="round"/>
-                <!-- Classical plumed helm & head -->
-                <path d="M252 204 Q264 191 278 205" stroke="#c44536" stroke-width="6" stroke-linecap="round"/>
-                <circle cx="264" cy="217" r="11" fill="#e8ba96" stroke="#9c6c4a" stroke-width="1.2"/>
-                <path d="M253 215 A11 11 0 0 1 275 215 Z" fill="#d9aa5b" stroke="#8c6323" stroke-width="1.2"/>
-                <!-- Bronze shield & sword arm -->
-                <ellipse cx="242" cy="252" rx="11" ry="15" fill="#e0b565" stroke="#8f6624" stroke-width="1.8"/>
-                <path d="M273 238 l24 -11" stroke="#e8ba96" stroke-width="5.5" stroke-linecap="round"/>
-                <line x1="296" y1="227" x2="342" y2="208" stroke="#f0f4f7" stroke-width="3.2" stroke-linecap="round"/>
-                <line x1="296" y1="227" x2="342" y2="208" stroke="#8c9fae" stroke-width="1"/>
-              </g>
-
-              <!-- Classical Blue Warrior (Sapphire Cloak, Silver Helm, Blade) -->
-              <g class="blue-fighter">
-                <!-- Flowing azure cape -->
-                <path d="M394 230 C 422 242, 438 268, 444 294 L 398 282 Z" fill="#355e8a"/>
-                <!-- Tunic & silver cuirass -->
-                <path d="M374 228 h24 l6 42 h-36 Z" fill="#4f7fb0" stroke="#28486b" stroke-width="1.3"/>
-                <rect x="377" y="230" width="18" height="24" rx="4" fill="#d6dfe6" stroke="#6d8194" stroke-width="1.2"/>
-                <!-- Legs -->
-                <path d="M380 270 l-12 38 M392 270 l14 38" stroke="#e3b692" stroke-width="6.5" stroke-linecap="round"/>
-                <path d="M364 308 h12 M402 308 h12" stroke="#5c4734" stroke-width="3.5" stroke-linecap="round"/>
-                <!-- Plumed silver helm & head -->
-                <path d="M372 203 Q386 190 398 204" stroke="#3c6e9c" stroke-width="6" stroke-linecap="round"/>
-                <circle cx="386" cy="215" r="11" fill="#f0c8a8" stroke="#a67956" stroke-width="1.2"/>
-                <path d="M375 213 A11 11 0 0 1 397 213 Z" fill="#cdd8e0" stroke="#617587" stroke-width="1.2"/>
-                <!-- Sword arm clashing & round shield -->
-                <path d="M376 236 l-24 -6" stroke="#f0c8a8" stroke-width="5.5" stroke-linecap="round"/>
-                <line x1="353" y1="230" x2="310" y2="213" stroke="#f4f8fb" stroke-width="3.2" stroke-linecap="round"/>
-                <ellipse cx="408" cy="252" rx="11" ry="15" fill="#4f7fb0" stroke="#d9aa5b" stroke-width="2"/>
-                <!-- Golden spark at sword clash -->
-                <path d="M326 206l2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" fill="#ffe184"/>
-              </g>
-
-              <!-- Rendered output badge -->
-              <rect x="436" y="354" width="190" height="24" rx="5" fill="#ffffff" fill-opacity="0.90" stroke="#bdd8ce"/>
-              <text x="446" y="370" font-size="9.5" font-family="monospace" font-weight="700" fill="#1e5246">RENDER: cloth+light+physics</text>
-            </svg>
-
-            <!-- Draggable Golden Shader Wipe Bar -->
             <div class="stage-divider" id="stage-divider">
               <div class="stage-handle" aria-hidden="true">⇄</div>
             </div>
+
+            <div class="stage-timeline" aria-hidden="true">
+              <div class="stage-tl-fill" id="hero-tl-fill"></div>
+              <div class="stage-tl-event" id="hero-tl-event" style="left:31%;" title="Intervention event"></div>
+            </div>
+          </div>
+
+          <div class="stage-caption-strip" id="hero-stage-caption">
+            <span class="cap-dot" id="hero-cap-dot"></span>
+            <span id="hero-cap-text"><b>Physical &amp; Embodied · Simulator &amp; Scene Decide:</b> Robot gripper picks up the blue ball before the red ball glides underneath.</span>
           </div>
 
           <div class="stage-slider-row">
-            <span><b>Drag wipe:</b> Clay Proxy</span>
-            <input id="stage-range" type="range" min="6" max="94" value="48" aria-label="Compare upstream 3D clay proxy and rendered sunlit video" />
-            <span>Sunlit Render</span>
+            <button type="button" class="stage-play-btn" id="hero-play-btn" title="Play / Pause">⏸</button>
+            <span><b>Wipe:</b> Proxy</span>
+            <input id="stage-range" type="range" min="4" max="96" value="50" aria-label="Compare 3D clay proxy video and MiniMax-H3 photoreal render" />
+            <span>Render</span>
+            <a class="stage-deep-lnk" href="#who-decides">Full story ↓</a>
           </div>
         </figure>
       </div>
@@ -380,8 +211,112 @@
       </div>
     </section>
 
+    <!-- CHAPTER 3 DRIVING DOMAINS: WHO DECIDES WHAT HAPPENS NEXT? -->
+    <section class="sec alt" id="who-decides">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow"><span class="status-dot"></span> Chapter 3 · Driving Domains</div>
+            <h2>Who Decides What Happens Next When Video Models Become Renderers?</h2>
+          </div>
+          <p>One ramp shot—a red ball rolling down to knock aside a blue ball blocking the exit—splits into <b>three closed decision loops</b> depending on who owns the final say. Click a domain below to watch the paired <b>3D Proxy → MiniMax-H3 2K Render</b> and trace how authority flows around the renderer.</p>
+        </div>
+
+        <div class="wd-grid">
+          <!-- LEFT: 3 INTERACTIVE DOMAIN CARDS -->
+          <div class="wd-cards" id="wd-cards">
+            <button type="button" class="wd-card active" data-wd="director" style="--wdc:#ad803b;">
+              <div class="wd-card-top">
+                <span class="wd-badge">01 · Creative Production</span>
+                <span class="wd-tiers"><b>T1</b> · <b>T2</b> · <b>T3a</b></span>
+              </div>
+              <h3>The Director Decides</h3>
+              <p class="wd-req"><i>“Shift the impact 0.5 s later—change one thing while keeping ramp, camera, and lighting locked.”</i></p>
+              <div class="wd-meta">
+                <span><b>Bottleneck:</b> Cost of revising a shot</span>
+              </div>
+              <div class="wd-chips">
+                <span>World Narrative: 18.6→5.1 attempts</span>
+                <span>VOL-Agent: 3.75→4.15 w/ clay</span>
+              </div>
+            </button>
+
+            <button type="button" class="wd-card" data-wd="engine" style="--wdc:#785c84;">
+              <div class="wd-card-top">
+                <span class="wd-badge">02 · Interactive Worlds</span>
+                <span class="wd-tiers"><b>T3b</b> Streamed</span>
+              </div>
+              <h3>The Engine Decides</h3>
+              <p class="wd-req"><i>“Player removes the blue ball before collision—authoritative world state must override visual memory.”</i></p>
+              <div class="wd-meta">
+                <span><b>Bottleneck:</b> Memory of entities &amp; rules</span>
+              </div>
+              <div class="wd-chips">
+                <span>CombatStateBench: 98% vs 8%</span>
+                <span>BoxWorld: 97.3% vs 16.2%</span>
+              </div>
+            </button>
+
+            <button type="button" class="wd-card" data-wd="robot" style="--wdc:#1e5246;">
+              <div class="wd-card-top">
+                <span class="wd-badge">03 · Physical &amp; Embodied</span>
+                <span class="wd-tiers"><b>T3a</b> Data + Real Loop</span>
+              </div>
+              <h3>The Simulator &amp; Scene Decide</h3>
+              <p class="wd-req"><i>“Robot arm reaches down to pick up the blue ball—simulator renders data, real tabletop confirms the grasp.”</i></p>
+              <div class="wd-meta">
+                <span><b>Bottleneck:</b> Physical consistency &amp; grounding</span>
+              </div>
+              <div class="wd-chips">
+                <span>RoboRender: 71% vs 10% real</span>
+                <span>Cosmos-T2.5: 24/30 vs 1/30</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- RIGHT: SYNCHRONIZED DUAL-VIDEO PAIR + ANIMATED DECISION LOOP SVG -->
+          <div class="wd-theatre">
+            <div class="wd-video-head">
+              <div>
+                <span class="wd-eyebrow" id="wd-stage-kicker">CREATIVE PRODUCTION · THE DIRECTOR DECIDES</span>
+                <strong id="wd-stage-title">Targeted Revision: Delayed Impact (+0.6 s) on Locked Camera</strong>
+              </div>
+              <div class="wd-mode-toggle" id="wd-mode-toggle">
+                <button type="button" class="wd-mbtn active" data-vmode="pair">Side-by-Side</button>
+                <button type="button" class="wd-mbtn" data-vmode="compare">Compare vs Base</button>
+              </div>
+            </div>
+
+            <div class="wd-video-pair" id="wd-video-pair">
+              <div class="wd-vbox">
+                <span class="wd-vpill is-left" id="wd-left-pill">Upstream 3D Clay Proxy · S(t)</span>
+                <video id="wd-vid-left" src="assets/ramp/proxy_director.mp4" autoplay loop muted playsinline></video>
+              </div>
+              <div class="wd-v-arrow" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16h22M19 8l8 8-8 8"/></svg>
+                <span>H3 2K</span>
+              </div>
+              <div class="wd-vbox">
+                <span class="wd-vpill is-right" id="wd-right-pill">Generative Video Render · Y(t)</span>
+                <video id="wd-vid-right" src="assets/ramp/render_director.mp4" poster="assets/ramp/poster_director.jpg" autoplay loop muted playsinline></video>
+              </div>
+            </div>
+
+            <!-- ANIMATED CLOSED DECISION LOOP (FAITHFUL TO FIG. 7 ch03_loops.tex) -->
+            <div class="wd-loop-box">
+              <div class="wd-loop-bar">
+                <span><b>Animated Decision Loop</b> (Fig. 7) — Double border = <b>Final Say</b></span>
+                <span class="wd-loop-status" id="wd-loop-status">Loop closes via director review</span>
+              </div>
+              <div id="wd-loop-svg-host"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- PERSPECTIVE: SPECIFICATION LADDER WITH BESPOKE SVG GLYPHS -->
-    <section class="sec alt" id="perspective">
+    <section class="sec" id="perspective">
       <div class="wrap">
         <div class="sec-head">
           <div>
@@ -466,7 +401,7 @@
     <!-- ================================================================
          INTERACTIVE 4-LINE METRO EVOLUTION MAP (ORIGINAL PAPER FIG 2!)
          ================================================================ -->
-    <section class="sec" id="metro-roadmap">
+    <section class="sec alt" id="metro-roadmap">
       <div class="wrap">
         <div class="sec-head">
           <div>
@@ -499,7 +434,7 @@
     </section>
 
     <!-- SYSTEM COMPARISON MATRIX (68 SYSTEMS) -->
-    <section class="sec alt" id="matrix">
+    <section class="sec" id="matrix">
       <div class="wrap">
         <div class="sec-head">
           <div>
@@ -534,7 +469,7 @@
     </section>
 
     <!-- SEARCHABLE RESEARCH LIBRARY (336 CITED WORKS) -->
-    <section class="sec" id="library">
+    <section class="sec alt" id="library">
       <div class="wrap">
         <div class="sec-head">
           <div>
@@ -580,7 +515,7 @@
     </section>
 
     <!-- CITE & CONTRIBUTE -->
-    <section class="sec alt" id="cite">
+    <section class="sec" id="cite">
       <div class="wrap">
         <div class="sec-head">
           <div>
