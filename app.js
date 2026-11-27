@@ -562,84 +562,55 @@
   }
 
   async function init() {
-    // 1. Full-Bleed Cinematic Shader-Scan Opening Controller
-    const vp = document.getElementById("opening-cinema");
-    const dock = document.getElementById("cinema-dock");
-    const range = document.getElementById("stage-range");
-    const reelBtn = document.getElementById("stage-reel-btn");
-    const sweepBtn = document.getElementById("stage-sweep-btn");
-    const cursorBtn = document.getElementById("stage-cursor-btn");
+    // 1. Minimal Full-Bleed CinemaScope Opening Film Controller
+    const film = document.getElementById("hero-film");
     const playBtn = document.getElementById("hero-play-btn");
-    const vProxy = document.getElementById("hero-vid-proxy");
-    const vRender = document.getElementById("hero-vid-render");
+    const soundBtn = document.getElementById("hero-sound-btn");
     const tlFill = document.getElementById("hero-tl-fill");
-    const tlEvent = document.getElementById("hero-tl-event");
-    const capDot = document.getElementById("hero-cap-dot");
-    const capText = document.getElementById("hero-cap-text");
-    const heroTc = document.getElementById("hero-tc");
-    const heroState = document.getElementById("hero-state");
+    const chBtns = Array.from(document.querySelectorAll("#hero-chapters .dock-ch"));
 
-    const REEL_ORDER = ["robot", "director", "engine", "base"];
-    let activeHeroSc = "robot";
-    let autoReel = true;
-    let splitVal = 50;
-    let targetSplit = 50;
-    let sweepPhase = 0;
-    let autoSweep = true;
-    let cursorFollow = false;
-    let dragging = false;
+    const ICO_PAUSE = '<svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><rect x="3" y="2.5" width="3.5" height="11" rx="1"/><rect x="9.5" y="2.5" width="3.5" height="11" rx="1"/></svg>';
+    const ICO_PLAY  = '<svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M4 2.5 13.5 8 4 13.5Z"/></svg>';
+    const ICO_MUTED = '<svg class="dt-ico" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6v4h2.8L9 13V3L5.3 6H2.5Z"/><path d="M11.5 5.5l3 5M14.5 5.5l-3 5"/></svg><span>Sound</span>';
+    const ICO_SOUND = '<svg class="dt-ico" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6v4h2.8L9 13V3L5.3 6H2.5Z"/><path d="M11.4 5.2a3.8 3.8 0 0 1 0 5.6M13.3 3.4a6.4 6.4 0 0 1 0 9.2"/></svg><span>Sound On</span>';
 
-    const activateHeroScenario = (sc, keepReel = false) => {
-      const meta = RAMP_SCENARIOS[sc];
-      if (!meta) return;
-      activeHeroSc = sc;
-      if (!keepReel) {
-        autoReel = false;
-        if (reelBtn) reelBtn.classList.remove("active");
-      }
-      document.querySelectorAll("#hero-scenario-btns .dock-sc").forEach((b) => {
-        b.classList.toggle("active", b.dataset.sc === sc);
-        const bar = b.querySelector(".dsc-bar i");
-        if (bar) bar.style.width = "0%";
-      });
-      capDot.style.background = meta.dot;
-      capDot.style.boxShadow = `0 0 0 3px ${meta.dot}55`;
-      capText.innerHTML = meta.caption;
-      tlEvent.style.left = `${meta.eventPct}%`;
-      playBtn.innerHTML = '<svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><rect x="3" y="2.5" width="3.5" height="11" rx="1"/><rect x="9.5" y="2.5" width="3.5" height="11" rx="1"/></svg>';
-      vProxy.classList.add("is-swapping");
-      vRender.classList.add("is-swapping");
-      loadSyncedVideos(vProxy, vRender, `assets/ramp/proxy_${sc}.mp4`, `assets/ramp/render_${sc}.mp4`, `assets/ramp/poster_${sc}.jpg`);
-      setTimeout(() => {
-        vProxy.classList.remove("is-swapping");
-        vRender.classList.remove("is-swapping");
-      }, 240);
-    };
-
-    vProxy.addEventListener("ended", () => {
-      if (autoReel) {
-        const nextIdx = (REEL_ORDER.indexOf(activeHeroSc) + 1) % REEL_ORDER.length;
-        activateHeroScenario(REEL_ORDER[nextIdx], true);
-      } else {
-        vProxy.currentTime = 0;
-        vRender.currentTime = 0;
-        vProxy.play().catch(() => {});
-        vRender.play().catch(() => {});
-      }
-    });
-
-    if (reelBtn) {
-      reelBtn.addEventListener("click", () => {
-        autoReel = !autoReel;
-        reelBtn.classList.toggle("active", autoReel);
+    if (playBtn && film) {
+      playBtn.addEventListener("click", () => {
+        if (film.paused) {
+          film.play().catch(() => {});
+          playBtn.innerHTML = ICO_PAUSE;
+        } else {
+          film.pause();
+          playBtn.innerHTML = ICO_PLAY;
+        }
       });
     }
 
-    const setSplit = (pct) => {
-      splitVal = Math.max(4, Math.min(96, pct));
-      vp.style.setProperty("--split", `${splitVal.toFixed(2)}%`);
-      if (range) range.value = Math.round(splitVal);
-    };
+    if (soundBtn && film) {
+      soundBtn.addEventListener("click", () => {
+        film.muted = !film.muted;
+        if (!film.muted) {
+          film.volume = 0.72;
+          if (film.paused) {
+            film.play().catch(() => {});
+            if (playBtn) playBtn.innerHTML = ICO_PAUSE;
+          }
+        }
+        soundBtn.classList.toggle("is-on", !film.muted);
+        soundBtn.innerHTML = film.muted ? ICO_MUTED : ICO_SOUND;
+      });
+    }
+
+    chBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (!film) return;
+        film.currentTime = Number(btn.dataset.seek || 0);
+        if (film.paused) {
+          film.play().catch(() => {});
+          if (playBtn) playBtn.innerHTML = ICO_PAUSE;
+        }
+      });
+    });
 
     // 2. Chapter 3 "Who Decides?" Interactive Decision-Loop Theatre
     const wdLeft = document.getElementById("wd-vid-left");
@@ -664,8 +635,8 @@
       wdStatus.textContent = d.loopStatus;
       wdSvgHost.innerHTML = d.svg();
       if (activeVMode === "pair") {
-        wdLeftPill.textContent = "Upstream 3D Clay Proxy · S(t)";
-        wdRightPill.textContent = "Seedance 2.5 · 1080p Render";
+        wdLeftPill.textContent = "3D Proxy · S(t)";
+        wdRightPill.textContent = "Rendered Video · Y(t)";
         loadSyncedVideos(wdLeft, wdRight, `assets/ramp/proxy_${key}.mp4`, `assets/ramp/render_${key}.mp4`, `assets/ramp/poster_${key}.jpg`);
       } else {
         wdLeftPill.textContent = d.baseCompareLabel;
@@ -687,92 +658,28 @@
     });
     setWhoDecides("director");
 
-    // Combined 60fps RAF loop: smooth optical beam motion + frame-lock video sync + live CAD telemetry
+    // 60fps RAF loop: smooth chapter progress bar on opening film + frame-lock sync of Ch. 3 pair
     const tickFrame = () => {
-      if (autoSweep && !dragging && !cursorFollow) {
-        sweepPhase += 0.011;
-        setSplit(50 + Math.sin(sweepPhase) * 32);
-      } else if (cursorFollow && !dragging) {
-        setSplit(splitVal + (targetSplit - splitVal) * 0.14);
-      }
-      syncVideoPair(vProxy, vRender);
       syncVideoPair(wdLeft, wdRight);
-      if (vProxy && vProxy.duration > 0) {
-        const t = vProxy.currentTime;
-        const pct = Math.min(100, (t / vProxy.duration) * 100);
-        tlFill.style.width = `${pct.toFixed(1)}%`;
-        const activeBar = document.querySelector("#hero-scenario-btns .dock-sc.active .dsc-bar i");
-        if (activeBar) activeBar.style.width = `${pct.toFixed(1)}%`;
-        const secs = Math.floor(t);
-        const frms = Math.floor((t - secs) * 24);
-        if (heroTc) heroTc.textContent = `TC 00:0${secs}:${String(frms).padStart(2, "0")} · 24 FPS`;
-        if (heroState) heroState.textContent = telemetryFor(activeHeroSc, t);
+      if (film && film.duration > 0) {
+        const t = film.currentTime;
+        const pct = Math.min(100, (t / film.duration) * 100);
+        if (tlFill) tlFill.style.width = `${pct.toFixed(1)}%`;
+        chBtns.forEach((b) => {
+          const s = Number(b.dataset.start);
+          const e = Number(b.dataset.end);
+          const active = t >= s && (t < e || e >= film.duration - 0.15);
+          b.classList.toggle("active", active);
+          const bar = b.querySelector(".dsc-bar i");
+          if (bar) {
+            if (active) bar.style.width = `${Math.max(0, Math.min(100, ((t - s) / Math.max(0.1, e - s)) * 100)).toFixed(1)}%`;
+            else bar.style.width = t >= e ? "100%" : "0%";
+          }
+        });
       }
       requestAnimationFrame(tickFrame);
     };
     requestAnimationFrame(tickFrame);
-
-    const setBeamModes = (auto, follow) => {
-      autoSweep = auto;
-      cursorFollow = follow;
-      sweepBtn.classList.toggle("active", autoSweep);
-      cursorBtn.classList.toggle("active", cursorFollow);
-    };
-
-    const pctFromClientX = (clientX) => {
-      const rect = vp.getBoundingClientRect();
-      return ((clientX - rect.left) / rect.width) * 100;
-    };
-
-    vp.addEventListener("pointerdown", (e) => {
-      if (e.target.closest(".cinema-dock-wrap")) return;
-      dragging = true;
-      setBeamModes(false, false);
-      vp.setPointerCapture(e.pointerId);
-      setSplit(pctFromClientX(e.clientX));
-    });
-    vp.addEventListener("pointermove", (e) => {
-      if (dragging) {
-        setSplit(pctFromClientX(e.clientX));
-      } else if (cursorFollow && !e.target.closest(".cinema-dock-wrap")) {
-        targetSplit = Math.max(6, Math.min(94, pctFromClientX(e.clientX)));
-      }
-    });
-    vp.addEventListener("pointerup", () => (dragging = false));
-
-    sweepBtn.addEventListener("click", () => {
-      if (autoSweep) setBeamModes(false, false);
-      else {
-        sweepPhase = Math.asin(Math.max(-1, Math.min(1, (splitVal - 50) / 32)));
-        setBeamModes(true, false);
-      }
-    });
-    cursorBtn.addEventListener("click", () => {
-      if (cursorFollow) setBeamModes(false, false);
-      else {
-        targetSplit = splitVal;
-        setBeamModes(false, true);
-      }
-    });
-
-    const ICO_PAUSE = '<svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><rect x="3" y="2.5" width="3.5" height="11" rx="1"/><rect x="9.5" y="2.5" width="3.5" height="11" rx="1"/></svg>';
-    const ICO_PLAY  = '<svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M4 2.5 13.5 8 4 13.5Z"/></svg>';
-
-    playBtn.addEventListener("click", () => {
-      if (vProxy.paused) {
-        vProxy.play().catch(() => {});
-        vRender.play().catch(() => {});
-        playBtn.innerHTML = ICO_PAUSE;
-      } else {
-        vProxy.pause();
-        vRender.pause();
-        playBtn.innerHTML = ICO_PLAY;
-      }
-    });
-
-    document.querySelectorAll("#hero-scenario-btns .dock-sc[data-sc]").forEach((btn) => {
-      btn.addEventListener("click", () => activateHeroScenario(btn.dataset.sc, false));
-    });
 
     setActiveTier("T3a");
     document.querySelectorAll("#ladder-paths .path").forEach((c) => {

@@ -32,59 +32,20 @@
   </header>
 
   <main id="top">
-    <!-- FULL-BLEED CINEMATIC SHADER-SCAN OPENING SPLASH (3D CLAY PROXY <-> MINIMAX-H3 2K RENDER) -->
-    <section class="opening-cinema" id="opening-cinema" aria-labelledby="hero-title" style="--split:50%;">
-      <!-- Synchronized Dual 1080p Full-HD Video Background Layers -->
-      <video class="cinema-vid cinema-vid-proxy" id="hero-vid-proxy" src="assets/ramp/proxy_robot.mp4" autoplay muted playsinline preload="auto"></video>
-      <video class="cinema-vid cinema-vid-render" id="hero-vid-render" src="assets/ramp/render_robot.mp4" poster="assets/ramp/poster_robot.jpg" autoplay muted playsinline preload="auto"></video>
+    <!-- MINIMAL FULL-BLEED CINEMASCOPE OPENING FILM -->
+    <section class="opening-cinema opening-film" id="opening-cinema" aria-labelledby="hero-title">
+      <video class="cinema-vid cinema-film-vid" id="hero-film" src="assets/ramp/hero_opening.mp4" poster="assets/ramp/hero_opening_poster.jpg" autoplay loop muted playsinline preload="auto"></video>
 
-      <!-- Subtle top & bottom cinema scrims (middle action band stays 100% bright & unobstructed!) -->
+      <!-- Whisper-soft top & bottom editorial scrims -->
       <div class="cinema-scrim-top" aria-hidden="true"></div>
       <div class="cinema-scrim-bottom" aria-hidden="true"></div>
 
-      <!-- Clipped Technical CAD Wireframe Telemetry Layer (visible ONLY on Proxy left side of laser beam!) -->
-      <div class="cinema-hud-proxy" aria-hidden="true">
-        <div class="cad-grid-overlay"></div>
-        <div class="cad-corner tl"></div>
-        <div class="cad-corner bl"></div>
-        <div class="hud-badge hud-left-badge">
-          <span class="hud-sq"></span>
-          <span>UPSTREAM 3D CLAY PROXY · S(t)</span>
-        </div>
-        <div class="hud-telemetry" id="hero-telemetry">
-          <span class="tele-tc" id="hero-tc">TC 00:00:00 · 24 FPS</span>
-          <span class="tele-sep">|</span>
-          <span class="tele-state" id="hero-state">STATE: ROBOT_APPROACH</span>
-        </div>
-      </div>
-
-      <!-- Clipped Photoreal Cinema Layer Badge (visible ONLY on Rendered right side of laser beam!) -->
-      <div class="cinema-hud-render" aria-hidden="true">
-        <div class="cad-corner tr"></div>
-        <div class="cad-corner br"></div>
-        <div class="hud-badge hud-right-badge">
-          <span class="hud-dot-live"></span>
-          <span>GENERATIVE RENDER · Y(t) · SEEDANCE 2.5 · 1080P</span>
-        </div>
-      </div>
-
-      <!-- Luminous Volumetric Optical Render-Scan Beam -->
-      <div class="cinema-beam" id="stage-divider" aria-hidden="true">
-        <div class="beam-aura"></div>
-        <div class="beam-core"></div>
-        <div class="beam-flare"></div>
-        <div class="beam-reticle">
-          <span class="reticle-ring"></span>
-          <span class="reticle-arrows">⇄</span>
-        </div>
-      </div>
-
-      <!-- Floating Upper Editorial Title Overlay -->
+      <!-- Minimal Floating Editorial Title -->
       <div class="cinema-header">
         <div class="wrap cinema-header-inner">
           <div class="cinema-eyebrow">
             <span class="hud-dot-live"></span>
-            <span>SURVEY &amp; LIVING HUB · NOVEMBER 2026 · 338 CITED WORKS</span>
+            <span>SURVEY · NOVEMBER 2026</span>
           </div>
           <h1 id="hero-title">Video Models as Generative Renderers</h1>
           <p class="cinema-sub">Foundations, Interfaces, Systems, and Beyond</p>
@@ -94,34 +55,24 @@
         </div>
       </div>
 
-      <!-- Floating Bottom VisionOS Frosted-Glass Cinema Control Dock -->
+      <!-- Minimal Floating Bottom Cinema Bar -->
       <div class="cinema-dock-wrap">
         <div class="wrap">
-          <div class="cinema-caption-line" id="hero-stage-caption">
-            <span class="cap-dot" id="hero-cap-dot"></span>
-            <span id="hero-cap-text"><b>Physical &amp; Embodied · Simulator &amp; Scene Decide:</b> Robot gripper picks up the blue ball before the red ball glides underneath.</span>
-          </div>
-
-          <div class="cinema-dock" id="cinema-dock">
-            <div class="dock-scenarios" id="hero-scenario-btns" role="tablist" aria-label="Choose ramp scenario">
-              <button type="button" class="dock-sc active" data-sc="robot" role="tab">
+          <div class="cinema-dock cinema-dock-min" id="cinema-dock">
+            <div class="dock-chapters" id="hero-chapters" role="tablist" aria-label="Film chapters">
+              <button type="button" class="dock-ch active" data-seek="0.0" data-start="0.0" data-end="4.2" role="tab">
                 <span class="dsc-num">01</span>
-                <span class="dsc-meta"><b>Robot Grasp</b><small>Simulator &amp; Scene</small></span>
+                <b>Ramp Physics</b>
                 <span class="dsc-bar"><i></i></span>
               </button>
-              <button type="button" class="dock-sc" data-sc="director" role="tab">
+              <button type="button" class="dock-ch" data-seek="4.25" data-start="4.2" data-end="8.2" role="tab">
                 <span class="dsc-num">02</span>
-                <span class="dsc-meta"><b>Director +0.6s</b><small>Creative · T3a</small></span>
+                <b>Courtyard Duel</b>
                 <span class="dsc-bar"><i></i></span>
               </button>
-              <button type="button" class="dock-sc" data-sc="engine" role="tab">
+              <button type="button" class="dock-ch" data-seek="8.25" data-start="8.2" data-end="12.05" role="tab">
                 <span class="dsc-num">03</span>
-                <span class="dsc-meta"><b>Engine Delete</b><small>Interactive · T3b</small></span>
-                <span class="dsc-bar"><i></i></span>
-              </button>
-              <button type="button" class="dock-sc" data-sc="base" role="tab">
-                <span class="dsc-num">04</span>
-                <span class="dsc-meta"><b>Base Shot</b><small>Ramp Collision</small></span>
+                <b>Embodied Grasp</b>
                 <span class="dsc-bar"><i></i></span>
               </button>
             </div>
@@ -132,31 +83,19 @@
               <button type="button" class="dock-tool" id="hero-play-btn" title="Play / Pause" aria-label="Play or Pause">
                 <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><rect x="3" y="2.5" width="3.5" height="11" rx="1"/><rect x="9.5" y="2.5" width="3.5" height="11" rx="1"/></svg>
               </button>
-              <button type="button" class="dock-tool active" id="stage-reel-btn" title="Auto-cycle through all 4 scenarios (20s showreel)">
-                <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 8a5.5 5.5 0 1 1-1.3-3.6"/><path d="M13.5 2.8v2.7h-2.7"/></svg>
-                <span>20s Reel</span>
+              <button type="button" class="dock-tool dock-sound-btn" id="hero-sound-btn" title="Toggle Sound" aria-label="Toggle Sound">
+                <svg class="dt-ico" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6v4h2.8L9 13V3L5.3 6H2.5Z"/><path d="M11.5 5.5l3 5M14.5 5.5l-3 5"/></svg>
+                <span>Sound</span>
               </button>
-              <button type="button" class="dock-tool active" id="stage-sweep-btn" title="Toggle auto-scan beam">
-                <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 1.5v13M4.5 5 1.8 8l2.7 3M11.5 5l2.7 3-2.7 3"/></svg>
-                <span>Auto-Scan</span>
-              </button>
-              <button type="button" class="dock-tool dock-cursor-tool" id="stage-cursor-btn" title="Move mouse to glide render beam">
-                <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="5"/><path d="M8 1v2.5M8 12.5V15M1 8h2.5M12.5 8H15"/></svg>
-                <span>Cursor</span>
-              </button>
-              <a class="dock-cta" href="#who-decides">Explore Survey ↓</a>
+              <a class="dock-cta" href="#who-decides">Explore ↓</a>
             </div>
           </div>
-
-          <!-- Hidden accessible range input synced to beam -->
-          <input id="stage-range" class="sr-only" type="range" min="4" max="96" value="50" aria-label="Shader wipe split percentage" />
         </div>
       </div>
 
-      <!-- Thin Cinema Timeline Strip along Bottom Edge -->
+      <!-- Thin Progress Line -->
       <div class="cinema-timeline" aria-hidden="true">
         <div class="stage-tl-fill" id="hero-tl-fill"></div>
-        <div class="stage-tl-event" id="hero-tl-event" style="left:31%;"></div>
       </div>
     </section>
 
@@ -280,7 +219,7 @@
             <div class="eyebrow"><span class="status-dot"></span> Chapter 3 · Driving Domains</div>
             <h2>Who Decides What Happens Next When Video Models Become Renderers?</h2>
           </div>
-          <p>One ramp shot—a red ball rolling down to knock aside a blue ball blocking the exit—splits into <b>three closed decision loops</b> depending on who owns the final say. Click a domain below to watch the paired <b>3D Proxy → Seedance 2.5 (1080p)</b> and trace how authority flows around the renderer.</p>
+          <p>One ramp shot—a red ball rolling down to knock aside a blue ball blocking the exit—splits into <b>three closed decision loops</b> depending on who owns the final say. Click a domain below to watch the paired <b>3D Proxy → Rendered Video</b> and trace how authority flows around the renderer.</p>
         </div>
 
         <div class="wd-grid">
@@ -350,15 +289,14 @@
 
             <div class="wd-video-pair" id="wd-video-pair">
               <div class="wd-vbox">
-                <span class="wd-vpill is-left" id="wd-left-pill">Upstream 3D Clay Proxy · S(t)</span>
+                <span class="wd-vpill is-left" id="wd-left-pill">3D Proxy · S(t)</span>
                 <video id="wd-vid-left" src="assets/ramp/proxy_director.mp4" autoplay loop muted playsinline></video>
               </div>
               <div class="wd-v-arrow" aria-hidden="true">
                 <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16h22M19 8l8 8-8 8"/></svg>
-                <span>S2.5</span>
               </div>
               <div class="wd-vbox">
-                <span class="wd-vpill is-right" id="wd-right-pill">Seedance 2.5 · 1080p Render</span>
+                <span class="wd-vpill is-right" id="wd-right-pill">Rendered Video · Y(t)</span>
                 <video id="wd-vid-right" src="assets/ramp/render_director.mp4" poster="assets/ramp/poster_director.jpg" autoplay loop muted playsinline></video>
               </div>
             </div>

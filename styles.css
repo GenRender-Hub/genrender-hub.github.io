@@ -1492,6 +1492,71 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 18px;
 }
 
+.opening-film {
+  cursor: default;
+  height: clamp(560px, calc(100vh - 58px), 800px);
+  background: #0d1613;
+}
+.cinema-film-vid {
+  z-index: 1;
+  object-position: center 52%;
+}
+.cinema-dock-min {
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 14px;
+}
+.dock-chapters {
+  display: flex;
+  align-items: stretch;
+  gap: 5px;
+}
+.dock-ch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 13px 9px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(236, 244, 240, 0.84);
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.18s;
+}
+.dock-ch:hover {
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+.dock-ch.active {
+  background: rgba(30, 82, 70, 0.85);
+  border-color: rgba(142, 232, 200, 0.58);
+  color: #ffffff;
+}
+.dock-sound-btn.is-on {
+  background: rgba(246, 213, 142, 0.22);
+  border-color: rgba(246, 213, 142, 0.72);
+  color: #ffe8b3;
+}
+.opening-film .cinema-scrim-top {
+  height: 44%;
+  background: linear-gradient(180deg,
+    rgba(9, 18, 15, 0.74) 0%,
+    rgba(9, 18, 15, 0.42) 48%,
+    rgba(9, 18, 15, 0.08) 80%,
+    rgba(9, 18, 15, 0) 100%);
+}
+.opening-film .cinema-scrim-bottom {
+  height: 26%;
+  background: linear-gradient(0deg,
+    rgba(9, 18, 15, 0.72) 0%,
+    rgba(9, 18, 15, 0.25) 60%,
+    rgba(9, 18, 15, 0) 100%);
+}
+
 /* Live Dual-Video Ramp Stage helpers */
 .cap-dot {
   width: 8px;
@@ -1789,8 +1854,11 @@ footer { padding: 26px 0 36px; font-size: 12.5px; color: var(--muted); border-to
 }
 @media (max-width: 680px) {
   .wrap, .header-inner { padding: 0 16px; }
-  .opening-cinema { height: 590px; }
-  .cinema-header { padding-top: 28px; }
+  .opening-cinema { height: 540px; }
+  .cinema-header { padding-top: 26px; }
+  .dock-chapters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+  .dock-ch { padding: 6px 6px 8px; justify-content: center; font-size: 10.5px; gap: 4px; }
+  .dock-ch .dsc-num { display: none; }
   .hud-badge, .hud-telemetry, .cad-corner, .dock-cursor-tool { display: none; }
   .cinema-caption-line { display: none; }
   .dock-sc { padding: 6px 8px 8px; }
