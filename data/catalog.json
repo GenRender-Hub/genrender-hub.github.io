@@ -7,7 +7,7 @@
     "homepage": "https://genrender-hub.github.io/",
     "repo": "https://github.com/GenRender-Hub/Awesome-Generative-Renderers",
     "counts": {
-      "cited_works": 337,
+      "cited_works": 338,
       "systems_total": 68,
       "tier3_total": 50,
       "tier3a": 26,
@@ -5236,6 +5236,21 @@
       "realtime": false,
       "realtime_note": "",
       "bibtex": "@misc{huang2026roborender,\n  author = {Huang, Huang and Ai, Wensi and Chen, Ziyu and Wang, Youhui and Du, Zijian and Liu, Yang and Yang, Jiaolong and Fei-Fei, Li and Wu, Jiajun},\n  title = {{RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer}},\n  howpublished = {arXiv preprint arXiv:2610.09254},\n  year = {2026},\n  eprint = {2610.09254},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2610.09254}\n}"
+    },
+    {
+      "key": "liao2026simpwm",
+      "name": "",
+      "title": "Simulator-as-Proxy World Model for Robot Manipulation",
+      "authors": "Liao, Tingting and Huo, Mingjia and Li, Hao and Liu, Zhengzhong and Xing, Eric P. and Liu, Guangyi",
+      "year": "2026",
+      "venue": "arXiv",
+      "eprint": "2611.32786",
+      "url": "https://arxiv.org/abs/2611.32786",
+      "track": "World Models & Surveys",
+      "summary": "arXiv",
+      "realtime": false,
+      "realtime_note": "",
+      "bibtex": "@misc{liao2026simpwm,\n  author = {Liao, Tingting and Huo, Mingjia and Li, Hao and Liu, Zhengzhong and Xing, Eric P. and Liu, Guangyi},\n  title = {{Simulator-as-Proxy World Model for Robot Manipulation}},\n  howpublished = {arXiv preprint arXiv:2611.32786},\n  year = {2026},\n  eprint = {2611.32786},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2611.32786}\n}"
     },
     {
       "key": "zhou2024simgen",
