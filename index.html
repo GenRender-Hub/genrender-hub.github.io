@@ -32,107 +32,164 @@
   </header>
 
   <main id="top">
-    <!-- ORIGINAL CLASSICAL ATELIER SPLIT HERO WITH INTERACTIVE CLAY <-> CINEMA COURTYARD STAGE -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap hero-shell">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="status-dot"></span> Survey &amp; Living Hub · November 2026</div>
-          <h1 id="hero-title">Video Models as Generative Renderers</h1>
-          <p class="hero-sub">Foundations, Interfaces, Systems, and Beyond</p>
-          <div class="hero-rule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <!-- FULL-BLEED CINEMATIC SHADER-SCAN OPENING SPLASH (3D CLAY PROXY <-> MINIMAX-H3 2K RENDER) -->
+    <section class="opening-cinema" id="opening-cinema" aria-labelledby="hero-title" style="--split:50%;">
+      <!-- Synchronized Dual HD Video Background Layers -->
+      <video class="cinema-vid cinema-vid-proxy" id="hero-vid-proxy" src="assets/ramp/proxy_robot.mp4" autoplay loop muted playsinline preload="auto"></video>
+      <video class="cinema-vid cinema-vid-render" id="hero-vid-render" src="assets/ramp/render_robot.mp4" poster="assets/ramp/poster_robot.jpg" autoplay loop muted playsinline preload="auto"></video>
 
-          <p class="hero-thesis">
-            Just as classical graphics separates <b>scene construction</b> from <b>rendering</b>, modern video models are shifting from open-ended content invention toward <b>faithful conditional rendering</b>—preserving externally constructed geometry, rules, and cast identity while synthesizing sunlit surfaces, cloth, and secondary motion.
-          </p>
+      <!-- Subtle top & bottom cinema scrims (middle action band stays 100% bright & unobstructed!) -->
+      <div class="cinema-scrim-top" aria-hidden="true"></div>
+      <div class="cinema-scrim-bottom" aria-hidden="true"></div>
 
-          <ul class="hero-keywords" aria-label="Survey keywords">
-            <li>Generative Rendering</li>
-            <li>Specification Ladder</li>
-            <li>Structural Proxies</li>
-            <li>Causal Streaming</li>
-            <li>World State vs. Visual Memory</li>
-          </ul>
-
-          <nav class="hero-actions" aria-label="Survey resources">
-            <a class="resource-link is-primary" href="#metro-roadmap">
-              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.5 8l4.2 7.8M17.5 8l-4.2 7.8"/></svg>
-              <span>Evolution Roadmap</span>
-            </a>
-            <a class="resource-link" href="https://github.com/GenRender-Hub/Awesome-Generative-Renderers" target="_blank" rel="noopener">
-              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.4 6.2-6.5a5.1 5.1 0 0 0-1.4-3.5 4.8 4.8 0 0 0-.1-3.5s-1.2-.4-3.8 1.3a13 13 0 0 0-6.8 0C5.6 1.1 4.4 1.5 4.4 1.5a4.8 4.8 0 0 0-.1 3.5 5.1 5.1 0 0 0-1.4 3.5c0 5.1 3.2 6.2 6.2 6.5a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
-              <span>GitHub</span>
-            </a>
-            <a class="resource-link" href="#matrix">
-              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>
-              <span>System Matrix (68)</span>
-            </a>
-            <a class="resource-link" href="#library">
-              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-              <span>Library (336)</span>
-            </a>
-            <a class="resource-link" href="#cite">
-              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 11H5a6 6 0 0 1 5-6M5 11h5v7H4v-5a2 2 0 0 1 1-2Zm15 0h-5a6 6 0 0 1 5-6m-5 6h5v7h-6v-5a2 2 0 0 1 1-2Z"/></svg>
-              <span>Cite</span>
-            </a>
-            <a class="resource-link" href="mailto:xyli@se.cuhk.edu.hk">
-              <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
-              <span>Contact</span>
-            </a>
-          </nav>
+      <!-- Clipped Technical CAD Wireframe Telemetry Layer (visible ONLY on Proxy left side of laser beam!) -->
+      <div class="cinema-hud-proxy" aria-hidden="true">
+        <div class="cad-grid-overlay"></div>
+        <div class="cad-corner tl"></div>
+        <div class="cad-corner bl"></div>
+        <div class="hud-badge hud-left-badge">
+          <span class="hud-sq"></span>
+          <span>UPSTREAM 3D CLAY PROXY · S(t)</span>
         </div>
+        <div class="hud-telemetry" id="hero-telemetry">
+          <span class="tele-tc" id="hero-tc">TC 00:00:00 · 24 FPS</span>
+          <span class="tele-sep">|</span>
+          <span class="tele-state" id="hero-state">STATE: ROBOT_APPROACH</span>
+        </div>
+      </div>
 
-        <!-- LIVE SYNCHRONIZED 3D CLAY PROXY <-> MINIMAX-H3 2K GENERATIVE RENDER STAGE (CH. 3 RAMP STORY) -->
-        <figure class="atelier-stage" id="atelier-stage">
-          <div class="stage-bar">
-            <span class="stage-title">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              Live Render · 3D Proxy ⇄ MiniMax-H3 2K
-            </span>
-            <div class="stage-controls" id="hero-scenario-btns">
-              <button type="button" class="stage-btn active" data-sc="robot">Robot</button>
-              <button type="button" class="stage-btn" data-sc="director">Director</button>
-              <button type="button" class="stage-btn" data-sc="engine">Engine</button>
-              <button type="button" class="stage-btn" data-sc="base">Base</button>
-              <button type="button" class="stage-btn is-wipe" id="stage-sweep-btn" title="Toggle auto-wipe">⏸ Wipe</button>
-            </div>
+      <!-- Clipped Photoreal Cinema Layer Badge (visible ONLY on Rendered right side of laser beam!) -->
+      <div class="cinema-hud-render" aria-hidden="true">
+        <div class="cad-corner tr"></div>
+        <div class="cad-corner br"></div>
+        <div class="hud-badge hud-right-badge">
+          <span class="hud-dot-live"></span>
+          <span>GENERATIVE RENDER · Y(t) · MINIMAX-H3 2K</span>
+        </div>
+      </div>
+
+      <!-- Luminous Volumetric Optical Render-Scan Beam -->
+      <div class="cinema-beam" id="stage-divider" aria-hidden="true">
+        <div class="beam-aura"></div>
+        <div class="beam-core"></div>
+        <div class="beam-flare"></div>
+        <div class="beam-reticle">
+          <span class="reticle-ring"></span>
+          <span class="reticle-arrows">⇄</span>
+        </div>
+      </div>
+
+      <!-- Floating Upper Editorial Title Overlay -->
+      <div class="cinema-header">
+        <div class="wrap cinema-header-inner">
+          <div class="cinema-eyebrow">
+            <span class="hud-dot-live"></span>
+            <span>SURVEY &amp; LIVING HUB · NOVEMBER 2026 · 336 CITED WORKS</span>
           </div>
+          <h1 id="hero-title">Video Models as Generative Renderers</h1>
+          <p class="cinema-sub">Foundations, Interfaces, Systems, and Beyond</p>
+          <p class="cinema-oneliner">
+            Upstream <b>engines, directors, and simulators</b> decide what happens next — the <b>video model</b> renders what it looks like.
+          </p>
+        </div>
+      </div>
 
-          <div class="stage-viewport stage-video-vp" id="stage-viewport" style="--split:50%;">
-            <span class="stage-pill left">3D Clay Proxy · S(t)</span>
-            <span class="stage-pill right">MiniMax-H3 2K Render · Y(t)</span>
-
-            <video class="stage-layer stage-vid" id="hero-vid-proxy" src="assets/ramp/proxy_robot.mp4" autoplay loop muted playsinline preload="auto"></video>
-            <video class="stage-layer stage-layer-cinema stage-vid" id="hero-vid-render" src="assets/ramp/render_robot.mp4" poster="assets/ramp/poster_robot.jpg" autoplay loop muted playsinline preload="auto"></video>
-
-            <div class="stage-divider" id="stage-divider">
-              <div class="stage-handle" aria-hidden="true">⇄</div>
-            </div>
-
-            <div class="stage-timeline" aria-hidden="true">
-              <div class="stage-tl-fill" id="hero-tl-fill"></div>
-              <div class="stage-tl-event" id="hero-tl-event" style="left:31%;" title="Intervention event"></div>
-            </div>
-          </div>
-
-          <div class="stage-caption-strip" id="hero-stage-caption">
+      <!-- Floating Bottom VisionOS Frosted-Glass Cinema Control Dock -->
+      <div class="cinema-dock-wrap">
+        <div class="wrap">
+          <div class="cinema-caption-line" id="hero-stage-caption">
             <span class="cap-dot" id="hero-cap-dot"></span>
             <span id="hero-cap-text"><b>Physical &amp; Embodied · Simulator &amp; Scene Decide:</b> Robot gripper picks up the blue ball before the red ball glides underneath.</span>
           </div>
 
-          <div class="stage-slider-row">
-            <button type="button" class="stage-play-btn" id="hero-play-btn" title="Play / Pause">⏸</button>
-            <span><b>Wipe:</b> Proxy</span>
-            <input id="stage-range" type="range" min="4" max="96" value="50" aria-label="Compare 3D clay proxy video and MiniMax-H3 photoreal render" />
-            <span>Render</span>
-            <a class="stage-deep-lnk" href="#who-decides">Full story ↓</a>
+          <div class="cinema-dock" id="cinema-dock">
+            <div class="dock-scenarios" id="hero-scenario-btns" role="tablist" aria-label="Choose ramp scenario">
+              <button type="button" class="dock-sc active" data-sc="robot" role="tab">
+                <span class="dsc-num">01</span>
+                <span class="dsc-meta"><b>Robot Grasp</b><small>Simulator &amp; Scene</small></span>
+                <span class="dsc-bar"><i></i></span>
+              </button>
+              <button type="button" class="dock-sc" data-sc="director" role="tab">
+                <span class="dsc-num">02</span>
+                <span class="dsc-meta"><b>Director +0.6s</b><small>Creative · T3a</small></span>
+                <span class="dsc-bar"><i></i></span>
+              </button>
+              <button type="button" class="dock-sc" data-sc="engine" role="tab">
+                <span class="dsc-num">03</span>
+                <span class="dsc-meta"><b>Engine Delete</b><small>Interactive · T3b</small></span>
+                <span class="dsc-bar"><i></i></span>
+              </button>
+              <button type="button" class="dock-sc" data-sc="base" role="tab">
+                <span class="dsc-num">04</span>
+                <span class="dsc-meta"><b>Base Shot</b><small>Ramp Collision</small></span>
+                <span class="dsc-bar"><i></i></span>
+              </button>
+            </div>
+
+            <div class="dock-divider" aria-hidden="true"></div>
+
+            <div class="dock-tools">
+              <button type="button" class="dock-tool" id="hero-play-btn" title="Play / Pause" aria-label="Play or Pause">
+                <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><rect x="3" y="2.5" width="3.5" height="11" rx="1"/><rect x="9.5" y="2.5" width="3.5" height="11" rx="1"/></svg>
+              </button>
+              <button type="button" class="dock-tool active" id="stage-sweep-btn" title="Toggle auto-scan beam">
+                <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 1.5v13M4.5 5 1.8 8l2.7 3M11.5 5l2.7 3-2.7 3"/></svg>
+                <span>Auto-Scan</span>
+              </button>
+              <button type="button" class="dock-tool dock-cursor-tool" id="stage-cursor-btn" title="Move mouse to glide render beam">
+                <svg class="dt-ico" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="5"/><path d="M8 1v2.5M8 12.5V15M1 8h2.5M12.5 8H15"/></svg>
+                <span>Cursor</span>
+              </button>
+              <a class="dock-cta" href="#who-decides">Explore Survey ↓</a>
+            </div>
           </div>
-        </figure>
+
+          <!-- Hidden accessible range input synced to beam -->
+          <input id="stage-range" class="sr-only" type="range" min="4" max="96" value="50" aria-label="Shader wipe split percentage" />
+        </div>
+      </div>
+
+      <!-- Thin Cinema Timeline Strip along Bottom Edge -->
+      <div class="cinema-timeline" aria-hidden="true">
+        <div class="stage-tl-fill" id="hero-tl-fill"></div>
+        <div class="stage-tl-event" id="hero-tl-event" style="left:31%;"></div>
       </div>
     </section>
 
-    <!-- AUTHORS & 15 OFFICIAL UNIVERSITY CALLIGRAPHY LOCKUPS -->
+    <!-- AUTHORS, QUICK RESOURCES & 15 OFFICIAL UNIVERSITY CALLIGRAPHY LOCKUPS -->
     <section class="cover-people" aria-label="Authors and institutions">
       <div class="wrap">
+        <nav class="hero-actions cover-actions" aria-label="Survey resources">
+          <a class="resource-link is-primary" href="#who-decides">
+            <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <span>Who Decides? (Ch. 3)</span>
+          </a>
+          <a class="resource-link" href="#metro-roadmap">
+            <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 6h9M6.5 8l4.2 7.8M17.5 8l-4.2 7.8"/></svg>
+            <span>Evolution Roadmap</span>
+          </a>
+          <a class="resource-link" href="https://github.com/GenRender-Hub/Awesome-Generative-Renderers" target="_blank" rel="noopener">
+            <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.4 6.2-6.5a5.1 5.1 0 0 0-1.4-3.5 4.8 4.8 0 0 0-.1-3.5s-1.2-.4-3.8 1.3a13 13 0 0 0-6.8 0C5.6 1.1 4.4 1.5 4.4 1.5a4.8 4.8 0 0 0-.1 3.5 5.1 5.1 0 0 0-1.4 3.5c0 5.1 3.2 6.2 6.2 6.5a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a class="resource-link" href="#matrix">
+            <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>
+            <span>System Matrix (68)</span>
+          </a>
+          <a class="resource-link" href="#library">
+            <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <span>Library (336)</span>
+          </a>
+          <a class="resource-link" href="#cite">
+            <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 11H5a6 6 0 0 1 5-6M5 11h5v7H4v-5a2 2 0 0 1 1-2Zm15 0h-5a6 6 0 0 1 5-6m-5 6h5v7h-6v-5a2 2 0 0 1 1-2Z"/></svg>
+            <span>Cite</span>
+          </a>
+          <a class="resource-link" href="mailto:xyli@se.cuhk.edu.hk">
+            <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+            <span>Contact</span>
+          </a>
+        </nav>
+
         <ul class="authors">
           <li><a href="https://asdfo123.github.io/" target="_blank" rel="noopener">Xinye Li</a><sup>1</sup><span class="r-star">★</span><span class="r-lead">✦</span></li>
           <li>Liuzhou Zhang<sup>2</sup><span class="r-star">★</span></li>
