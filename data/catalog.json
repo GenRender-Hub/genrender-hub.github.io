@@ -7,13 +7,13 @@
     "homepage": "https://genrender-hub.github.io/",
     "repo": "https://github.com/GenRender-Hub/Awesome-Generative-Renderers",
     "counts": {
-      "cited_works": 336,
+      "cited_works": 337,
       "systems_total": 68,
       "tier3_total": 50,
       "tier3a": 26,
       "tier3b": 24,
       "tier12": 18,
-      "benchmarks": 29
+      "benchmarks": 30
     }
   },
   "systems": [
@@ -1674,6 +1674,22 @@
       "breakdown": "48 worlds",
       "cases": "432",
       "bibtex": "@misc{hou2026worlddraft,\n  author = {Hou, Zhiyu and Shu, Wen-Jie and Chen, Harold Haodong and Ruan, Weilin and Liao, Chenfei and Zhang, Liuzhou and Lan, Disen and Xu, Xiaogang and Chen, Qi and Lim, Ser-Nam},\n  title = {{WorldDraft: If Code Builds the World, Can Video Models Just Render It?}},\n  howpublished = {arXiv preprint arXiv:2611.16217},\n  year = {2026},\n  eprint = {2611.16217},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2611.16217}\n}"
+    },
+    {
+      "kind": "benchmark",
+      "name": "ProxyGenBench",
+      "tier": "Benchmark",
+      "stage": "Stage 2: Rendering",
+      "key": "tang2026proxygenbench",
+      "title": "ProxyGenBench: Benchmarking Proxy-Guided Video Generation",
+      "authors": "Tang, Zhenchen and Lu, Haolin and Yang, Songlin and Zhao, Xiaotong and Zhang, Ran and Peng, Bo and Li, Shuai and Fan, Haotian and Zhong, Haobin and Zhang, Yanni and Li, Songlian and Zhang, Ning and Gao, Xun and Zhao, Alan and Dong, Jing",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.34457",
+      "output_type": "Clip",
+      "reference": "Checklists; inputs",
+      "breakdown": "3 tasks",
+      "cases": "312",
+      "bibtex": "@misc{tang2026proxygenbench,\n  author = {Tang, Zhenchen and Lu, Haolin and Yang, Songlin and Zhao, Xiaotong and Zhang, Ran and Peng, Bo and Li, Shuai and Fan, Haotian and Zhong, Haobin and Zhang, Yanni and Li, Songlian and Zhang, Ning and Gao, Xun and Zhao, Alan and Dong, Jing},\n  title = {{ProxyGenBench: Benchmarking Proxy-Guided Video Generation}},\n  howpublished = {arXiv preprint arXiv:2611.34457},\n  year = {2026},\n  eprint = {2611.34457},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2611.34457}\n}"
     },
     {
       "kind": "benchmark",
@@ -4515,6 +4531,21 @@
       "realtime": false,
       "realtime_note": "",
       "bibtex": "@inproceedings{zhou2025zeroshotr2v,\n    author    = {Zhou, Zijian and Liu, Shikun and Liu, Haozhe and Qiu, Haonan and An, Zhaochong and Ren, Weiming and Liu, Zhiheng and Huang, Xiaoke and Ng, Kam-Woh and Xie, Tian and Han, Xiao and Cong, Yuren and Li, Hang and Zhu, Chuyan and Patel, Aditya and Xiang, Tao and He, Sen},\n    title     = {Scaling Zero-Shot Reference-to-Video Generation},\n    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n    month     = {June},\n    year      = {2026},\n    pages     = {9253--9262},\n    eprint    = {2512.06905},\n    url       = {https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_Scaling_Zero-Shot_Reference-to-Video_Generation_CVPR_2026_paper.html}\n}"
+    },
+    {
+      "key": "tang2026proxygenbench",
+      "name": "ProxyGenBench",
+      "title": "ProxyGenBench: Benchmarking Proxy-Guided Video Generation",
+      "authors": "Tang, Zhenchen and Lu, Haolin and Yang, Songlin and Zhao, Xiaotong and Zhang, Ran and Peng, Bo and Li, Shuai and Fan, Haotian and Zhong, Haobin and Zhang, Yanni and Li, Songlian and Zhang, Ning and Gao, Xun and Zhao, Alan and Dong, Jing",
+      "year": "2026",
+      "venue": "arXiv",
+      "eprint": "2611.34457",
+      "url": "https://arxiv.org/abs/2611.34457",
+      "track": "Benchmark",
+      "summary": "Stage 2: Rendering · Checklists; inputs · 3 tasks",
+      "realtime": false,
+      "realtime_note": "",
+      "bibtex": "@misc{tang2026proxygenbench,\n  author = {Tang, Zhenchen and Lu, Haolin and Yang, Songlin and Zhao, Xiaotong and Zhang, Ran and Peng, Bo and Li, Shuai and Fan, Haotian and Zhong, Haobin and Zhang, Yanni and Li, Songlian and Zhang, Ning and Gao, Xun and Zhao, Alan and Dong, Jing},\n  title = {{ProxyGenBench: Benchmarking Proxy-Guided Video Generation}},\n  howpublished = {arXiv preprint arXiv:2611.34457},\n  year = {2026},\n  eprint = {2611.34457},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2611.34457}\n}"
     },
     {
       "key": "ho2022vdm",
